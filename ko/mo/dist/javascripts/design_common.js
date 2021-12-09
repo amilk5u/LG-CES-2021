@@ -47,19 +47,20 @@ videoGallery();
 "use strict";
 function detail(){
 
+    /*211208 start*/
     // Header Toggle Button
     var TVContainer = $(".tv_container"),
         TVGnbBtn = TVContainer.find(".gnb_btn"),
-        TVToggleMenu = TVContainer.find(".toggle_menu"),
+        TVGnbList = TVContainer.find(".gnb_list"),
         TVMenuCloseBtn = TVContainer.find(".close_btn"),
         TVDim = TVContainer.find(".dim");
 
     TVGnbBtn.on("click",function(){
-        if (TVToggleMenu.hasClass("active") ) {
+        if (TVGnbList.hasClass("active") ) {
             GnbMenuNone();
         } else {
             TweenMax.to(TVDim, .5, { opacity:1, display:"block"})
-            TVToggleMenu.addClass("active");
+            TVGnbList.addClass("active");
         }
     });
     TVMenuCloseBtn.on("click",function(){
@@ -70,9 +71,10 @@ function detail(){
         GnbMenuNone();
     });
     function GnbMenuNone () {
-        TVToggleMenu.removeClass("active");
+        TVGnbList.removeClass("active");
         TweenMax.to(TVDim, .5, { opacity:0, display:"none"})
     }
+    /*211208 end*/
 
 
     setTimeout(function () {
@@ -87,10 +89,11 @@ function detail(){
         $(this).addClass("main_title_active");
         $(".sub_title").css("display","none");
         $(this).parent().find(".sub_title").css("display","block");
-        // $(this).parent().find(".sub_title").children().first().trigger("click");
+        $(this).parent().find(".sub_title").children().first().trigger("click");
         //각 maintitle 클릭했을 때 filter한 첫번째 모델 클릭되도록
-        // $(this).parent().find($(".subtitle_btn_select")).eq(0).trigger("click");
+        $(this).parent().find($(".subtitle_btn_select")).eq(0).trigger("click");
     });
+
 
     //model subtitle 제어
     var $hashSub = $(".hash_sub button");
@@ -106,8 +109,9 @@ function detail(){
     /*model name*/
     var selectModel;
     $subTitleBtn.on("click",function(){
+        /*211208 start*/
         GnbMenuNone();
-
+        /*211208 end*/
         selectModel = $(this).children().text();
         $subTitleBtn.removeClass("subtitle_active");
         $(this).addClass("subtitle_active");

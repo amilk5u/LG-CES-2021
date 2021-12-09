@@ -163,11 +163,9 @@ label, button { cursor: pointer; }
 
 #header .lg_index_link img { width: 100%; }
 
-#header .toggle_menu { width: 31rem; height: calc(100vh - 5.35rem); position: relative; background-color: #fff; left: -100vw; -webkit-transition: left 0.5s ease; -moz-transition: left 0.5s ease; -o-transition: left 0.5s ease; -ms-transition: left 0.5s ease; }
+#header .gnb_list { width: fit-content; width: 31rem; height: calc(100vh - 5.35rem); position: relative; background-color: #fff; left: -100vw; -webkit-transition: left 0.5s ease; -moz-transition: left 0.5s ease; -o-transition: left 0.5s ease; -ms-transition: left 0.5s ease; }
 
-#header .toggle_menu.active { left: 0; }
-
-#header .gnb_list { width: fit-content; }
+#header .gnb_list.active { left: 0; }
 
 #header .gnb_list .main_title { width: 18.5rem; display: block; }
 
