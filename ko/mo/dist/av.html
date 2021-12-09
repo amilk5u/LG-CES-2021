@@ -22,8 +22,16 @@
 <div id="wrap">
    <!-- header-->
    <header id="header">
-      <img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/layout/logo.png" alt="">
-       <a href="./index" class="lg_index_link"></a>
+		<!--211208 start-->
+		<button class="gnb_btn" type="button">
+			<span></span>
+		</button>
+		<a href="./index" class="lg_index_link">
+			<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/layout/logo.png" alt="">
+		</a>
+		<button type="button" class="simulator_close_btn"></button>
+		<button type="button" class="webgl_close_btn"></button>
+		<!--211208 end-->
        <div class="title_middle_line"></div>
       <ul class="gnb_list">
          <li class="main_title">
@@ -76,1475 +84,1319 @@
                <li class="sub_title_btn"><button type="button">FP8</button></li>
             </ul>
          </li>
+      	<a href="./oled" class="goto_AV_link">GO TO TV</a>
       </ul>
-      <button type="button" id="modelFilter" style="position:absolute; top:32px; right:0;">FILTER BY MODEL</button>
       <!--      <a href="../video_gallery.html?param=tv" class="contents_link">PLAYLISTS</a>-->
-      <a href="./oled" class="goto_AV_link">GO TO TV</a>
    </header>
-
    <!-- //header-->
-   <!--filter_header-->
-   <div class="filter_header">
-      <div class="filter_header_wrap">
-         <img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/layout/logo.png" alt="">
-          <a href="./index" class="lg_index_link"></a>
-         <h1>FILTER BY MODEL</h1>
-         <a href="./oled" class="goto_AV_link">GO TO TV</a>
-      </div>
-   </div>
-   <!--//filter_header-->
 
-<!--mainContainer-->
-<div id="container" class="main_container">
-	<div class="img_3D_wrap">
-		<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/infill/soundbar/S95QR.jpg" alt="" class="goto3d_img">
-		<button type="button" class="btn_3D"><img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/icon_3D_btn.png" alt="">Click to Start</button>
-	</div>
-	<div class="model_info">
-		<p class="model_name"><span class="model_title"></span><span class="model_size">83</span><span class="model_subtitle">C2</span></p>
-		<div class="model_size_btn">
-			<button type="button" class="model_size_btn_active">83"</button>
-			<button type="button" class="model_size_btn_inactive">77"</button>
-			<button type="button">65"</button>
-			<button type="button" class="model_size_btn_inactive">55"</button>
-			<button type="button">48"</button>
-			<button type="button">42"</button>
-		</div>
-		<div class="key_features">
-			<p class="title">Key Features</p>
-			<div class="hash_usp">
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="immersive_810w" class="S95QR">810W / 9.1.5ch Immersive Dolby Atmos Sound</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="cinematic_620w" class="S80QR">620W / 5.1.3ch Cinematic Surround Sound</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="high_power_800w" class="SH7Q">800W / 5.1ch High Power Sound Bar</button></div>
-
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="slim_wall" class="G1">Slim Wall-mount Design</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="center_up_firing" class="S95QR S80QR">Center Up-Firing Speaker</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="rear_6ch" class="S95QR">6ch Rear Speaker</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="plug_wireless" class="FP9">Plug & Wireless</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="meridian_audio_technologies" class="S95QR S75Q S80QR S65Q G1 QP5 TF7">MERIDIAN Audio Technologies</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="meridian_audio_technology" class="FP9 FP8">MERIDIAN Audio Technologies</button></div>
-
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="dts_virtualX" class="S65Q SH7Q">DTS Virtual:X</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="dolby_dts_imax" class="S95QR S80QR">Dolby Atmos / DTS:X / IMAX Enhanced</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="immersive_400w" class="S65Q">400W / 3.1ch Immersive Sound</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="immersive_sound_21ch_S40Q" class="S40Q">2.1ch Immersive Sound</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="immersive_sound_21ch_S60Q" class="S60Q">2.1ch Immersive Sound</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="dolby_dts" class="S75Q">Dolby Atmos / DTS:X</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="dolby_dts_G1" class="G1">Dolby Atmos / DTS:X</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="dolby_dts_QP5" class="QP5">Dolby Atmos / DTS:X</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="immersive_380w" class="S75Q">380W / 3.1.2 ch Immersive Sound</button></div>
-
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="immersive_320w" class="QP5">320W / 3.1.2 ch Immersive Sound</button></div>
-
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="ai_room_calibration" class="S95QR S80QR">AI Room Calibration</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="built_in_subwoofer" class="S40Q S60Q">Built-In Subwoofer</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="wireless_subwoofer" class="SH7Q">Wireless Subwoofer</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="interior_friendly_design_S40Q" class="S40Q">Interior Friendly Design</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="interior_friendly_design_S60Q" class="S60Q">Interior Friendly Design</button></div>
-				<!--수급 안됨--><div class="hash_usp_btn_wrap_av"><button type="button" id="virtual_dolby_atmos" class="S60Q">Virtual Dolby Atmos</button></div>
-
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="high_resolution_S75Q" class="S75Q">High Resolution Audio</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="high_resolution_G1" class="G1">High Resolution Audio</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="low_vibration" class="QP5">Low Vibration Subwoofer</button></div>
-				<!--수급 안됨--><div class="hash_usp_btn_wrap_av"><button type="button" id="spotify_hifi" class="S95QR S80QR">Compatible with Spotify Hi-Fi</button></div>
-
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="wireless_dolby_dts" class="WTP3">Wireless Transmission of Dolby Atmos & DTS:X</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="compatible_variety_tvs" class="WTP3">Compatible with Variety of TVs</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="compact_size_easy_setup" class="WTP3">Compact Size & Easy Setup</button></div>
-
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="authentic_360_omnidirectional_sound" class="RP4">Authentic 360 Omnidirectional sound</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="inch_525_glass_fiber_woofer" class="RP4">5.25 inch Glass fiber woofer</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="inch_1_titanium_horn_tweeter" class="RP4">1 inch Titanium horn tweeter</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="emotive_360_mood" class="RP4">EMOTIVE 360 MOOD LIGHTING</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="dj_effects" class="RP4">DJ Effects (iOS / Android App.)</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="grab_go" class="RP4">GRAB & GO: 10 hours battery</button></div>
-
-
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="gaming_sound_3d_gp3" class="GP3">3D gaming sound</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="gaming_sound_3d_gp9" class="GP9">3D gaming sound</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="dts_headphone_x_gp3" class="GP3">DTS Headphone: X</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="dts_headphone_x_gp9" class="GP9">DTS Headphone: X</button></div>
-				<!--<div class="hash_usp_btn_wrap_av"><button type="button" id="es9038_pro" class="GP3">ES9038 Pro Hi-Fi DAC</button></div>-->
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="hi_fi_quad_dac" class="GP9">Hi-Fi Quad DAC (ES9038 Pro)</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="echo_cancelling_mic" class="GP3">Built-In MIC for Clear Voice Chat</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="built_in_mic_clear_voice" class="GP9">Built-In MIC for Clear Voice Chat</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="customizable_precision_eq_sound_gp3" class="GP3">Customizable Precision EQ Sound</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="customizable_precision_eq_sound_gp9" class="GP9">Customizable Precision EQ Sound</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="built_in_battery_GP9" class="GP9">Built-in Battery</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="built_in_battery_GP3" class="GP3">Built-in Battery</button></div>
-
-
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="active_noise" class="TF7">Active Noise Cancellation</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="enhanced_anc" class="FP9 FP8">Enhanced ANC</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="advanced_call" class="TF7 FP9 FP8">Advanced Call Quality</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="uv_nano_charging_case" class="FP9 FP8">UV Nano Charging Case</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="uvnano" class="TF7">UVnano</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="medical_grade" class="TF7 FP9 FP8">Medical Grade Silicon Ear Gels</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="battery_life_24h" class="TF7">24 Hour Battery Life</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="perfect_fit" class="FP8">Perfect Fit : Ear Optimized Design</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="sleek_fit" class="FP9">Sleek Fit : Ear Optimized Design</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="wireless_charging" class="FP8">Wireless Charging</button></div>
-
-
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="eco_friendly" class="S75Q G1 S65Q SH7Q">Eco minded</button></div>
-				<div class="hash_usp_btn_wrap_av"><button type="button" id="eco_friendly_QP5" class="QP5">Eco minded</button></div>
+	<!--mainContainer-->
+	<div id="container" class="main_container">
+		<div class="img_3D_wrap">
+			<img src="./images/main/infill/nano/65nano80.png" alt="" class="goto3d_img">
+			<div class="btn_wrap">
+				<button type="button" class="btn_3D">
+					<img src="./images/main/icon_3D_btn.png" alt=""> Click to Start
+				</button>
+				<button type="button" class="btn_simulate">
+					<img src="./images/main/icon_simulate_btn.png" alt=""> Simulate
+				</button>
+				<button type="button" class="btn_gallery_popup">
+					<img src="./images/main/icon_simulate_btn.png" alt=""> Gallery Image
+				</button>
 			</div>
 		</div>
-		<div class="dimension">
-			<p class="title">Dimension<span class="millimeter">WxHxD(mm)</span></p>
-			<div class="description_wrap">
-				<span class="description"><span class="hyphen">-</span><span class="without_stand_num"></span></span><br>
-				<span class="description description_sub"><span class="hyphen">-</span><span class="with_stand_num"></span></span>
-				<span class="description description_rear"><span class="hyphen">-</span><span class="with_stand_num_rear"></span></span>
+		<div class="model_info">
+			<p class="model_name">
+				<span class="model_title"></span><span class="model_size">83</span><span class="model_subtitle">C2</span>
+			</p>
+			<div class="model_size_btn">
+				<button type="button" class="model_size_btn_active">83"</button>
+				<button type="button" class="model_size_btn_inactive">77"</button>
+				<button type="button">65"</button>
+				<button type="button" class="model_size_btn_inactive">55"</button>
+				<button type="button">48"</button>
+				<button type="button">42"</button>
 			</div>
-		</div>
-		<p class="ex_description">*Availability of sizes and models may vary depending on region.</p>
-	</div>
-	<div class="hash_popup">
-		<!--810W / 9.1.5 ch Immersive Dolby Atmos Sound-->
-		<div class="popup_window popup_window_av immersive_810w">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">810W / 9.1.5 ch <br>Immersive Dolby <br>Atmos Sound</p>
-					<p class="description">
-						9.1.5 Channel Audio, 810W power,
-						2 rear up-firing speakers,
-						and a subwoofer – LG Soundbar
-						S95QR is the complete package
-						with powerful and immersive audio
-						for an upgraded surround
-						sound experience.
-					</p>
+			<div class="key_features">
+				<p class="title">Key Features</p>
+				<div class="hash_usp">
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="immersive_810w" class="S95QR">810W / 9.1.5ch Immersive Dolby Atmos Sound</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="cinematic_620w" class="S80QR">620W / 5.1.3ch Cinematic Surround Sound</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="high_power_800w" class="SH7Q">800W / 5.1ch High Power Sound Bar</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="slim_wall" class="G1">Slim Wall-mount Design</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="center_up_firing" class="S95QR S80QR">Center Up-Firing Speaker</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="rear_6ch" class="S95QR">6ch Rear Speaker</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="plug_wireless" class="FP9">Plug & Wireless</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="meridian_audio_technologies" class=" S75Q S80QR S65Q G1 QP5 TF7">MERIDIAN Audio Technologies</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="meridian_audio_technology" class="FP9 FP8">MERIDIAN Audio Technologies</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="dts_virtualX" class="S65Q SH7Q">DTS Virtual:X</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="immersive_400w" class="S65Q">400W / 3.1ch Immersive Sound</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="immersive_sound_21ch_S40Q" class="S40Q">2.1ch Immersive Sound</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="immersive_sound_21ch_S60Q" class="S60Q">2.1ch Immersive Sound</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="dolby_dts" class="S75Q">Dolby Atmos / DTS:X</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="dolby_dts_G1" class="G1">Dolby Atmos / DTS:X</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="dolby_dts_QP5" class="QP5">Dolby Atmos / DTS:X</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="immersive_380w" class="S75Q">380W / 3.1.2 ch Immersive Sound</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="immersive_320w" class="QP5">320W / 3.1.2 ch Immersive Sound</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="built_in_subwoofer" class="S40Q S60Q">Built-In Subwoofer</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="wireless_subwoofer" class="SH7Q">Wireless Subwoofer</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="interior_friendly_design_S40Q" class="S40Q">Interior Friendly Design</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="interior_friendly_design_S60Q" class="S60Q">Interior Friendly Design</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="wireless_dolby_dts" class="WTP3">Wireless Transmission of Dolby Atmos & DTS:X</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="compatible_variety_tvs" class="WTP3">Compatible with Variety of TVs</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="compact_size_easy_setup" class="WTP3">Compact Size & Easy Setup</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="authentic_360_omnidirectional_sound" class="RP4">Authentic 360 Omnidirectional sound</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="inch_525_glass_fiber_woofer" class="RP4">5.25 inch Glass fiber woofer</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="inch_1_titanium_horn_tweeter" class="RP4">1 inch Titanium horn tweeter</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="gaming_sound_3d_gp3" class="GP3">3D gaming sound</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="gaming_sound_3d_gp9" class="GP9">3D gaming sound</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="dts_headphone_x_gp3" class="GP3">DTS Headphone: X</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="dts_headphone_x_gp9" class="GP9">DTS Headphone: X</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="hi_fi_quad_dac" class="GP9">Hi-Fi Quad DAC (ES9038 Pro)</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="echo_cancelling_mic" class="GP3">Built-In MIC for Clear Voice Chat</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="active_noise" class="TF7">Active Noise Cancellation</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="enhanced_anc" class="FP9 FP8">Enhanced ANC</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="advanced_call" class="TF7  FP8">Advanced Call Quality</button>
+					</div>
+					<div class="hash_usp_btn_wrap_av">
+						<button type="button" id="uv_nano_charging_case" class=" FP8">UV Nano Charging Case</button>
+					</div>
+
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/810W_dolby.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Image is simulated with S95QR.<br>
-					*Actual product may vary by models.
+			</div>
+			<div class="dimension">
+				<p class="title">Dimension<span class="millimeter">WxHxD(mm)</span>
 				</p>
+				<div class="description_wrap">
+					<span class="description"><span class="hyphen">-</span><span class="without_stand_num"></span></span>
+					<span class="description description_sub"><span class="hyphen">-</span><span class="with_stand_num"></span></span>
+					<span class="description description_rear"><span class="hyphen">-</span><span class="with_stand_num_rear"></span></span>
+				</div>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
+			<p class="ex_description">*Availability of sizes and models may vary depending on region.</p>
 		</div>
-
-		<!--Plug & Wireless-->
-		<div class="popup_window popup_window_av plug_wireless">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Plug & Wireless</p>
-					<p class="description">
-						Enjoy the high quality sound and Active Noise Cancellation of your TONE Free FP9 earbuds even where there is no Bluetooth support - such as on an airplane seat or the treadmill at your gym. Simply connect the charging case to any device with a 3.5mm headphone jack using the included USB-C to AUX cable, and it will transmit the audio to your earbuds.
+		<div class="hash_popup">
+			<!--810W / 9.1.5 ch Immersive Dolby Atmos Sound-->
+			<div class="popup_window popup_window_av immersive_810w">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">810W / 9.1.5 ch
+							<br>Immersive Dolby
+							<br>Atmos Sound
+						</p>
+						<p class="description">
+							9.1.5 Channel Audio, 810W power, 2 rear up-firing speakers, and a subwoofer – LG Soundbar S95QR is the complete package with powerful and immersive audio for an upgraded surround sound experience.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/810W_dolby.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Image is simulated with S95QR.<br> *Actual product may vary by models.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/plug_wireless.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Charging function is only compatible with devices with Aux cables.<br>
-					*Plug & Wireless can't be used with some game consoles, and compatibility varies by device.
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Center Up-Firing Speaker-->
-		<div class="popup_window popup_window_av center_up_firing">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Center Up-Firing <br>Speaker</p>
-					<p class="description">
-						The up-firing center channel proposed
-						for the first time in the world provides
-						a higher level of sound. Up-firing
-						Channel improves voice clarity and
-						places the sound in the center of the
-						TV to provide more immersive.
+			<!--Plug & Wireless-->
+			<div class="popup_window popup_window_av plug_wireless">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Plug & Wireless</p>
+						<p class="description">
+							Enjoy the high quality sound and Active Noise Cancellation of your TONE Free FP9 earbuds even where there is no Bluetooth support - such as on an airplane seat or the treadmill at your gym. Simply connect the charging case to any device with a 3.5mm headphone jack using the included USB-C to AUX cable, and it will transmit the audio to your earbuds.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/plug_wireless.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Charging function is only compatible with devices with Aux cables.<br> *Plug & Wireless can't be used with some game consoles, and compatibility varies by device.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/center_up_firing.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Image is simulated with S95QR. <br>
-					*Actual product may vary by models.
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--6 ch Rear Speaker-->
-		<div class="popup_window popup_window_av rear_6ch">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">6 ch Rear Speaker</p>
-					<p class="description">
-						For a complete cinematic experience,
-						LG proposes a new rear speaker kit for
-						a immersive surround sound. The new
-						rear up-firing speaker kit provides true
-						rear surround with a much wider
-						soundstage.
+			<!--Center Up-Firing Speaker-->
+			<div class="popup_window popup_window_av center_up_firing">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Center Up-Firing
+							<br>Speaker
+						</p>
+						<p class="description">
+							The up-firing center channel proposed for the first time in the world provides a higher level of sound. Up-firing Channel improves voice clarity and places the sound in the center of the TV to provide more immersive.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/center_up_firing.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Image is simulated with S95QR.
+						<br> *Actual product may vary by models.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/rear_6ch.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Rear Speaker Kit sold separately. <br>
-					**Rear speakers are wired to the included wireless receiver but is not shown in the image.
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--MERIDIAN Audio Technologies-->
-		<div class="popup_window popup_window_av meridian_audio_technologies">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">MERIDIAN Audio <br>Technologies</p>
-					<p class="description">
-						Since 1977, Meridian has delivered
-						innovative and elegant
-						high-performance audio solutions that
-						have redefined how people enjoy their
-						music and movies. As the pioneer of
-						High Resolution Audio and the master
-						of Digital Signal Processing (DSP),
-						they have played an integral role in the
-						development and adoption of
-						pioneering technologies.
+			<!--6 ch Rear Speaker-->
+			<div class="popup_window popup_window_av rear_6ch">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">6 ch Rear Speaker</p>
+						<p class="description">
+							For a complete cinematic experience, LG proposes a new rear speaker kit for a immersive surround sound. The new rear up-firing speaker kit provides true rear surround with a much wider soundstage.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/rear_6ch.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Rear Speaker Kit sold separately.
+						<br> **Rear speakers are wired to the included wireless receiver but is not shown in the image.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/meridian_audio_technologies.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Dolby Atmos / DTS:X / IMAX Enhanced-->
-		<div class="popup_window popup_window_av dolby_dts_imax">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Dolby Atmos / <br>DTS:X / <br>IMAX Enhanced</p>
-					<p class="description">
-						Dolby Atmos and DTS:X place sound
-						all around you for a more realistic
-						audio experience. In addition, DTS
-						decoder detects IMAX Enhanced
-						contents automatically and provides
-						IMAX Signature sound according to
-						set IMAX Mode. All your movies and
-						music are brought to life with sound
-						that’s clearer and more immersive.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dolby_dts_imax.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Provides IMAX Signature sound when IMAX mode is in Auto mode.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--ai_room_calibration-->
-		<div class="popup_window popup_window_av ai_room_calibration">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Room Calibration</p>
-					<p class="description">
-						AI Room Calibration can determine the layout of your room
-						in only 15 seconds - then configure itself for the best,
-						distortion-free audio for your living space.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_room_calibration.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					* AI Room Calibration is a automatic sound tuning technology that compensates for the environment the Sound Bar is placed,<br>
-					by using Algorithms that improve the Sound Bar’s sonic performance. <br>
-					*Image is simulated with S95QR. <br>
-					*Actual product may vary by models.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Compatible with Spotify Hi-Fi 수급 안됨-->
-		<div class="popup_window popup_window_av ">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title"></p>
-					<p class="description">
+			<!--MERIDIAN Audio Technologies-->
+			<div class="popup_window popup_window_av meridian_audio_technologies">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">MERIDIAN Audio
+							<br>Technologies
+						</p>
+						<p class="description">
+							Since 1977, Meridian has delivered innovative and elegant high-performance audio solutions that have redefined how people enjoy their music and movies. As the pioneer of High Resolution Audio and the master of Digital Signal Processing (DSP), they have played an integral role in the development and adoption of pioneering technologies.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/meridian_audio_technologies.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
 
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/810W_dolby.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--620W / 5.1.3 ch Cinematic Surround Sound-->
-		<div class="popup_window popup_window_av cinematic_620w">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">620W / 5.1.3 ch <br>Cinematic <br>Surround Sound</p>
-					<p class="description">
-						5.1.3 Channel Audio, 620W power,
-						2 rear up-firing speakers,
-						and a subwoofer – LG Soundbar
-						S80QR is the complete package with
-						powerful and immersive audio for
-						an upgraded surround
-						sound experience.
+			<!--Dolby Atmos / DTS:X / IMAX Enhanced-->
+			<div class="popup_window popup_window_av dolby_dts_imax">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Dolby Atmos /
+							<br>DTS:X /
+							<br>IMAX Enhanced
+						</p>
+						<p class="description">
+							Dolby Atmos and DTS:X place sound all around you for a more realistic audio experience. In addition, DTS decoder detects IMAX Enhanced contents automatically and provides IMAX Signature sound according to set IMAX Mode. All your movies and music are brought to life with sound that’s clearer and more immersive.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dolby_dts_imax.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Provides IMAX Signature sound when IMAX mode is in Auto mode.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/810W_dolby.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Image is simulated with S95QR.<br>
-					*Actual product may vary by models.
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--MERIDIAN Audio Technology-->
-		<div class="popup_window popup_window_av meridian_audio_technology">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">MERIDIAN Audio Technologies</p>
-					<p class="description">
-						LG TONE Free earbuds deliver another
-						dimension of sound courtesy of British
-						audio icon, Meridian. Their pioneering
-						technology, found in high-end speaker
-						systems, has been re-engineered to fit
-						in your ear.
+			<!--ai_room_calibration-->
+			<div class="popup_window popup_window_av ai_room_calibration">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">AI Room Calibration</p>
+						<p class="description">
+							AI Room Calibration can determine the layout of your room in only 15 seconds - then configure itself for the best, distortion-free audio for your living space.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_room_calibration.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						* AI Room Calibration is a automatic sound tuning technology that compensates for the environment the Sound Bar is placed,<br> by using Algorithms that improve the Sound Bar’s sonic performance.
+						<br> *Image is simulated with S95QR.
+						<br> *Actual product may vary by models.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/meridian_audio_technology.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Dolby Atmos / DTS:X-->
-		<div class="popup_window popup_window_av dolby_dts">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Dolby Atmos / DTS:X</p>
-					<p class="description">
-						Dolby Atmos and DTS:X place sound
-						all around you for a more realistic
-						audio experience. All your movies and
-						music are brought to life with sound
-						that’s clearer and more immersive.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dolby_dts.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
+			<!--Compatible with Spotify Hi-Fi 수급 안됨-->
+			<div class="popup_window popup_window_av ">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title"></p>
+						<p class="description">
 
-		<!--Dolby Atmos / DTS:X QP5-->
-		<div class="popup_window popup_window_av dolby_dts_QP5">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Dolby Atmos / DTS:X</p>
-					<p class="description">
-						Dolby Atmos and DTS:X place sound
-						all around you for a more realistic
-						audio experience. All your movies and
-						music are brought to life with sound
-						that’s clearer and more immersive.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dolby_dts_QP5.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Dolby Atmos / DTS:X G1-->
-		<div class="popup_window popup_window_av dolby_dts_G1">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Dolby Atmos / DTS:X</p>
-					<p class="description">
-						Dolby Atmos and DTS:X place sound
-						all around you for a more realistic
-						audio experience. All your movies and
-						music are brought to life with sound
-						that’s clearer and more immersive.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dolby_dts_G1.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--High Resolution Audio S75Q-->
-		<div class="popup_window popup_window_av high_resolution_S75Q">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">High Resolution <br>Audio</p>
-					<p class="description">
-						High Resolution Audio delivers
-						192kHz sampling rates and 24bit
-						depth, for more accurate sound and a
-						more enjoyable listening experience.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/high_resolution_S75Q.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Eco minded-->
-		<div class="popup_window popup_window_av eco_friendly">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Eco minded</p>
-					<p class="description">
-						UL has validated LG Soundbars as
-						ECV (Environmental Claims Validation)
-						products because the top and bottom
-						parts of the soundbar body use
-						recycled plastic. Proof we're taking a
-						more eco-minded approach to
-						soundbar production. LG Soundbars
-						have been certified by SGS as an
-						Eco Product because the internal
-						packaging has been changed from
-						EPS foam (Styrofoam) and plastic
-						bags, to recycled molded pulp —
-						an environmentally friendly alternative
-						that still protects the product.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/eco_friendly.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Eco minded-->
-		<div class="popup_window popup_window_av eco_friendly_QP5">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Eco minded</p>
-					<p class="description">
-						LG Soundbars have been certified by
-						SGS as an Eco Product because the
-						internal packaging has been changed
-						from EPS foam (Styrofoam) and plastic
-						bags, to recycled molded pulp — an
-						environmentally friendly alternative
-						that still protects the product.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/eco_friendly_QP5.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--380W / 3.1.2 ch Immersive Sound-->
-		<div class="popup_window popup_window_av immersive_380w">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">380W / 3.1.2 ch <br>Immersive Sound</p>
-					<p class="description">
-						3.1.2 Channel Audio, 380W power,
-						and a subwoofer that provides
-						rich sound in the mid and low range.
-						LG Soundbar S75Q is the complete
-						package with powerful and
-						immersive audio for an upgraded
-						surround sound experience.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/immersive_380w.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Image is simulated with S75QR. <br>
-					*Actual product may vary by models.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--400W / 3.1 ch Immersive Sound-->
-		<div class="popup_window popup_window_av immersive_400w">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">400W / 3.1 ch <br>Immersive Sound</p>
-					<p class="description">
-						3.1 Channel Audio, 400W power,
-						and a subwoofer that provides
-						rich sound in the mid and low range.
-						LG Soundbar S65Q is the complete
-						package with powerful and
-						immersive audio for an upgraded
-						surround sound experience.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/immersive_400w.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Image is simulated with S75QR. <br>
-					*Actual product may vary by models.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--2.1 ch Immersive Sound-->
-		<div class="popup_window popup_window_av immersive_sound_21ch_S40Q">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">2.1 ch <br>Immersive Sound</p>
-					<p class="description">
-						2.1 Channel Audio, 300W power, and
-						a built-in subwoofer — LG Soundbar
-						S40Q delivers powerful and
-						immersive audio for an upgraded
-						sound experience.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/immersive_sound_21ch.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Image is simulated with S75QR. <br>
-					*Actual product may vary by models.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-		<div class="popup_window popup_window_av immersive_sound_21ch_S60Q">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">2.1 ch <br>Immersive Sound</p>
-					<p class="description">
-						2.1 Channel Audio, 300W power, and
-						a built-in subwoofer — LG Soundbar
-						S60Q delivers powerful and
-						immersive audio for an upgraded
-						sound experience.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/immersive_sound_21ch.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Image is simulated with S75QR. <br>
-					*Actual product may vary by models.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Built-in Subwoofer-->
-		<div class="popup_window popup_window_av built_in_subwoofer">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Built-in <br>Subwoofer</p>
-					<p class="description">
-						LG Soundbar has a built-in subwoofer
-						and dual passive radiators to deliver
-						rich and consistent bass with
-						everything you watch and listen to.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/built_in_subwoofer.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Interior Friendly Design-->
-		<div class="popup_window popup_window_av interior_friendly_design_S40Q">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Interior <br>Friendly Design</p>
-					<p class="description">
-						LG Soundbar has the style and sound
-						quality to fit anywhere in your home.
-						Whether you want to place it in the
-						living room, bedroom, or study,
-						the S40Q is designed to match your
-						interior and provide powerful,
-						room-filling sound.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/interior_friendly_design.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Interior Friendly Design-->
-		<div class="popup_window popup_window_av interior_friendly_design_S60Q">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Interior <br>Friendly Design</p>
-					<p class="description">
-						LG Soundbar has the style and sound
-						quality to fit anywhere in your home.
-						Whether you want to place it in the
-						living room, bedroom, or study,
-						the S60Q is designed to match your
-						interior and provide powerful,
-						room-filling sound.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/interior_friendly_design.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Virtual Dolby Atmos 수급 안됨-->
-		<div class="popup_window popup_window_av virtual_dolby_atmos">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title"></p>
-					<p class="description">
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/810W_dolby.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
 
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/virtual_dolby_atmos.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--800W / 5.1 ch High Power Sound Bar -->
-		<div class="popup_window popup_window_av high_power_800w">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">800W / 5.1 ch <br>High Power <br>Sound Bar</p>
-					<p class="description">
-						5.1 Channel Audio, 800W power,
-						and a subwoofer that provides
-						rich sound in the mid and low range.
-						LG Soundbar SH7Q is the complete
-						package with powerful and
-						immersive audio for an upgraded
-						surround sound experience.
+			<!--620W / 5.1.3 ch Cinematic Surround Sound-->
+			<div class="popup_window popup_window_av cinematic_620w">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">620W / 5.1.3 ch
+							<br>Cinematic
+							<br>Surround Sound
+						</p>
+						<p class="description">
+							5.1.3 Channel Audio, 620W power, 2 rear up-firing speakers, and a subwoofer – LG Soundbar S80QR is the complete package with powerful and immersive audio for an upgraded surround sound experience.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/810W_dolby.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Image is simulated with S95QR.<br> *Actual product may vary by models.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/high_power_800w.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Image is simulated with S75QR. <br>
-					*Actual product may vary by models.
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Wireless Subwoofer 수급 안됨-->
-		<div class="popup_window popup_window_av wireless_subwoofer">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title"></p>
-					<p class="description">
+			<!--MERIDIAN Audio Technology-->
+			<div class="popup_window popup_window_av meridian_audio_technology">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">MERIDIAN Audio Technologies</p>
+						<p class="description">
+							LG TONE Free earbuds deliver another dimension of sound courtesy of British audio icon, Meridian. Their pioneering technology, found in high-end speaker systems, has been re-engineered to fit in your ear.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/meridian_audio_technology.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Dolby Atmos / DTS:X-->
+			<div class="popup_window popup_window_av dolby_dts">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Dolby Atmos / DTS:X</p>
+						<p class="description">
+							Dolby Atmos and DTS:X place sound all around you for a more realistic audio experience. All your movies and music are brought to life with sound that’s clearer and more immersive.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dolby_dts.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Dolby Atmos / DTS:X QP5-->
+			<div class="popup_window popup_window_av dolby_dts_QP5">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Dolby Atmos / DTS:X</p>
+						<p class="description">
+							Dolby Atmos and DTS:X place sound all around you for a more realistic audio experience. All your movies and music are brought to life with sound that’s clearer and more immersive.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dolby_dts_QP5.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Dolby Atmos / DTS:X G1-->
+			<div class="popup_window popup_window_av dolby_dts_G1">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Dolby Atmos / DTS:X</p>
+						<p class="description">
+							Dolby Atmos and DTS:X place sound all around you for a more realistic audio experience. All your movies and music are brought to life with sound that’s clearer and more immersive.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dolby_dts_G1.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--High Resolution Audio S75Q-->
+			<div class="popup_window popup_window_av high_resolution_S75Q">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">High Resolution
+							<br>Audio
+						</p>
+						<p class="description">
+							High Resolution Audio delivers 192kHz sampling rates and 24bit depth, for more accurate sound and a more enjoyable listening experience.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/high_resolution_S75Q.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Eco minded-->
+			<div class="popup_window popup_window_av eco_friendly">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Eco minded</p>
+						<p class="description">
+							UL has validated LG Soundbars as ECV (Environmental Claims Validation) products because the top and bottom parts of the soundbar body use recycled plastic. Proof we're taking a more eco-minded approach to soundbar production. LG Soundbars have been certified by SGS as an Eco Product because the internal packaging has been changed from EPS foam (Styrofoam) and plastic bags, to recycled molded pulp — an environmentally friendly alternative that still protects the product.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/eco_friendly.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
 
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/wireless_subwoofer.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Slim Wall-mount Design-->
-		<div class="popup_window popup_window_av slim_wall">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Slim Wall-mount <br> Design</p>
-					<p class="description">
-						The G1 sound bar has been designed
-						to perfectly and seamlessly match your
-						LG 55” G1 OLED TV – wall-mounted
-						directly below the TV with a flush fitting
-						and slim profile. The LG Sound Bar G1
-						was also designed with your home in
-						mind. It's slim profile and premium
-						materials are the perfect
-						fit for any interior.
+			<!--Eco minded-->
+			<div class="popup_window popup_window_av eco_friendly_QP5">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Eco minded</p>
+						<p class="description">
+							LG Soundbars have been certified by SGS as an Eco Product because the internal packaging has been changed from EPS foam (Styrofoam) and plastic bags, to recycled molded pulp — an environmentally friendly alternative that still protects the product.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/eco_friendly_QP5.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--380W / 3.1.2 ch Immersive Sound-->
+			<div class="popup_window popup_window_av immersive_380w">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">380W / 3.1.2 ch
+							<br>Immersive Sound
+						</p>
+						<p class="description">
+							3.1.2 Channel Audio, 380W power, and a subwoofer that provides rich sound in the mid and low range. LG Soundbar S75Q is the complete package with powerful and immersive audio for an upgraded surround sound experience.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/immersive_380w.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Image is simulated with S75QR.
+						<br> *Actual product may vary by models.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/slim_wall.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--High Resolution Audio-->
-		<div class="popup_window popup_window_av high_resolution_G1">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">High Resolution <br>Audio</p>
-					<p class="description">
-						High Resolution Audio
-						delivers 96kHz sampling rates and
-						24bit depth, for more accurate sound
-						and a more enjoyable listening
-						experience.
+			<!--400W / 3.1 ch Immersive Sound-->
+			<div class="popup_window popup_window_av immersive_400w">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">400W / 3.1 ch
+							<br>Immersive Sound
+						</p>
+						<p class="description">
+							3.1 Channel Audio, 400W power, and a subwoofer that provides rich sound in the mid and low range. LG Soundbar S65Q is the complete package with powerful and immersive audio for an upgraded surround sound experience.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/immersive_400w.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Image is simulated with S75QR.
+						<br> *Actual product may vary by models.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/high_resolution_G1.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--3.1.2 ch Immersive Sound-->
-		<div class="popup_window popup_window_av immersive_320w">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">3.1.2 ch <br>Immersive Sound</p>
-					<p class="description">
-						3.1.2 Channel Audio and
-						Dolby Atmos place sound
-						all around you for a more realistic
-						audio experience.
-						The new LG Eclair QP5
-						is the complete package
-						with powerful, immersive audio
-						in a more compact size.
+			<!--2.1 ch Immersive Sound-->
+			<div class="popup_window popup_window_av immersive_sound_21ch_S40Q">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">2.1 ch
+							<br>Immersive Sound
+						</p>
+						<p class="description">
+							2.1 Channel Audio, 300W power, and a built-in subwoofer — LG Soundbar S40Q delivers powerful and immersive audio for an upgraded sound experience.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/immersive_sound_21ch.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Image is simulated with S75QR.
+						<br> *Actual product may vary by models.
 					</p>
 				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/av/3.1.2ch-Immersive-Sound.mp4" loop></video>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Low Vibration Subwoofer-->
-		<div class="popup_window popup_window_av low_vibration">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Low Vibration <br>Subwoofer</p>
-					<p class="description">
-						The Eclair's bi-directional subwoofer
-						also minimizes vibration.
-						So you get to experience the same
-						big bass as a full-size soundbar but
-						with less speaker shake.
+			<div class="popup_window popup_window_av immersive_sound_21ch_S60Q">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">2.1 ch
+							<br>Immersive Sound
+						</p>
+						<p class="description">
+							2.1 Channel Audio, 300W power, and a built-in subwoofer — LG Soundbar S60Q delivers powerful and immersive audio for an upgraded sound experience.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/immersive_sound_21ch.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Image is simulated with S75QR.
+						<br> *Actual product may vary by models.
 					</p>
 				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/av/Low-Vibration-Subwoofer.mp4" loop></video>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Wireless Transmission of Dolby & DTS:X-->
-		<div class="popup_window popup_window_av wireless_dolby_dts">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Wireless <br>Transmission of <br>Dolby & DTS:X</p>
-					<p class="description">
-						Use LG WOWCAST for a wireless
-						connection of LG Sound Bar and your
-						TV to enjoy high-quality sound in a
-						more convenient way. It can transmit
-						up to 7.1.4 channels and output Dolby
-						Atmos and DTS:X for a more satisfying
-						audio experience.
+			<!--Built-in Subwoofer-->
+			<div class="popup_window popup_window_av built_in_subwoofer">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Built-in
+							<br>Subwoofer
+						</p>
+						<p class="description">
+							LG Soundbar has a built-in subwoofer and dual passive radiators to deliver rich and consistent bass with everything you watch and listen to.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/built_in_subwoofer.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/wireless_dolby_dts.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					* The image shown is for illustration purposes only. The actual location of cable ports may vary depending on TV products or models.<br>
-					** A power cable has to be connected in order to activate the Sound Bar.
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Compatible with Variety of TVs-->
-		<div class="popup_window popup_window_av compatible_variety_tvs">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Compatible with Variety of TVs</p>
-					<p class="description">
-						Connect to any TV regardless of the
-						brand as long as it has ARC or eARC.
+			<!--Interior Friendly Design-->
+			<div class="popup_window popup_window_av interior_friendly_design_S40Q">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Interior
+							<br>Friendly Design
+						</p>
+						<p class="description">
+							LG Soundbar has the style and sound quality to fit anywhere in your home. Whether you want to place it in the living room, bedroom, or study, the S40Q is designed to match your interior and provide powerful, room-filling sound.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/interior_friendly_design.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Interior Friendly Design-->
+			<div class="popup_window popup_window_av interior_friendly_design_S60Q">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Interior
+							<br>Friendly Design
+						</p>
+						<p class="description">
+							LG Soundbar has the style and sound quality to fit anywhere in your home. Whether you want to place it in the living room, bedroom, or study, the S60Q is designed to match your interior and provide powerful, room-filling sound.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/interior_friendly_design.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Virtual Dolby Atmos 수급 안됨-->
+			<div class="popup_window popup_window_av virtual_dolby_atmos">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title"></p>
+						<p class="description">
+
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/virtual_dolby_atmos.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/compatible_variety_tvs.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					* Product images are for illustrative purposes only. WOWCAST should be connected to TV's HDMI ARC or HDMI eARC in order to be activated in real life.
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Compact Size & Easy Setup-->
-		<div class="popup_window popup_window_av compact_size_easy_setup">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Compact Size & Easy Setup</p>
-					<p class="description">
-						Simple setup with no apps required.
-						Just plug & play! LG WOWCAST
-						eliminated all the complicated steps
-						for you. Simply connect it to your TV
-						via an HDMI and a USB cable, and you
-						are all set. Also, let's keep it organized.
-						With its compact size, it neatly fits the
-						back of TV screens even for the
-						wall-mounted ones.
+			<!--800W / 5.1 ch High Power Sound Bar -->
+			<div class="popup_window popup_window_av high_power_800w">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">800W / 5.1 ch
+							<br>High Power
+							<br>Sound Bar
+						</p>
+						<p class="description">
+							5.1 Channel Audio, 800W power, and a subwoofer that provides rich sound in the mid and low range. LG Soundbar SH7Q is the complete package with powerful and immersive audio for an upgraded surround sound experience.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/high_power_800w.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Image is simulated with S75QR.
+						<br> *Actual product may vary by models.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/compact_size_easy_setup.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					* The image shown is for illustration purposes only. The actual location of cable ports may vary depending on TV products or models.
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Authentic 360 Sound-->
-		<div class="popup_window popup_window_av authentic_360_omnidirectional_sound">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Authentic 360<br>Omnidirectional sound</p>
-					<p class="description">
-						XBOOM 360 is a stunning piece of audio engineering that will change the way you experience sound. Wherever you place the speaker, LG's sound technology combined with a conical body shape fills your entire space with natural and consistently high-quality, omnidirectional audio.
+			<!--Wireless Subwoofer 수급 안됨-->
+			<div class="popup_window popup_window_av wireless_subwoofer">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title"></p>
+						<p class="description">
+
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/wireless_subwoofer.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/authentic_360.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--5.25 inch Glass fiber woofer-->
-		<div class="popup_window popup_window_av inch_525_glass_fiber_woofer">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">5.25 inch Glass fiber woofer</p>
-					<p class="description">
-						The 5.25-inch woofer made of a lighter material with good elasticity produces dynamic low-end and cleaner vocals.
+			<!--Slim Wall-mount Design-->
+			<div class="popup_window popup_window_av slim_wall">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Slim Wall-mount
+							<br> Design
+						</p>
+						<p class="description">
+							The G1 sound bar has been designed to perfectly and seamlessly match your LG 55” G1 OLED TV – wall-mounted directly below the TV with a flush fitting and slim profile. The LG Sound Bar G1 was also designed with your home in mind. It's slim profile and premium materials are the perfect fit for any interior.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/slim_wall.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--High Resolution Audio-->
+			<div class="popup_window popup_window_av high_resolution_G1">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">High Resolution
+							<br>Audio
+						</p>
+						<p class="description">
+							High Resolution Audio delivers 96kHz sampling rates and 24bit depth, for more accurate sound and a more enjoyable listening experience.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/high_resolution_G1.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--3.1.2 ch Immersive Sound-->
+			<div class="popup_window popup_window_av immersive_320w">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">3.1.2 ch
+							<br>Immersive Sound
+						</p>
+						<p class="description">
+							3.1.2 Channel Audio and Dolby Atmos place sound all around you for a more realistic audio experience. The new LG Eclair QP5 is the complete package with powerful, immersive audio in a more compact size.
+						</p>
+					</div>
+					<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/av/3.1.2ch-Immersive-Sound.mp4" loop></video>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Low Vibration Subwoofer-->
+			<div class="popup_window popup_window_av low_vibration">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Low Vibration
+							<br>Subwoofer
+						</p>
+						<p class="description">
+							The Eclair's bi-directional subwoofer also minimizes vibration. So you get to experience the same big bass as a full-size soundbar but with less speaker shake.
+						</p>
+					</div>
+					<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/av/Low-Vibration-Subwoofer.mp4" loop></video>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Wireless Transmission of Dolby & DTS:X-->
+			<div class="popup_window popup_window_av wireless_dolby_dts">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Wireless
+							<br>Transmission of
+							<br>Dolby & DTS:X
+						</p>
+						<p class="description">
+							Use LG WOWCAST for a wireless connection of LG Sound Bar and your TV to enjoy high-quality sound in a more convenient way. It can transmit up to 7.1.4 channels and output Dolby Atmos and DTS:X for a more satisfying audio experience.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/wireless_dolby_dts.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						* The image shown is for illustration purposes only. The actual location of cable ports may vary depending on TV products or models.<br> ** A power cable has to be connected in order to activate the Sound Bar.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/525_inch_glass_fiber.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--1 inch Titanium horn tweeter-->
-		<div class="popup_window popup_window_av inch_1_titanium_horn_tweeter">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">1 inch Titanium horn tweeter</p>
-					<p class="description">
-						The compression horn tweeter compresses high notes and powerfully disperses them in 360 degrees. With its good rigidity, the solidified diaphragm is able to produce clearer high-pitched sound vibrating 10,000 times per second (10kHz) without damaging the material.
+			<!--Compatible with Variety of TVs-->
+			<div class="popup_window popup_window_av compatible_variety_tvs">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Compatible with Variety of TVs</p>
+						<p class="description">
+							Connect to any TV regardless of the brand as long as it has ARC or eARC.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/compatible_variety_tvs.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						* Product images are for illustrative purposes only. WOWCAST should be connected to TV's HDMI ARC or HDMI eARC in order to be activated in real life.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/1inch_titanium_horn.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--DJ Effects (iOS / Android App.)-->
-		<div class="popup_window popup_window_av dj_effects">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">DJ Effects<br>(iOS / Android App.)</p>
-					<p class="description">
-						Save the night with a variety of DJ sound effects all on your smartphone!
+			<!--Compact Size & Easy Setup-->
+			<div class="popup_window popup_window_av compact_size_easy_setup">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Compact Size & Easy Setup</p>
+						<p class="description">
+							Simple setup with no apps required. Just plug & play! LG WOWCAST eliminated all the complicated steps for you. Simply connect it to your TV via an HDMI and a USB cable, and you are all set. Also, let's keep it organized. With its compact size, it neatly fits the back of TV screens even for the wall-mounted ones.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/compact_size_easy_setup.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						* The image shown is for illustration purposes only. The actual location of cable ports may vary depending on TV products or models.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dj_effect.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Emotive 360 Mood Lighting-->
-		<div class="popup_window popup_window_av emotive_360_mood">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Emotive 360 <br>Mood Lighting</p>
-					<p class="description">
-						See emotive 360° lighting that
-						transforms the mood. Whether you
-						need to relax, meditate of party,
-						there's a lighting mode to suit
-						your mood.
+			<!--Authentic 360 Sound-->
+			<div class="popup_window popup_window_av authentic_360_omnidirectional_sound">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Authentic 360<br>Omnidirectional sound
+						</p>
+						<p class="description">
+							XBOOM 360 is a stunning piece of audio engineering that will change the way you experience sound. Wherever you place the speaker, LG's sound technology combined with a conical body shape fills your entire space with natural and consistently high-quality, omnidirectional audio.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/authentic_360.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--5.25 inch Glass fiber woofer-->
+			<div class="popup_window popup_window_av inch_525_glass_fiber_woofer">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">5.25 inch Glass fiber woofer</p>
+						<p class="description">
+							The 5.25-inch woofer made of a lighter material with good elasticity produces dynamic low-end and cleaner vocals.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/525_inch_glass_fiber.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--1 inch Titanium horn tweeter-->
+			<div class="popup_window popup_window_av inch_1_titanium_horn_tweeter">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">1 inch Titanium horn tweeter</p>
+						<p class="description">
+							The compression horn tweeter compresses high notes and powerfully disperses them in 360 degrees. With its good rigidity, the solidified diaphragm is able to produce clearer high-pitched sound vibrating 10,000 times per second (10kHz) without damaging the material.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/1inch_titanium_horn.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--DJ Effects (iOS / Android App.)-->
+			<div class="popup_window popup_window_av dj_effects">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">DJ Effects<br>(iOS / Android App.)
+						</p>
+						<p class="description">
+							Save the night with a variety of DJ sound effects all on your smartphone!
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dj_effect.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Emotive 360 Mood Lighting-->
+			<div class="popup_window popup_window_av emotive_360_mood">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Emotive 360
+							<br>Mood Lighting
+						</p>
+						<p class="description">
+							See emotive 360° lighting that transforms the mood. Whether you need to relax, meditate of party, there's a lighting mode to suit your mood.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/emotive_360_mood.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Aesthetic 360 Design-->
+			<div class="popup_window popup_window_av aesthetic_360">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Aesthetic 360
+							<br>Design
+						</p>
+						<p class="description">
+							This isn't just a speaker, it's a beautiful addition to your home. XBOOM 360 is designed to add warmth and sophistication to your space. Its conical shape brings an air of stability, while stylish colors add aesthetic beauty that blends harmoniously with a variety of interiors and living situations.
+						</p>
+					</div>
+					<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/av/Aesthetic-360-Design.mp4" loop></video>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Grab and Go-->
+			<div class="popup_window popup_window_av grab_go">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Grab and Go</p>
+						<p class="description">
+							An aluminum handle enhances mobility and convenience, with a sturdy grip that makes it easy to move. And with a built-in battery that last 10 hours, feel free to move around and experience the joy for longer.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/grab_go.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Actural battery life varies depending on network connectivity and lighting usage.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/emotive_360_mood.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Aesthetic 360 Design-->
-		<div class="popup_window popup_window_av aesthetic_360">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Aesthetic 360 <br>Design</p>
-					<p class="description">
-						This isn't just a speaker, it's a beautiful
-						addition to your home. XBOOM 360
-						is designed to add warmth and
-						sophistication to your space. Its
-						conical shape brings an air of stability,
-						while stylish colors add aesthetic
-						beauty that blends harmoniously with
-						a variety of interiors and living
-						situations.
+			<!--Gaming Sound Fields-->
+			<div class="popup_window popup_window_av gaming_sound_fields">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Gaming Sound
+							<br>Fields
+						</p>
+						<p class="description">
+							By expanding the sound field, RTS mode creates a spatial effect that enhances realism and increases immersion for not only RTS games but also for other various game genres including Racing, RPG, E-Sports, etc. You can now truly enjoy the spatial presence inside the virtual world, and inside the sound.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/gaming_sound_fields.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--3D gaming sound_GP9-->
+			<div class="popup_window popup_window_av gaming_sound_3d_gp9">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">3D Gaming Sound</p>
+						<p class="description">
+							Welcome to a new gaming experience. 3D Gaming Sound is a proprietary LG technology that tailors game audio according to its genres. By using a special HRTF (Head Related Transfer Functions) algorithm, the LG UltraGear Gaming Speaker creates a level of surround sound that you would normally only experience with a headset.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/3d_gaming_sound_GP9.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--3D gaming sound_GP3-->
+			<div class="popup_window popup_window_av gaming_sound_3d_gp3">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">3D Gaming Sound</p>
+						<p class="description">
+							Welcome to a new gaming experience. 3D Gaming Sound is a proprietary LG technology that tailors game audio according to its genres. By using a special HRTF (Head Related Transfer Functions) algorithm, the LG UltraGear Gaming Speaker creates a level of surround sound that you would normally only experience with a headset.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/3d_gaming_sound_GP3.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--DTS Headphone: X_GP9-->
+			<div class="popup_window popup_window_av dts_headphone_x_gp9">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">DTS Headphone : X</p>
+						<p class="description">
+							LG UltraGear Gaming Speaker and DTS Headphone:X® deliver virtual surround sound to headphones and earphones with 3.5mm headphone port. Bring immersive 3D audio experience right to your ears to gain a competitive edge with new levels of in-game awareness.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dts_headphone_GP9.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--DTS Headphone: X_GP3-->
+			<div class="popup_window popup_window_av dts_headphone_x_gp3">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">DTS Headphone : X</p>
+						<p class="description">
+							LG UltraGear Gaming Speaker and DTS Headphone:X® deliver virtual surround sound to headphones and earphones with 3.5mm headphone port. Bring immersive 3D audio experience right to your ears to gain a competitive edge with new levels of in-game awareness.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dts_headphone_GP3.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--ES9038 Pro Hi-Fi DAC-->
+			<div class="popup_window popup_window_av es9038_pro">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">ES9038 Pro Hi-Fi
+							<br>DAC
+						</p>
+						<p class="description">
+							Experience the Industry-leading Hi-Fi Quad DAC.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/es9038_pro.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Hi-Fi Quad DAC (ES9038 Pro)-->
+			<div class="popup_window popup_window_av hi_fi_quad_dac">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Hi-Fi Quad DAC (ES9038 Pro)</p>
+						<p class="description">
+							Experience the Industry-leading Hi-Fi Quad DAC.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/es9038_pro.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Echo Cancelling Mic-->
+			<div class="popup_window popup_window_av echo_cancelling_mic">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Built-In MIC for Clear Voice Chat</p>
+						<p class="description">
+							LG has developed a new Clear Voice Chat technology for gamers. With this new striking technology, LG UltraGear Gaming Speaker can now distinguish the surrounding daily noise such as air-conditioner, and in-game sound from the user’s voice more clearly. Its echo-cancelling also prevents howling that could occur frequently. That way, your teammates will be able to hear your commands crystal clear in the middle of the game.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/echo_cancelling_mic.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Built-In MIC for Clear Voice Chat-->
+			<div class="popup_window popup_window_av built_in_mic_clear_voice">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Built-In MIC for Clear Voice Chat</p>
+						<p class="description">
+							LG has developed a new Clear Voice Chat technology for gamers. With this new striking technology, LG UltraGear Gaming Speaker can now distinguish the surrounding daily noise such as air-conditioner, and in-game sound from the user’s voice more clearly. Its echo-cancelling also prevents howling that could occur frequently. That way, your teammates will be able to hear your commands crystal clear in the middle of the game.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/echo_cancelling_mic.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Customizable Precision EQ Sound_GP9-->
+			<div class="popup_window popup_window_av customizable_precision_eq_sound_gp9">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Customizable Precision EQ Sound</p>
+						<p class="description">
+							You no longer need your external gaming sound card to control the EQ mode to suit your gaming needs. You can get a sound field EQ specifically tuned for gaming with the ability to modify it to your specific game and taste through the app. Once you’re done with your customized setting for a specific title, you can simply share it with other players and improve your gaming experience.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/customizable_precision_EQ_sound_GP9.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Customizable Precision EQ Sound_GP3-->
+			<div class="popup_window popup_window_av customizable_precision_eq_sound_gp3">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Customizable Precision EQ Sound</p>
+						<p class="description">
+							You no longer need your external gaming sound card to control the EQ mode to suit your gaming needs. You can get a sound field EQ specifically tuned for gaming with the ability to modify it to your specific game and taste through the app. Once you’re done with your customized setting for a specific title, you can simply share it with other players and improve your gaming experience.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/customizable_precision_EQ_sound_GP3.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Built-in Battery_GP9-->
+			<div class="popup_window popup_window_av built_in_battery_GP9">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Built-in Battery</p>
+						<p class="description">
+							With a built-in battery, you can enjoy the next-level quality sound and immersive play everywhere you go. Take your gaming notebook and speaker anywhere and make it your battle station even in outdoors.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/built_in_battery_GP9.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*The battery lasts up to 5 hours of playtime.
 					</p>
 				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/av/Aesthetic-360-Design.mp4" loop></video>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Grab and Go-->
-		<div class="popup_window popup_window_av grab_go">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Grab and Go</p>
-					<p class="description">
-						An aluminum handle enhances mobility and convenience, with a sturdy grip that makes it easy to move. And with a built-in battery that last 10 hours, feel free to move around and experience the joy for longer.
+			<!--Built-in Battery_GP3-->
+			<div class="popup_window popup_window_av built_in_battery_GP3">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Built-in Battery</p>
+						<p class="description">
+							With a built-in battery, you can enjoy the next-level quality sound and immersive play everywhere you go. Take your gaming notebook and speaker anywhere and make it your battle station even in outdoors.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/built_in_battery_GP3.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*The battery lasts up to 5 hours of playtime.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/grab_go.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Actural battery life varies depending on network connectivity and lighting usage.
-				</p>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Gaming Sound Fields-->
-		<div class="popup_window popup_window_av gaming_sound_fields">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Gaming Sound <br>Fields</p>
-					<p class="description">
-						By expanding the sound field, RTS
-						mode creates a spatial effect that
-						enhances realism and increases
-						immersion for not only RTS games but
-						also for other various game genres
-						including Racing, RPG, E-Sports, etc.
-						You can now truly enjoy the spatial
-						presence inside the virtual world, and
-						inside the sound.
+			<!--Active Noise Cancellation-->
+			<div class="popup_window popup_window_av active_noise">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Active Noise Cancellation</p>
+						<p class="description">
+							Enhanced Active Noise Cancellation blocks out external sound by generating an equal amount of anti-noise. The improved driver is able to more effectively detect and cancel noise to create a true high-fidelity experience that allows you to completely immerse in whatever you’re listening to.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/active_noise.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Enhanced ANC-->
+			<div class="popup_window popup_window_av enhanced_anc">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Enhanced ANC</p>
+						<p class="description">
+							Enhanced Active Noise Cancellation blocks out external sound by generating an equal amount of anti-noise. The improved driver is able to more effectively detect and cancel noise to create a true high-fidelity experience that allows you to completely immerse in whatever you’re listening to.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/active_noise.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--UVnano-->
+			<div class="popup_window popup_window_av uvnano">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">UVnano</p>
+						<p class="description">
+							LG TONE Free are the only UV earbuds you can trust. If you're concerned about hygiene and you clean your earbuds with alcohol, you could be damaging the mesh area. With TONE Free, you just put your earbuds in the case to charge — connected — and UVnano kills 99.9% of bacteria in just 5 minutes.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/uvnano.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*UVnano is a compound word derived from the words UV and its unit, nanometer.
+						<br> **Independent testing shows that the UVnano charging cradle kills 99.9% of Escherichia coli,
+						<br> Staphylococcus aureus and Klebsiella pneumonia bacteria on the speaker mesh of the earbuds in 5 minutes while charging.<br> ***UV LED light is invisible and is only activated when the charging cradle is closed with the earbuds inside.<br> The blue mood light is for aesthetic purposes only and appears when the charging cradle lid is opened.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/gaming_sound_fields.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--3D gaming sound_GP9-->
-		<div class="popup_window popup_window_av gaming_sound_3d_gp9">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">3D Gaming Sound</p>
-					<p class="description">
-						Welcome to a new gaming experience. 3D Gaming Sound is a proprietary LG technology that tailors game audio according to its genres. By using a special HRTF (Head Related Transfer Functions) algorithm, the LG UltraGear Gaming Speaker creates a level of surround sound that you would normally only experience with a headset.
+			<!--UV Nano Charging Case-->
+			<div class="popup_window popup_window_av uv_nano_charging_case">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">UV Nano Charging Case</p>
+						<p class="description">
+							LG TONE Free are the only UV earbuds you can trust. If you're concerned about hygiene and you clean your earbuds with alcohol, you could be damaging the mesh area. With TONE Free, you just put your earbuds in the case to charge — connected — and UVnano kills 99.9% of bacteria in just 5 minutes.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/uvnano.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*UVnano is a compound word derived from the words UV and its unit, nanometer.
+						<br> **Independent testing shows that the UVnano charging cradle kills 99.9% of Escherichia coli,
+						<br> Staphylococcus aureus and Klebsiella pneumonia bacteria on the speaker mesh of the earbuds in 5 minutes while charging.<br> ***UV LED light is invisible and is only activated when the charging cradle is closed with the earbuds inside.<br> The blue mood light is for aesthetic purposes only and appears when the charging cradle lid is opened.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/3d_gaming_sound_GP9.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--3D gaming sound_GP3-->
-		<div class="popup_window popup_window_av gaming_sound_3d_gp3">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">3D Gaming Sound</p>
-					<p class="description">
-						Welcome to a new gaming experience. 3D Gaming Sound is a proprietary LG technology that tailors game audio according to its genres. By using a special HRTF (Head Related Transfer Functions) algorithm, the LG UltraGear Gaming Speaker creates a level of surround sound that you would normally only experience with a headset.
+			<!--Advanced Call Quality-->
+			<div class="popup_window popup_window_av advanced_call">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Advanced Call
+							<br>Quality
+						</p>
+						<p class="description">
+							LG TONE Free earbuds have a three-mic array that's engineered to reduce ambient noise while clearly picking up your own voice. Conversations feel more natural and you'll be heard loud and clear.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/advanced_call.jpg" alt="">
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Medical-Grade Ear Gels-->
+			<div class="popup_window popup_window_av medical_grade">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Medical-Grade
+							<br>Ear Gels
+						</p>
+						<p class="description">
+							LG TONE Free earbuds have comfortable, medical-grade ear gels made from non-toxic, hypoallergenic silicone that allows you to have fewer worries about all-day use. Find your perfect fit from three sizes.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/medical_grade.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*This device or any of its parts is not intended or implied to prevent or treat any health conditions, it is not a medical device, nor for use as or to replace a medical device. **The case meterial in silicone ear gel meets ISO 10993 and USP Class VI requirements.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/3d_gaming_sound_GP3.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--DTS Headphone: X_GP9-->
-		<div class="popup_window popup_window_av dts_headphone_x_gp9">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">DTS Headphone : X</p>
-					<p class="description">
-						LG UltraGear Gaming Speaker and DTS Headphone:X® deliver virtual surround sound to headphones and earphones with 3.5mm headphone port. Bring immersive 3D audio experience right to your ears to gain a competitive edge with new levels of in-game awareness.
+			<!--24 Hour Battery Life-->
+			<div class="popup_window popup_window_av battery_life_24h">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">24 Hour
+							<br>Battery Life
+						</p>
+						<p class="description">
+							Everyone needs more play time. LG TONE Free now provide 24 hours of play time from a single charge. 10 hours with the earbuds, and an additional 14 hours from the charging case.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/battery_life_24h.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Standard playingtime when listening to music.
+						<br> **The earbud batteries and cradle battery last for 10 and 24 hours respectively when Active Noise Cancellation function is turned off.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dts_headphone_GP9.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--DTS Headphone: X_GP3-->
-		<div class="popup_window popup_window_av dts_headphone_x_gp3">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">DTS Headphone : X</p>
-					<p class="description">
-						LG UltraGear Gaming Speaker and DTS Headphone:X® deliver virtual surround sound to headphones and earphones with 3.5mm headphone port. Bring immersive 3D audio experience right to your ears to gain a competitive edge with new levels of in-game awareness.
+			<!--Perfect Fit : Ear Optimized Design-->
+			<div class="popup_window popup_window_av perfect_fit">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Perfect Fit :<br>Ear Optimized Design
+						</p>
+						<p class="description">
+							LG TONE Free earbuds have a new contoured design that was developed by analyzing hundreds of ears. It conforms to the shape of your ear, providing a comfortable and stylish fit.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ergonomic_design.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*LG’s unique, Concha-shaped design is currently registered in the EU, UK, Russia, Australia, China, and Korea.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dts_headphone_GP3.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--ES9038 Pro Hi-Fi DAC-->
-		<div class="popup_window popup_window_av es9038_pro">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">ES9038 Pro Hi-Fi <br>DAC</p>
-					<p class="description">
-						Experience the Industry-leading Hi-Fi
-						Quad DAC.
+			<!--Sleek Fit : Ear Optimized Design-->
+			<div class="popup_window popup_window_av sleek_fit">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Sleek Fit :<br>Ear Optimized Design
+						</p>
+						<p class="description">
+							LG TONE Free earbuds have a new contoured design that was developed by analyzing hundreds of ears. It conforms to the shape of your ear, providing a comfortable and stylish fit.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/sleek_fit_design.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*LG’s unique, Concha-shaped design is currently registered in the EU, UK, Russia, Australia, China, and Korea.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/es9038_pro.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Hi-Fi Quad DAC (ES9038 Pro)-->
-		<div class="popup_window popup_window_av hi_fi_quad_dac">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Hi-Fi Quad DAC (ES9038 Pro)</p>
-					<p class="description">
-						Experience the Industry-leading Hi-Fi
-						Quad DAC.
+			<!--DTS Virtual: X-->
+			<div class="popup_window popup_window_av dts_virtualX">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">DTS Virtual: X</p>
+						<p class="description">
+							DTS Virtual: X uses audio processing techniques to place sound all around you for a more realistic audio experience. All your movies and music are brought to life with sound that’s clearer and more immersive
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dts_virtualX.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Image is simulated with S65QR.
+						<br> *Actual product may vary by models.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/es9038_pro.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
 
-		<!--Echo Cancelling Mic-->
-		<div class="popup_window popup_window_av echo_cancelling_mic">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Built-In MIC for Clear Voice Chat</p>
-					<p class="description">
-						LG has developed a new Clear Voice
-						Chat technology for gamers. With this
-						new striking technology, LG UltraGear
-						Gaming Speaker can now distinguish
-						the surrounding daily noise such as
-						air-conditioner, and in-game sound
-						from the user’s voice more clearly.
-						Its echo-cancelling also prevents
-						howling that could occur frequently.
-						That way, your teammates will be able
-						to hear your commands crystal clear
-						in the middle of the game.
+			<!--Wireless Charging-->
+			<div class="popup_window popup_window_av wireless_charging">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Wireless Charging</p>
+						<p class="description">
+							Charging LG TONE Free is as fast and easy as placing the case on a compatible wireless charging pad. And you'll get around 1 hour of listening time from just 5 minutes of charging.
+						</p>
+					</div>
+					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/wireless_charging.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						*Enjoy 1 hour of music playtime after charging the cradle for 5 minutes with the earbuds inside.<br> *Wireless charging pad not included.
 					</p>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/echo_cancelling_mic.jpg" alt="">
+				<button type="button" class="popup_close_btn"></button>
 			</div>
-			<button type="button" class="popup_close_btn"></button>
+
 		</div>
 
-		<!--Built-In MIC for Clear Voice Chat-->
-		<div class="popup_window popup_window_av built_in_mic_clear_voice">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Built-In MIC for Clear Voice Chat</p>
-					<p class="description">
-						LG has developed a new Clear Voice
-						Chat technology for gamers. With this
-						new striking technology, LG UltraGear
-						Gaming Speaker can now distinguish
-						the surrounding daily noise such as
-						air-conditioner, and in-game sound
-						from the user’s voice more clearly.
-						Its echo-cancelling also prevents
-						howling that could occur frequently.
-						That way, your teammates will be able
-						to hear your commands crystal clear
-						in the middle of the game.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/echo_cancelling_mic.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
+		<!--simulator popup-->
+		<div class="simulator_popup">
+			<div class="simulator_wrap">
+				<img src="./images/main/simulator/test_bg_infill.jpg" class="simulator_bg" alt="">
+				<div class="simulator_controller">
+					<div class="controller_wrap">
+						<div class="controller_box">
+							<div class="interior_box">
+								<strong>Interior</strong>
+								<ol>
+									<li>
+										<button type="button" class="active">
+											<div class="img_wrap">
+												<img src="./images/main/simulator/test_bg_infill.jpg" alt="">
+											</div>
+											<p>Modern</p>
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											<div class="img_wrap">
+												<img src="./images/main/simulator/test_bg_infill.jpg" alt="">
+											</div>
+											<p>Vintage</p>
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											<div class="img_wrap">
+												<img src="./images/main/simulator/test_bg_infill.jpg" alt="">
+											</div>
+											<p>Planterior</p>
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											<div class="img_wrap">
+												<img src="./images/main/simulator/test_bg_infill.jpg" alt="">
+											</div>
+											<p>Minimal</p>
+										</button>
+									</li>
+								</ol>
+							</div>
 
-		<!--Customizable Precision EQ Sound_GP9-->
-		<div class="popup_window popup_window_av customizable_precision_eq_sound_gp9">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Customizable Precision EQ Sound</p>
-					<p class="description">
-						You no longer need your external gaming sound card to control the EQ mode to suit your gaming needs. You can get a sound field EQ specifically tuned for gaming with the ability to modify it to your specific game and taste through the app. Once you’re done with your customized setting for a specific title, you can simply share it with other players and improve your gaming experience.
-					</p>
+							<div class="sound_on_off">
+								<p>sound On/Off</p>
+								<button type="button" class="on_off_btn"></button>
+							</div>
+						</div>
+						<div class="simulate_down_wrap">
+							<button type="button" class="image_down_btn">Image download
+								<i></i>
+							</button>
+						</div>
+					</div>
+					<button type="button" class="controller_close_btn"></button>
 				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/customizable_precision_EQ_sound_GP9.jpg" alt="">
 			</div>
-			<button type="button" class="popup_close_btn"></button>
+			<button type="button" class="simulator_close_btn"></button>
 		</div>
+		<!--//simulator popup-->
 
-		<!--Customizable Precision EQ Sound_GP3-->
-		<div class="popup_window popup_window_av customizable_precision_eq_sound_gp3">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Customizable Precision EQ Sound</p>
-					<p class="description">
-						You no longer need your external gaming sound card to control the EQ mode to suit your gaming needs. You can get a sound field EQ specifically tuned for gaming with the ability to modify it to your specific game and taste through the app. Once you’re done with your customized setting for a specific title, you can simply share it with other players and improve your gaming experience.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/customizable_precision_EQ_sound_GP3.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Built-in Battery_GP9-->
-		<div class="popup_window popup_window_av built_in_battery_GP9">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Built-in Battery</p>
-					<p class="description">
-						With a built-in battery, you can enjoy
-						the next-level quality sound and
-						immersive play everywhere you go.
-						Take your gaming notebook and
-						speaker anywhere and make it your
-						battle station even in outdoors.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/built_in_battery_GP9.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*The battery lasts up to 5 hours of playtime.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Built-in Battery_GP3-->
-		<div class="popup_window popup_window_av built_in_battery_GP3">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Built-in Battery</p>
-					<p class="description">
-						With a built-in battery, you can enjoy
-						the next-level quality sound and
-						immersive play everywhere you go.
-						Take your gaming notebook and
-						speaker anywhere and make it your
-						battle station even in outdoors.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/built_in_battery_GP3.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*The battery lasts up to 5 hours of playtime.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Active Noise Cancellation-->
-		<div class="popup_window popup_window_av active_noise">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Active Noise Cancellation</p>
-					<p class="description">
-						Enhanced Active Noise
-						Cancellation blocks out external sound
-						by generating an equal amount of
-						anti-noise. The improved driver is able
-						to more effectively detect and cancel
-						noise to create a true high-fidelity
-						experience that allows you to
-						completely immerse in whatever
-						you’re listening to.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/active_noise.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Enhanced ANC-->
-		<div class="popup_window popup_window_av enhanced_anc">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Enhanced ANC</p>
-					<p class="description">
-						Enhanced Active Noise
-						Cancellation blocks out external sound
-						by generating an equal amount of
-						anti-noise. The improved driver is able
-						to more effectively detect and cancel
-						noise to create a true high-fidelity
-						experience that allows you to
-						completely immerse in whatever
-						you’re listening to.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/active_noise.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--UVnano-->
-		<div class="popup_window popup_window_av uvnano">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">UVnano</p>
-					<p class="description">
-						LG TONE Free are the only
-						UV earbuds you can trust. If you're
-						concerned about hygiene and you
-						clean your earbuds with alcohol, you
-						could be damaging the mesh area.
-						With TONE Free, you just put your
-						earbuds in the case to charge
-						— connected — and UVnano kills
-						99.9% of bacteria in just 5 minutes.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/uvnano.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*UVnano is a compound word derived from the words UV and its unit, nanometer. <br>
-					**Independent testing shows that the UVnano charging cradle kills 99.9% of Escherichia coli, <br> Staphylococcus aureus and Klebsiella pneumonia bacteria on the speaker mesh of the earbuds in 5 minutes while charging.<br>
-					***UV LED light is invisible and is only activated when the charging cradle is closed with the earbuds inside.<br>
-					The blue mood light is for aesthetic purposes only and appears when the charging cradle lid is opened.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--UV Nano Charging Case-->
-		<div class="popup_window popup_window_av uv_nano_charging_case">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">UV Nano Charging Case</p>
-					<p class="description">
-						LG TONE Free are the only
-						UV earbuds you can trust. If you're
-						concerned about hygiene and you
-						clean your earbuds with alcohol, you
-						could be damaging the mesh area.
-						With TONE Free, you just put your
-						earbuds in the case to charge
-						— connected — and UVnano kills
-						99.9% of bacteria in just 5 minutes.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/uvnano.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*UVnano is a compound word derived from the words UV and its unit, nanometer. <br>
-					**Independent testing shows that the UVnano charging cradle kills 99.9% of Escherichia coli, <br> Staphylococcus aureus and Klebsiella pneumonia bacteria on the speaker mesh of the earbuds in 5 minutes while charging.<br>
-					***UV LED light is invisible and is only activated when the charging cradle is closed with the earbuds inside.<br>
-					The blue mood light is for aesthetic purposes only and appears when the charging cradle lid is opened.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Advanced Call Quality-->
-		<div class="popup_window popup_window_av advanced_call">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Advanced Call <br>Quality</p>
-					<p class="description">
-						LG TONE Free earbuds have
-						a three-mic array that's engineered
-						to reduce ambient noise while clearly
-						picking up your own voice.
-						Conversations feel more natural and
-						you'll be heard loud and clear.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/advanced_call.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Medical-Grade Ear Gels-->
-		<div class="popup_window popup_window_av medical_grade">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Medical-Grade <br>Ear Gels</p>
-					<p class="description">
-						LG TONE Free earbuds have
-						comfortable, medical-grade ear gels
-						made from non-toxic, hypoallergenic
-						silicone that allows you to have fewer
-						worries about all-day use.
-						Find your perfect fit from three sizes.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/medical_grade.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*This device or any of its parts is not intended or implied to prevent or treat any health conditions, it is not a medical device, nor for use as or to replace a medical device.
-					**The case meterial in silicone ear gel meets ISO 10993 and USP Class VI requirements.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--24 Hour Battery Life-->
-		<div class="popup_window popup_window_av battery_life_24h">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">24 Hour <br>Battery Life</p>
-					<p class="description">
-						Everyone needs more play time.
-						LG TONE Free now provide 24 hours
-						of play time from a single charge.
-						10 hours with the earbuds, and an
-						additional 14 hours from
-						the charging case.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/battery_life_24h.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Standard playingtime when listening to music. <br>
-					**The earbud batteries and cradle battery last for 10 and 24 hours respectively when Active Noise Cancellation function is turned off.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Perfect Fit : Ear Optimized Design-->
-		<div class="popup_window popup_window_av perfect_fit">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Perfect Fit :<br>Ear Optimized Design</p>
-					<p class="description">
-						LG TONE Free earbuds have a new
-						contoured design that was developed
-						by analyzing hundreds of ears. It
-						conforms to the shape of your ear,
-						providing a comfortable and stylish fit.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ergonomic_design.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*LG’s unique, Concha-shaped design is currently registered in the EU, UK, Russia, Australia, China, and Korea.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Sleek Fit : Ear Optimized Design-->
-		<div class="popup_window popup_window_av sleek_fit">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Sleek Fit :<br>Ear Optimized Design</p>
-					<p class="description">
-						LG TONE Free earbuds have a new
-						contoured design that was developed
-						by analyzing hundreds of ears. It
-						conforms to the shape of your ear,
-						providing a comfortable and stylish fit.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/sleek_fit_design.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*LG’s unique, Concha-shaped design is currently registered in the EU, UK, Russia, Australia, China, and Korea.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--DTS Virtual: X-->
-		<div class="popup_window popup_window_av dts_virtualX">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">DTS Virtual: X</p>
-					<p class="description">
-						DTS Virtual: X uses audio processing
-						techniques to place sound all around
-						you for a more realistic audio
-						experience. All your movies and music
-						are brought to life with sound that’s
-						clearer and more immersive
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dts_virtualX.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Image is simulated with S65QR. <br>
-					*Actual product may vary by models.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Wireless Charging-->
-		<div class="popup_window popup_window_av wireless_charging">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Wireless Charging</p>
-					<p class="description">
-						Charging LG TONE Free is as fast and easy as placing the case on a compatible wireless charging pad. And you'll get around 1 hour of listening time from just 5 minutes of charging.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/wireless_charging.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Enjoy 1 hour of music playtime after charging the cradle for 5 minutes with the earbuds inside.<br>
-					*Wireless charging pad not included.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
+		<!--3d view-->
+		<div class="webgl_wrap">
+			<div id="root"></div>
+			<button type="button" class="webgl_close_btn"></button>
 		</div>
 
 	</div>
-	<!--3d view-->
-	<div class="webgl_wrap">
-		<div id="root"></div>
-		<button type="button" class="webgl_close_btn"></button>
-	</div>
-	<div class="filter_container">
-		<div class="filter_wrap">
-			<ul class="filter_box">
-				<!--<input type="checkbox" id="checkAll" class="checkIdx" name="checkAll"><label for="checkAll">All Check</label>-->
-				<li class="filter_title">
-					<strong>Sound Bar</strong>
-					<ol class="filter_checkbox">
-						<li><input type="checkbox" id="S95QR" name="S95QR" class="check_confirm checkIdx" checked><label for="S95QR">S95QR</label></li>
-						<li><input type="checkbox" id="S80QR" name="S80QR" class="check_confirm checkIdx" checked><label for="S80QR">S80QR</label></li>
-						<li><input type="checkbox" id="S75Q" name="S75Q" class="check_confirm checkIdx" checked><label for="S75Q">S75Q</label></li>
-						<li><input type="checkbox" id="S65Q" name="S65Q" class="check_confirm checkIdx" checked><label for="S65Q">S65Q</label></li>
-						<li><input type="checkbox" id="S60Q" name="S60Q" class="check_confirm checkIdx" checked><label for="S60Q">S60Q</label></li>
-						<li><input type="checkbox" id="S40Q" name="S40Q" class="check_confirm checkIdx" checked><label for="S40Q">S40Q</label></li><br>
-						<li><input type="checkbox" id="SH7Q" name="SH7Q" class="check_confirm checkIdx" checked><label for="SH7Q">SH7Q</label></li>
-						<li><input type="checkbox" id="G1" name="G1" class="check_confirm checkIdx" checked><label for="G1">G1</label></li>
-						<li><input type="checkbox" id="QP5" name="QP5" class="check_confirm checkIdx" checked><label for="QP5">QP5</label></li>
-						<li><input type="checkbox" id="WTP3" name="WTP3" class="check_confirm checkIdx" checked><label for="WTP3">WTP3</label></li>
-					</ol>
-				</li>
-				<!--				<li class="filter_title">-->
-				<!--					<strong>Dongle</strong>-->
-				<!--					<ol class="filter_checkbox">-->
-				<!--						<li><input type="checkbox" id="WTP3" name="WTP3" class="check_confirm checkIdx" checked><label for="WTP3">WTP3</label></li>-->
-				<!--					</ol>-->
-				<!--				</li>-->
-				<li class="filter_title">
-					<strong>Portable</strong>
-					<ol class="filter_checkbox">
-						<!--						<li><input type="checkbox" id="PQ9" name="PQ9" class="check_confirm checkIdx" checked><label for="PQ9">PQ9</label></li>-->
-						<!--						<li><input type="checkbox" id="PQ7" name="PQ7" class="check_confirm checkIdx" checked><label for="PQ7">PQ7</label></li>-->
-						<!--						<li><input type="checkbox" id="Ghost 360" name="Ghost 360" class="check_confirm checkIdx" checked><label for="Ghost 360">Ghost 360</label></li>-->
-						<li><input type="checkbox" id="RP4" name="RP4" class="check_confirm checkIdx" checked><label for="RP4">RP4</label></li>
-						<li><input type="checkbox" id="GP9" name="GP9" class="check_confirm checkIdx" checked><label for="GP9">GP9</label></li>
-						<li><input type="checkbox" id="GP3" name="GP3" class="check_confirm checkIdx" checked><label for="GP3">GP3</label></li>
-					</ol>
-				</li>
-				<li class="filter_title">
-					<strong>Earbuds</strong>
-					<ol class="filter_checkbox">
-						<!--						<li><input type="checkbox" id="T90" name="T90" class="check_confirm checkIdx" checked><label for="T90">T90</label></li>-->
-						<!--						<li><input type="checkbox" id="TF7" name="TF7" class="check_confirm checkIdx" checked><label for="TF7">TF7</label></li>-->
-						<li><input type="checkbox" id="FP9" name="FP9" class="check_confirm checkIdx" checked><label for="FP9">FP9</label></li>
-						<li><input type="checkbox" id="FP8" name="FP8" class="check_confirm checkIdx" checked><label for="FP8">FP8</label></li>
-					</ol>
-				</li>
-			</ul>
-			<button type="button" class="filter_apply_btn">APPLY</button>
-		</div>
-	</div>
-</div>
-<!--//mainContainer-->
+	<!--//mainContainer-->
 </div>
 <script src="./javascripts/plugin.js"></script>
 <script src="./javascripts/design_common.js?date=211019_1"></script>
@@ -1555,13 +1407,13 @@
 	!function(e){function r(r){for(var n,i,a=r[0],c=r[1],l=r[2],p=0,s=[];p<a.length;p++)i=a[p],Object.prototype.hasOwnProperty.call(o,i)&&o[i]&&s.push(o[i][0]),o[i]=0;for(n in c)Object.prototype.hasOwnProperty.call(c,n)&&(e[n]=c[n]);for(f&&f(r);s.length;)s.shift()();return u.push.apply(u,l||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,a=1;a<t.length;a++){var c=t[a];0!==o[c]&&(n=!1)}n&&(u.splice(r--,1),e=i(i.s=t[0]))}return e}var n={},o={1:0},u=[];function i(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,i),t.l=!0,t.exports}i.e=function(e){var r=[],t=o[e];if(0!==t)if(t)r.push(t[2]);else{var n=new Promise((function(r,n){t=o[e]=[r,n]}));r.push(t[2]=n);var u,a=document.createElement("script");a.charset="utf-8",a.timeout=120,i.nc&&a.setAttribute("nonce",i.nc),a.src=function(e){return i.p+"static/js/"+({}[e]||e)+"."+{3:"83d61993"}[e]+".chunk.js"}(e);var c=new Error;u=function(r){a.onerror=a.onload=null,clearTimeout(l);var t=o[e];if(0!==t){if(t){var n=r&&("load"===r.type?"missing":r.type),u=r&&r.target&&r.target.src;c.message="Loading chunk "+e+" failed.\n("+n+": "+u+")",c.name="ChunkLoadError",c.type=n,c.request=u,t[1](c)}o[e]=void 0}};var l=setTimeout((function(){u({type:"timeout",target:a})}),12e4);a.onerror=a.onload=u,document.head.appendChild(a)}return Promise.all(r)},i.m=e,i.c=n,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,r){if(1&r&&(e=i(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)i.d(t,n,function(r){return e[r]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/",i.oe=function(e){throw console.error(e),e};var a=this.webpackJsonphdrp=this.webpackJsonphdrp||[],c=a.push.bind(a);a.push=r,a=a.slice();for(var l=0;l<a.length;l++)r(a[l]);var f=c;t()}([])</script>
 <script src="https://d1wl83prm6u37g.cloudfront.net/static/models/js/2.a132ed2b.chunk.js"></script>
 <script src="https://d1wl83prm6u37g.cloudfront.net/static/models/js/main.caaecd74.chunk.js"></script>
-<div class="footer">
+<!--<div class="footer">
 	<div class="privacy_law">
 		<a href="https://www.lg.com/global/privacy" target="_black" class="privacy">PRIVACY</a>
 		<a href="https://www.lg.com/global/legal" target="_black">LEGAL</a>
 	</div>
 	<p>Copyright &copy; LG Electronics. ALL Rights Reserved</p>
-</div>
+</div>-->
 </body>
 </html>
 

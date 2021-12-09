@@ -13,6 +13,7 @@
    <meta name="Keywords" content="">
    <meta name="Author" content="">
    <meta name="robots" content="ALL">
+	<meta name="format-detection" content="telephone=no"/>
    <link rel="stylesheet" href="./stylesheets/css/common.css?date=211019">
    <script src="./javascripts/jquery-1.8.2.min.js"></script>
    <link href="https://d1wl83prm6u37g.cloudfront.net/static2/models/css/main.1c59b974.chunk.css" rel="stylesheet">
@@ -28,6 +29,8 @@
 		<button class="gnb_btn" type="button">
 			<span></span>
 		</button>
+		<button type="button" class="simulator_close_btn"></button>
+		<button type="button" class="webgl_close_btn"></button>
 		<!--211208 end-->
 		<a href="./index" class="lg_index_link">
 			<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/layout/logo.png" alt="">
@@ -120,2138 +123,1627 @@
 			<button class="close_btn" type="button"></button>
 			<!--211208 end-->
 		</ul>
+		<!--211208 delete start
+		<a href="./av" class="goto_AV_link">GO TO AV</a>
+		211208 delete end-->
 	</header>
    <!-- //header-->
 
-
-<!--mainContainer-->
-<div id="container" class="main_container">
-	<div class="img_3D_wrap">
-		<img src="./images/main/infill/nano/65nano80.png" alt="" class="goto3d_img">
-		<div class="btn_wrap">
-			<button type="button" class="btn_3D"><img src="./images/main/icon_3D_btn.png" alt=""> Click to Start</button>
-			<button type="button" class="btn_simulate"><img src="./images/main/icon_simulate_btn.png" alt=""> Simulate</button>
-			<button type="button" class="btn_gallery_popup"><img src="./images/main/icon_simulate_btn.png" alt=""> Gallery Image</button>
-		</div>
-	</div>
-	<div class="model_info OLED_Color_dot">
-		<p class="model_name"><span class="model_title">NanoCell</span><span class="model_size">83</span><span class="model_subtitle">C2</span></p>
-		<div class="model_size_btn">
-			<button type="button" class="model_size_btn_active">83"</button>
-			<button type="button" class="model_size_btn_inactive">77"</button>
-			<button type="button">65"</button>
-			<button type="button" class="model_size_btn_inactive">55"</button>
-			<button type="button">48"</button>
-			<button type="button">42"</button>
-		</div>
-		<div class="art90_color_btn_container">
-			<div class="art90_color_btn_wrap">
-				<button type="button" class="model_size_btn_active art90_color_btn art90_beige_btn">Kvadrat <br> Beige</button>
-				<button type="button" class="art90_color_btn art90_green_btn">Kvedrat <br> Green</button>
-				<button type="button" class="art90_color_btn art90_redwood_btn">Kvadrat <br> Redwood</button>
+	<!--mainContainer-->
+	<div id="container" class="main_container">
+		<div class="img_3D_wrap">
+			<img src="./images/main/infill/nano/65nano80.png" alt="" class="goto3d_img">
+			<div class="btn_wrap">
+				<button type="button" class="btn_3D">
+					<img src="./images/main/icon_3D_btn.png" alt=""> Click to Start
+				</button>
+				<button type="button" class="btn_simulate">
+					<img src="./images/main/icon_simulate_btn.png" alt=""> Simulate
+				</button>
+				<button type="button" class="btn_gallery_popup">
+					<img src="./images/main/icon_simulate_btn.png" alt=""> Gallery Image
+				</button>
 			</div>
 		</div>
-		<div class="key_features">
-			<p class="title">Key Features</p>
+		<div class="model_info OLED_Color_dot">
+			<p class="model_name">
+				<span class="model_title">NanoCell</span>
+				<span class="model_size">83</span>
+				<span class="model_subtitle">C2</span>
+			</p>
+			<div class="model_size_btn">
+				<button type="button" class="model_size_btn_active">83"</button>
+				<button type="button" class="model_size_btn_inactive">77"</button>
+				<button type="button">65"</button>
+				<button type="button" class="model_size_btn_inactive">55"</button>
+				<button type="button">48"</button>
+				<button type="button">42"</button>
+			</div>
+			<div class="art90_color_btn_container">
+				<div class="art90_color_btn_wrap">
+					<button type="button" class="model_size_btn_active art90_color_btn art90_beige_btn">Kvadrat
+						<br> Beige
+					</button>
+					<button type="button" class="art90_color_btn art90_green_btn">Kvedrat
+						<br> Green
+					</button>
+					<button type="button" class="art90_color_btn art90_redwood_btn">Kvadrat
+						<br> Redwood
+					</button>
+				</div>
+			</div>
+			<div class="key_features">
+				<p class="title">Key Features</p>
+				<!--컨텐츠 추가 s-->
+				<div class="hash_usp">
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="rollable_design" class="R1">Rollable Design</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="selflit" class="R1 B2 A2">SELF-LIT OLED</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="selflit8K" class="Z2">SELF-LIT OLED 8K</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="selflit_evo_G2" class="G2">SELF-LIT OLED evo</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="selflit_evo_C2" class="C2">SELF-LIT OLED evo</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="quantumDot" class="QNED99 QNED95">Quantum Dot Nanocell Mini LED</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="quantumDot_90" class="QNED90">Quantum Dot Nanocell Mini LED</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="quantumDot_85" class="QNED85">Quantum Dot Nanocell Mini LED</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="quantumDot_80" class="QNED80">Quantum Dot Nanocell</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="real4K" class="UQ90 UQ80 UQ75 UQ70">Real 4K</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="pureColors_80" class="NANO80">Pure Colors in Real 4K</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="pureColors_75" class="NANO75">Pure Colors in Real 4K</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="a9_gen5_4K" class="R1 G2 C2">α9 Gen5 AI Processor 4K</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="a9_gen5_8K" class="Z2 QNED99 QNED95">α9 Gen5 AI Processor 8K</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="a7_gen5_4K" class="B2 A2 QNED90 QNED85 QNED80">α7 Gen5 AI Processor 4K</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="a5_gen5_4K" class="NANO80 NANO75 UQ70">α5 Gen5 AI Processor 4K</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="a5_gen5_4K_UQ75" class="UQ80 UQ75">α5 Gen5 AI Processor 4K</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="thinQ_AI" class=" Z2 G2 C2 B2 A2 QNED99 QNED95 QNED90 QNED85 QNED80 NANO80 NANO75 UQ90 UQ80 UQ75 UQ70">ThinQ AI</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="homeCinema" class="UQ90">Home Cinema Experience</button>
+					</div>
+
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="rotate_tilt_swivel" class="ART10">Rotate, Tilt, Swivel</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="wireless_battery" class="ART10">Wireless, built-in Battery</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="wheels_5" class="ART10">5-wheels</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="full_line_view" class="ART90">Full / Line view</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="sound_80w" class="ART90">80W Sound</button>
+					</div>
+					<div class="hash_usp_btn_wrap">
+						<button type="button" id="selective_textile_colors" class="ART90">Selective Textile Colors</button>
+					</div>
+				</div>
+
+				<!--컨텐츠 추가 e-->
+			</div>
+			<div class="dimension">
+				<p class="title">Dimension<span class="millimeter">WxHxD(mm)</span>
+				</p>
+				<div class="description_wrap">
+					<div class="description">
+						<span class="hyphen">-</span>
+						<span class="without_stand_num">Full View: 1,592 x 1,276 x 266</span>
+					</div>
+					<div class="description description_sub">
+						<span class="hyphen">-</span>
+						<span class="with_stand_num">Zero View: 1,592 x 450 x 266</span>
+					</div>
+				</div>
+			</div>
+			<p class="ex_description">*Availability of sizes and models may vary depending on region.</p>
+		</div>
+		<!--hash popup-->
+		<div class="hash_popup">
+			<div class="popup_subusp_btn">
+				<button type="button" class="popup_main_usp">Advanced SELF-LIT OLED</button>
+				<div class="popup_sub_usp_wrap">
+					<button type="button" class="popup_sub_usp active">Infinite Contrast</button>
+					<button type="button" class="popup_sub_usp">100% Color Fidelity</button>
+					<button type="button" class="popup_sub_usp">100% Color Volume</button>
+					<button type="button" class="popup_sub_usp">Eye Comfort Display</button>
+				</div>
+			</div>
 			<!--컨텐츠 추가 s-->
-			<div class="hash_usp">
-				<div class="hash_usp_btn_wrap"><button type="button" id="rollable_design" class="R1">Rollable Design</button></div>
 
-				<div class="hash_usp_btn_wrap"><button type="button" id="selflit" class="R1 B2 A2">SELF-LIT OLED</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="selflit8K" class="Z2">SELF-LIT OLED 8K</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="selflit_evo_G2" class="G2">SELF-LIT OLED evo</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="selflit_evo_C2" class="C2">SELF-LIT OLED evo</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="quantumDot" class="QNED99 QNED95">Quantum Dot Nanocell Mini LED</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="quantumDot_90" class="QNED90">Quantum Dot Nanocell Mini LED</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="quantumDot_85" class="QNED85">Quantum Dot Nanocell Mini LED</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="quantumDot_80" class="QNED80">Quantum Dot Nanocell</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="real4K" class="UQ90 UQ80 UQ75 UQ70">Real 4K</button></div>
-
-				<div class="hash_usp_btn_wrap"><button type="button" id="pureColors_80" class="NANO80">Pure Colors in Real 4K</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="pureColors_75" class="NANO75">Pure Colors in Real 4K</button></div>
-
-				<div class="hash_usp_btn_wrap"><button type="button" id="a9_gen5_4K" class="R1 G2 C2">α9 Gen5 AI Processor 4K</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="a9_gen5_8K" class="Z2 QNED99 QNED95">α9 Gen5 AI Processor 8K</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="a7_gen5_4K" class="B2 A2 QNED90 QNED85 QNED80">α7 Gen5 AI Processor 4K</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="a5_gen5_4K" class="NANO80 NANO75 UQ70">α5 Gen5 AI Processor 4K</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="a5_gen5_4K_UQ75" class="UQ80 UQ75">α5 Gen5 AI Processor 4K</button></div>
-
-				<div class="hash_usp_btn_wrap"><button type="button" id="thinQ_AI" class=" Z2 G2 C2 B2 A2 QNED99 QNED95 QNED90 QNED85 QNED80 NANO80 NANO75 UQ90 UQ80 UQ75 UQ70">ThinQ AI</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="homeCinema" class="UQ90">Home Cinema Experience</button></div>
-
-
-				<div class="hash_usp_btn_wrap"><button type="button" id="rotate_tilt_swivel" class="ART10">Rotate, Tilt, Swivel</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="wireless_battery" class="ART10">Wireless, built-in Battery</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="wheels_5" class="ART10">5-wheels</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="full_line_view" class="ART90">Full / Line view</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="sound_80w" class="ART90">80W Sound</button></div>
-				<div class="hash_usp_btn_wrap"><button type="button" id="selective_textile_colors" class="ART90">Selective Textile Colors</button></div>
+			<!--selflit-->
+			<div class="popup_window selflit">
+				<div class="hash_info_wrap">
+					<img src="./images/main/selflit_oled_02.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Infinite Contrast</p>
+						<p class="description">
+							The same content can look different depending on which display technology a TV has. LG OLED TVs have self-lit pixels that turn on and off to achieve perfect black and infinite contrast. LED and Mini LED TVs use backlights that are not self-emissive. This means they can't create perfect black and can also suffer from the halo effect. Self-lit pixels don't have this problem — there's no light bleed and no halo, so you get perfect black and better image quality.
+						</p>
+					</div>
+					<p class="popup_disclaimer01">*Screen images simulated.</p>
+				</div>
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/OLED/02_100%25%20Color%20Fidelity.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">100% Color<br>Fidelity
+						</p>
+						<p class="description">
+							LG OLED TVs not only express perfect black, but also original color. Intertek, a global testing agency based in the UK, has certified that OLED displays have 100% color fidelity. This means on-screen colors closely match those of the original image. LED TVs simply can't match this standard of color reproduction.
+						</p>
+					</div>
+				</div>
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/OLED/03_Color%20Volume%20100%25.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">100% Color<br>Volume
+						</p>
+						<p class="description">
+							Thanks to LG TVs’ outstanding color reproduction technology, colors achieve full volume on LG OLED and QNED. Certified via independent third-party testing, the evolved display accurately captures a wider color gamut to deliver rich colors that remain brilliant even at maximum brightness levels. This ensures a vibrant experience and keeps everything you watch looking exactly as intended.
+						</p>
+					</div>
+				</div>
+				<div class="hash_info_wrap">
+					<img src="./images/main/selflit_oled_01.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Eye Comfort<br>Display
+						</p>
+						<p class="description">
+							If you worry about you and your family’s eyes, LG OLED TVs provide a more comfortable way to watch for longer. They’ve been certified as low-blue light, flicker-free, and discomfort glare-free displays by international agencies TÜV Rheinland (TUV) and Underwriter Laboratories (UL). LG OLED TVs are also the first panels from any kind of TV to receive the Eyesafe® certification developed by TUV-Eyesafe®.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*LG OLED TV sets, except LG OLED R, have been certified as low-blue light displays by TUV-Eyesafe®.<br> *LG OLED TV panels have been certified as flicker-free and discomfort glare free by UL.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
 			</div>
 
+			<!--selflit8K-->
+			<div class="popup_window selflit8K">
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/OLED/Z1-8K-Desktop.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">REAL 8K
+							<br>(7,680 x 4,320)
+						</p>
+						<p class="description">
+							33 million self-lit pixels make LG OLED TV the only way to see real 8K. Each pixel can be controlled individually to display unprecedented levels of depth and detail with infinite contrast and perfect blacks. LG OLED TVs set the standard for real 8K — LED TVs that claim to be 8K just can’t quite reach this level of realism.
+						</p>
+					</div>
+				</div>
+				<div class="hash_info_wrap">
+					<img src="./images/main/selflit_oled_02.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Infinite Contrast</p>
+						<p class="description">
+							The same content can look different depending on which display technology a TV has. LG OLED TVs have self-lit pixels that turn on and off to achieve perfect black and infinite contrast. LED and Mini LED TVs use backlights that are not self-emissive. This means they can't create perfect black and can also suffer from the halo effect. Self-lit pixels don't have this problem — there's no light bleed and no halo, so you get perfect black and better image quality.
+						</p>
+					</div>
+					<p class="popup_disclaimer01">*Screen images simulated.</p>
+				</div>
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/OLED/02_100%25%20Color%20Fidelity.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">100% Color<br> Fidelity
+						</p>
+						<p class="description">
+							LG OLED TVs not only express perfect black, but also original color. Intertek, a global testing agency based in the UK, has certified that OLED displays have 100% color fidelity. This means on-screen colors closely match those of the original image. LED TVs simply can't match this standard of color reproduction.
+						</p>
+					</div>
+				</div>
+				<div class="hash_info_wrap">
+					<img src="./images/main/selflit_oled_01.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Eye Comfort<br>Display
+						</p>
+						<p class="description">
+							If you worry about you and your family’s eyes, LG OLED TVs provide a more comfortable way to watch for longer. They’ve been certified as low-blue light, flicker-free, and discomfort glare-free displays by international agencies TÜV Rheinland (TUV) and Underwriter Laboratories (UL). LG OLED TVs are also the first panels from any kind of TV to receive the Eyesafe® certification developed by TUV-Eyesafe®.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*LG OLED TV sets, except LG OLED R, have been certified as low-blue light displays by TUV-Eyesafe®.<br> *LG OLED TV panels have been certified as flicker-free and discomfort glare free by UL.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--a9 Gen5 AI Processor 4K-->
+			<div class="popup_window a9_gen5_4K">
+				<!--AI Picture Pro-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_picture_pro_img01.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">AI Picture Pro</p>
+						<p class="description">
+							Developed using a vast database of over one million visual data points, the deep-learning algorithm recognizes content quality, while the 5th generation α9 AI processor removes noise, and optimizes contrast and saturation. The result is crisp, high-quality visuals.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*Screen images simulated.
+						<br>
+					</p>
+				</div>
+
+				<!--Dynamic Tone-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/dynamic_tone_img01.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">
+							Dynamic Tone
+							<br> Mapping Pro
+						</p>
+						<p class="description">
+							Dynamic Tone Mapping Pro analyzes the image and adjusts brightness levels to minimize saturated or smeared areas. When analyzing videos, it divides them into small blocks and collects data separately for each block. This way it can bring out individual areas of detail in a scene and optimize tone curves on a frame-by-frame basis.
+						</p>
+					</div>
+				</div>
+
+				<!--AI Sound Pro-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_sound_pro_7.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">
+							AI Sound Pro
+						</p>
+						<p class="description">
+							By learning from more than 17 million sound data points, the processor identifies voices, effects, and frequencies so it can optimize sound according to the audio genre. And the Auto Volume Leveling feature maintains consistent voice levels across different types of content. Also, with the a9 processor, LG Virtual Up-mixing now converts 2-channel audio into 7. 1. 2 channel audio providing a more spatial sound.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--ThinQ AI-->
+			<div class="popup_window thinQ_AI">
+				<!--Google Assistant-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/google_assistant.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Google Assistant</p>
+						<p class="description">
+							Do more on your TV with help from Google. Access entertainment, get answers on screen, control smart devices, and more using your voice.
+						</p>
+					</div>
+				</div>
+
+				<!--Amazon Alexa-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/amazon_alexa.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Amazon Alexa</p>
+						<p class="description">
+							Speak to Alexa through your LG TV to play music, check the weather, control smart home devices, and access more than 100,000 Skills and more. Make your life easier using Alexa routines to link several actions, such as traffic updates, weather reports, and alarms, with one voice command.
+						</p>
+					</div>
+				</div>
+
+				<!--Apple Airplay-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/apple_airplay.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Apple Airplay</p>
+						<p class="description">
+							Effortlessly stream, share and mirror your favorite content from your iPhone, iPad or Mac. Play your favorites from the Apple TV app and other video apps, or view photos right on your LG ThinQ AI TV.
+						</p>
+					</div>
+				</div>
+
+				<!--HomeKit-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/apple_homekit.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">HomeKit</p>
+						<p class="description">
+							Use the Home app or Siri on your Apple devices to easily and securely control your ThinQ AI TV. You can turn your TV on and off, switch inputs, and even change the volume.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--True Cinema Experience-->
+			<div class="popup_window trueCinema">
+				<!--Dolby Vision IQ & Dolby Atmos-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/dolby_vision_iq.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Dolby Vision IQ &<br>Dolby Atmos
+						</p>
+						<p class="description">
+							LG TVs come with the latest solutions from Dolby. Dolby Vision IQ utilizes metadata and the TVs’ built-in light sensors to optimize picture quality based on content genre and ambient surroundings while Dolby Atmos simultaneously delivers multi- dimensional immersive sound. it’s a powerful combination that delivers a more realistic experience when watching a movie.
+						</p>
+					</div>
+				</div>
+
+				<!--HDR 10 Pro-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/hdr_10.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">HDR 10 Pro</p>
+						<p class="description">
+							Because HDR 10 doesn't use dynamic metadata like Dolby, we integrated our own LG HDR technology that uses static metadata to create HDR 10 Pro. It uses that metadata to adjust color and brightness, reveal more detail in both bright and dark scenes, and enhance color to make everything you watch look more realistic. It also intensifies regular HDR content, so all your favorite movies and shows will be more dynamic and vibrant.
+						</p>
+					</div>
+				</div>
+
+				<!--filmmaker mode-->
+				<div class="hash_info_wrap">
+					<div class="right_contents">
+						<img src="./images/main/filmmaker_mode_img01.jpg" alt="">
+					</div>
+					<div class="hash_frame">
+						<iframe src="https://player.vimeo.com/video/631710843?quality=1080p"></iframe>
+					</div>
+					<div class="hash_info">
+						<p class="title">FILMMAKER<br>MODE
+						</p>
+						<p class="description">
+							FILMMAKER MODE™ turns off motion smoothing, image sharpening, and other processing settings while preserving the original aspect ratios, colors, and frame rates. This accurately delivers the director's original intent, so you get to experience the film the way they intended.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Ultimate Gameplay-->
+			<div class="popup_window ultimate_gameplay">
+				<!--NVIDIA G-SYNC-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/nvidia_g_sync.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">NVIDIA G-SYNC</p>
+						<p class="description">
+							LG continue to work with industry- leader NVIDIA to make LG OLED TV the only G-SYNC compatible TV. LG OLED TVs use the precision and control of individual self-lit pixels to take full advantage of the G-SYNC compatibility, allowing fast response times and smoother gaming, even at high resolution.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*NVIDIA G-SYNC is compatible with RTX 20, RTX 30 and GTX 16 graphics cards. Older GPUs will not support G-SYNC compaibility.
+						<br> *NVIDIA G-SYNC is only supported on Z1, G1, C1, and B1 models.
+					</p>
+				</div>
+
+				<!--FreeSync™ Premium-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/free_sync.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">FreeSync™
+							<br> Premium
+						</p>
+						<p class="description">
+							We also partnered with AMD to bring FreeSync™ Premium to LG OLED TVs. Less flicker and low latency allow action-packed games to perform at their absolute peak with clear and fluid gameplay.
+						</p>
+					</div>
+				</div>
+
+				<!--STADIA & GEFORCE NOW-->
+				<div class="hash_info_wrap">
+					<div class="right_contents">
+						<img src="./images/main/stadia_geforce.jpg" alt="">
+					</div>
+					<div class="hash_info">
+						<p class="title">STADIA &
+							<br>GEFORCE NOW
+						</p>
+						<p class="description">
+							LG TV delivers the latest gaming experiences. Google Stadia and NVIDIA GEFORCE NOW are a real-time cloud gaming service that lets you instantly play an exciting array of games on your TV with just a controller and no additional gaming hardware.
+						</p>
+					</div>
+				</div>
+
+				<!--Game Dashboard & Optimizer-->
+				<div class="hash_info_wrap">
+					<div class="right_contents">
+						<img src="./images/main/stadia_geforce.jpg" alt="">
+						<video class="popup_video" src="./video/Game%20Optimizer.mp4" preload controls></video>
+					</div>
+					<div class="hash_info">
+						<p class="title">Game Dashboard
+							<br> & Optimizer
+						</p>
+						<p class="description">
+							Game Optimizer provides optimized settings for various game genres including, FPS, RPG, RTS, and Sports. You can access everything in one place for greater control over picture and sound settings. And you can also toggle VRR, NVIDIA G-GYNC, and AMD FreeSync™ technologies. This added control ensures all your games will be clearer and smooth with less lag, stutter, and tearing.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*Items in Game Optimizer can be different by series.<br> *Dark Room mode only applies to 2022 OLED, QNED, NaoCell, and UHD TVs.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Eco minded-->
+			<div class="popup_window eco_01">
+				<!--Composite Fiber-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/composite.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Composite Fiber</p>
+						<p class="description">
+							LG OLED TV is produced with composite fiber material making it lighter and eco-minded by emitting less carbon. Using the new material makes LG OLED TV more consumer friendly because it is easier to carry and install due to lightweight.
+						</p>
+					</div>
+					<p class="popup_disclaimer01">*Screen images simulated.</p>
+				</div>
+
+				<!--Eco Packaging-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/eco_packaging.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Eco Packaging</p>
+						<p class="description">
+							LG TVs are made to be more sustainable. LG's ultimate aim is to impact environmental change and improve the lives of it consumers. LG OLED uses recyclable box, 1 color printing and bio-based remote- control bag to minimize waste.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--a9 Gen5 AI Processor 8K-->
+			<div class="popup_window a9_gen5_8K">
+				<!--AI Picture Pro-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_picture_pro_img01.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">AI Picture Pro</p>
+						<p class="description">
+							Developed using a vast database of over one million visual data points, the deep-learning algorithm recognizes content quality, while the 5th generation α9 AI processor removes noise, and optimizes contrast and saturation. The result is crisp, high-quality visuals.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*Screen images simulated.
+						<br>
+					</p>
+				</div>
+
+				<!--Dynamic Tone-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/dynamic_tone_img01.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">
+							Dynamic Tone
+							<br> Mapping Pro
+						</p>
+						<p class="description">
+							Dynamic Tone Mapping Pro analyzes the image and adjusts brightness levels to minimize saturated or smeared areas. When analyzing videos, it divides them into small blocks and collects data separately for each block. This way it can bring out individual areas of detail in a scene and optimize tone curves on a frame-by-frame basis.
+						</p>
+					</div>
+				</div>
+
+				<!--AI Sound Pro-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_sound_pro_7.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">
+							AI Sound Pro
+						</p>
+						<p class="description">
+							By learning from more than 17 million sound data points, the processor identifies voices, effects, and frequencies so it can optimize sound according to the audio genre. And the Auto Volume Leveling feature maintains consistent voice levels across different types of content. Also, with the a9 processor, LG Virtual Up-mixing now converts 2-channel audio into 7. 1. 2 channel audio providing a more spatial sound.
+						</p>
+					</div>
+				</div>
+
+				<!--AI 8K Upscaling-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_8k_upscaling.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">
+							AI 8K Upscaling
+						</p>
+						<p class="description">
+							α9 AI processor 8K uses a deep learning algorithm to transform 2K or 4K content into the most life-like 8K picture by enhancing detail and definition. You get to enjoy much clearer text and images with reduced noise and enhanced sharpness, even on LG's biggest screens.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--SELF-LIT OLED evo-->
+			<div class="popup_window selflit_evo_G2">
+				<!--Brightness Booster-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/a9_gen5.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">LG OLED evo</p>
+						<p class="description">
+							LG OLED has evolved. The next-generation OLED panel, combined with the power of the Alpha 9 Gen 5 processor, sets a new standard for TV. The redesigned panel has an added layer of more emissive material that refines the wavelengths of light input. The materials used for OLED lighting have also been changed to enhance and strengthen light intensity. Also, OLED evo technology guarantees most advanced OLED picture quality and performance. LG’s new Heat dissipation technology improves maximum brightness making G2 the brightest LG OLED TV.
+						</p>
+					</div>
+				</div>
+				<div class="hash_info_wrap">
+					<img src="./images/main/selflit_oled_02.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Infinite Contrast</p>
+						<p class="description">
+							The same content can look different depending on which display technology a TV has. LG OLED TVs have self-lit pixels that turn on and off to achieve perfect black and infinite contrast. LED and Mini LED TVs use backlights that are not self-emissive. This means they can't create perfect black and can also suffer from the halo effect. Self-lit pixels don't have this problem — there's no light bleed and no halo, so you get perfect black and better image quality.
+						</p>
+					</div>
+					<p class="popup_disclaimer01">*Screen images simulated.</p>
+				</div>
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/OLED/02_100%25%20Color%20Fidelity.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">100% Color<br> Fidelity
+						</p>
+						<p class="description">
+							LG OLED TVs not only express perfect black, but also original color. Intertek, a global testing agency based in the UK, has certified that OLED displays have 100% color fidelity. This means on-screen colors closely match those of the original image. LED TVs simply can't match this standard of color reproduction.
+						</p>
+					</div>
+				</div>
+				<div class="hash_info_wrap">
+					<img src="./images/main/selflit_oled_01.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Eye Comfort<br>Display
+						</p>
+						<p class="description">
+							If you worry about you and your family’s eyes, LG OLED TVs provide a more comfortable way to watch for longer. They’ve been certified as low-blue light, flicker-free, and discomfort glare-free displays by international agencies TÜV Rheinland (TUV) and Underwriter Laboratories (UL). LG OLED TVs are also the first panels from any kind of TV to receive the Eyesafe® certification developed by TUV-Eyesafe®.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*LG OLED TV sets, except LG OLED R, have been certified as low-blue light displays by TUV-Eyesafe®.<br> *LG OLED TV panels have been certified as flicker-free and discomfort glare free by UL.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--SELF-LIT OLED evo-->
+			<div class="popup_window selflit_evo_C2">
+				<!--Brightness Booster-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/OLED-Evo.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">LG OLED evo</p>
+						<p class="description">
+							LG OLED has evolved. The next-generation OLED panel, combined with the power of the Alpha 9 Gen 5 processor, sets a new standard for TV. The redesigned panel has an added layer of more emissive material that refines the wavelengths of light input. The materials used for OLED lighting have also been changed to enhance and strengthen light intensity.
+						</p>
+					</div>
+				</div>
+				<div class="hash_info_wrap">
+					<img src="./images/main/selflit_oled_02.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Infinite Contrast</p>
+						<p class="description">
+							The same content can look different depending on which display technology a TV has. LG OLED TVs have self-lit pixels that turn on and off to achieve perfect black and infinite contrast. LED and Mini LED TVs use backlights that are not self-emissive. This means they can't create perfect black and can also suffer from the halo effect. Self-lit pixels don't have this problem — there's no light bleed and no halo, so you get perfect black and better image quality.
+						</p>
+					</div>
+					<p class="popup_disclaimer01">*Screen images simulated.</p>
+				</div>
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/OLED/02_100%25%20Color%20Fidelity.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">100% Color<br> Fidelity
+						</p>
+						<p class="description">
+							LG OLED TVs not only express perfect black, but also original color. Intertek, a global testing agency based in the UK, has certified that OLED displays have 100% color fidelity. This means on-screen colors closely match those of the original image. LED TVs simply can't match this standard of color reproduction.
+						</p>
+					</div>
+				</div>
+				<div class="hash_info_wrap">
+					<img src="./images/main/selflit_oled_01.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Eye Comfort<br>Display
+						</p>
+						<p class="description">
+							If you worry about you and your family’s eyes, LG OLED TVs provide a more comfortable way to watch for longer. They’ve been certified as low-blue light, flicker-free, and discomfort glare-free displays by international agencies TÜV Rheinland (TUV) and Underwriter Laboratories (UL). LG OLED TVs are also the first panels from any kind of TV to receive the Eyesafe® certification developed by TUV-Eyesafe®.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*LG OLED TV sets, except LG OLED R, have been certified as low-blue light displays by TUV-Eyesafe®.<br> *LG OLED TV panels have been certified as flicker-free and discomfort glare free by UL.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Gallery Design-->
+			<div class="popup_window gallery_design">
+				<!--Gallery Design-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/gallery_design.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Gallery</p>
+						<p class="description">
+							LG OLED G2’s class-leading gallery design offers an ultra slim profile and built-in flush fit wall mount providing understated elegance to any space, merging seamlessly into your environment while making a bold statement and powerful focal point.
+						</p>
+					</div>
+				</div>
+
+				<!--Narrow Bezel-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/narrow_bezel.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Narrow Bezel</p>
+						<p class="description">
+							LG OLED TVs use self-lit pixels instead of backlights. This allows for more innovative designs that are ultra-slim and have almost no bezels — it's a feat of engineering that has to be seen to be believed. The supper narrow bezel that focuses only on the screen enables people to have more immersive experience.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*This feature only applies to G2 and C2.<br> *Bezel size can be different by size.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Refined Design-->
+			<div class="popup_window refined_design">
+				<!--Narrow Bezel-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/narrow_bezel.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Narrow Bezel</p>
+						<p class="description">
+							LG OLED TVs use self-lit pixels instead of backlights. This allows for more innovative designs that are ultra-slim and have almost no bezels — it's a feat of engineering that has to be seen to be believed. The supper narrow bezel that focuses only on the screen enables people to have more immersive experience.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*This feature only applies to G2 and C2.<br> *Bezel size can be different by size.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--α7 Gen5 AI Processor 4K-->
+			<div class="popup_window a7_gen5_4K">
+				<!--AI Picture Pro-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_picture_pro_img01.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">AI Picture Pro</p>
+						<p class="description">
+							Developed using a vast database of over one million visual data points, the deep-learning algorithm recognizes content quality, while the 5th generation α9 AI processor removes noise, and optimizes contrast and saturation. The result is crisp, high-quality visuals.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*Screen images simulated.
+						<br>
+					</p>
+				</div>
+
+				<!--AI Sound Pro-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_sound_pro_7.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">AI Sound Pro</p>
+						<p class="description">
+							By learning from more than 17 million sound data points, the processor identifies voices, effects, and frequencies so it can optimize sound according to the audio genre. And the Auto Volume Leveling feature maintains consistent voice levels across different types of content. Also, with the a7 and a5 processor, LG Virtual Up-mixing now converts
+							<br> 2-channel audio into 5. 1. 2 channel audio providing a more spatial sound.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Eco minded-->
+			<div class="popup_window eco_02">
+				<!--Eco Packaging-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/eco_packaging.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Eco Packaging</p>
+						<p class="description">
+							LG TVs are made to be more sustainable. LG's ultimate aim is to impact environmental change and improve the lives of it consumers. LG OLED uses recyclable box, 1 color printing and bio-based remote- control bag to minimize waste.
+						</p>
+					</div>
+				</div>
+
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Ultimate Gameplay-->
+			<div class="popup_window ultimate_gameplay_A2">
+				<!--STADIA & GEFORCE NOW-->
+				<div class="hash_info_wrap">
+					<div class="right_contents">
+						<img src="./images/main/stadia_geforce.jpg" alt="">
+					</div>
+					<div class="hash_info">
+						<p class="title">STADIA &
+							<br>GEFORCE NOW
+						</p>
+						<p class="description">
+							LG TV delivers the latest gaming experiences. Google Stadia and NVIDIA GEFORCE NOW are a real-time cloud gaming service that lets you instantly play an exciting array of games on your TV with just a controller and no additional gaming hardware.
+						</p>
+					</div>
+				</div>
+
+				<!--Game Dashboard & Optimizer-->
+				<div class="hash_info_wrap">
+					<div class="right_contents">
+						<img src="./images/main/stadia_geforce.jpg" alt="">
+						<video class="popup_video" src="./video/Game%20Optimizer.mp4" preload controls></video>
+					</div>
+					<div class="hash_info">
+						<p class="title">Game Dashboard
+							<br> & Optimizer
+						</p>
+						<p class="description">
+							Game Optimizer provides optimized settings for various game genres including, FPS, RPG, RTS, and Sports. You can access everything in one place for greater control over picture and sound settings. And you can also toggle VRR, NVIDIA G-GYNC, and AMD FreeSync™ technologies. This added control ensures all your games will be clearer and smooth with less lag, stutter, and tearing.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*Items in Game Optimizer can be different by series.<br> *Dark Room mode only applies to 2022 OLED, QNED, NaoCell, and UHD TVs.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Quantum Dot NanoCell Mini LED-->
+			<div class="popup_window quantumDot">
+				<!--Extreme Dimming Technology 9X-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/extreme_dimming_9x.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Extreme Dimming
+							<br>Technology 9X
+						</p>
+						<p class="description">
+							LG QNED Mini LED features approximately 30,000 Mini LEDs to produce a bright, high-quality picture, while close to 2,400 unique dimming zones deliver stunning blacks with reduced halo effect even in the darkest scenes. The resulting image looks so good you might just think it's magic.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*2,400 dimming zones are number of block based on 86QNED99
+					</p>
+				</div>
+
+				<!--100% Color Volume-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/OLED/03_Color%20Volume%20100%25.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">100% Color<br>Volume
+						</p>
+						<p class="description">
+							Thanks to LG TVs’ outstanding color reproduction technology, colors achieve full volume on LG OLED and QNED. Certified via independent third-party testing, the evolved display accurately captures a wider color gamut to deliver rich colors that remain brilliant even at maximum brightness levels. This ensures a vibrant experience and keeps everything you watch looking exactly as intended.
+						</p>
+					</div>
+				</div>
+
+				<!--100% Color Consistency-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/color_consistency.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">100% Color
+							<br>Consistency
+						</p>
+						<p class="description">
+							LG QNED and NanoCell TV display Pure Colors with high consistency from wide viewing angles thanks to Nano technology. Color consistency is a representation of display consistency in terms of color and lightness. Certified by Intertek, LG QNED and NanoCell TV deliver a high Color Consistency recorded as 100% by CIE DE2000 across 18 color patterns with a viewing angle of ±30°. In other words, this means that LG QNED and NanoCell TV display colors richly and accurately even when viewed from wide angles.
+						</p>
+					</div>
+				</div>
+
+				<!--Ultra Contrast-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/QNED/01_Ultra%20Contrast.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">Ultra Contrast</p>
+						<p class="description">
+							Approximately 2,500 unique dimming zones deliver precise backlight control and an ultra-high contrast ratio. This makes blacks deeper and colors more vivid for a more detailed picture, even in the darkest scenes.
+						</p>
+					</div>
+				</div>
+
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Powerful Gameplay-->
+			<div class="popup_window powerful_gameplay">
+				<!--STADIA & GEFORCE NOW-->
+				<div class="hash_info_wrap">
+					<div class="right_contents">
+						<img src="./images/main/stadia_geforce.jpg" alt="">
+					</div>
+					<div class="hash_info">
+						<p class="title">STADIA &
+							<br>GEFORCE NOW
+						</p>
+						<p class="description">
+							LG TV delivers the latest gaming experiences. Google Stadia and NVIDIA GEFORCE NOW are a real-time cloud gaming service that lets you instantly play an exciting array of games on your TV with just a controller and no additional gaming hardware.
+						</p>
+					</div>
+				</div>
+
+				<!--Game Dashboard & Optimizer-->
+				<div class="hash_info_wrap">
+					<div class="right_contents">
+						<img src="./images/main/stadia_geforce.jpg" alt="">
+						<video class="popup_video" src="./video/Game%20Optimizer.mp4" preload controls></video>
+					</div>
+					<div class="hash_info">
+						<p class="title">Game Dashboard
+							<br>& Optimizer
+						</p>
+						<p class="description">
+							Game Optimizer provides optimized settings for various game genres including, FPS, RPG, RTS, and Sports. You can access everything in one place for greater control over picture and sound settings. And you can also toggle VRR, NVIDIA G-GYNC, and AMD FreeSync™ technologies. This added control ensures all your games will be clearer and smooth with less lag, stutter, and tearing.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*Items in Game Optimizer can be different by series.<br> *Dark Room mode only applies to 2022 OLED, QNED, NaoCell, and UHD TVs.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Quantum Dot NanoCell Mini LED-->
+			<div class="popup_window quantumDot_90">
+				<!--Extreme Dimming Technology 9X-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/extreme_dimming_9x.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Extreme Dimming
+							<br>Technology 4X
+						</p>
+						<p class="description">
+							LG QNED Mini LED features approximately 30,000 Mini LEDs to produce a bright, high-quality picture, while close to 2,400 unique dimming zones deliver stunning blacks with reduced halo effect even in the darkest scenes. The resulting image looks so good you might just think it's magic.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*2,400 dimming zones are number of block based on 86QNED99
+					</p>
+				</div>
+
+				<!--100% Color Volume-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/OLED/03_Color%20Volume%20100%25.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">100% Color<br>Volume
+						</p>
+						<p class="description">
+							Thanks to LG TVs’ outstanding color reproduction technology, colors achieve full volume on LG OLED and QNED. Certified via independent third-party testing, the evolved display accurately captures a wider color gamut to deliver rich colors that remain brilliant even at maximum brightness levels. This ensures a vibrant experience and keeps everything you watch looking exactly as intended.
+						</p>
+					</div>
+				</div>
+
+				<!--100% Color Consistency-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/color_consistency.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">100% Color
+							<br>Consistency
+						</p>
+						<p class="description">
+							LG QNED and NanoCell TV display Pure Colors with high consistency from wide viewing angles thanks to Nano technology. Color consistency is a representation of display consistency in terms of color and lightness. Certified by Intertek, LG QNED and NanoCell TV deliver a high Color Consistency recorded as 100% by CIE DE2000 across 18 color patterns with a viewing angle of ±30°. In other words, this means that LG QNED and NanoCell TV display colors richly and accurately even when viewed from wide angles.
+						</p>
+					</div>
+				</div>
+
+				<!--Ultra Contrast-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/QNED/01_Ultra%20Contrast.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">Ultra Contrast</p>
+						<p class="description">
+							Approximately 2,500 unique dimming zones deliver precise backlight control and an ultra-high contrast ratio. This makes blacks deeper and colors more vivid for a more detailed picture, even in the darkest scenes.
+						</p>
+					</div>
+				</div>
+
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Advanced Gameplay-->
+			<div class="popup_window advanced_gameplay">
+				<!--FreeSync™ Premium-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/free_sync.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">FreeSync™
+							<br> Premium
+						</p>
+						<p class="description">
+							We also partnered with AMD to bring FreeSync™ Premium to LG OLED TVs. Less flicker and low latency allow action-packed games to perform at their absolute peak with clear and fluid gameplay.
+						</p>
+					</div>
+				</div>
+
+				<!--STADIA & GEFORCE NOW-->
+				<div class="hash_info_wrap">
+					<div class="right_contents">
+						<img src="./images/main/stadia_geforce.jpg" alt="">
+					</div>
+					<div class="hash_info">
+						<p class="title">STADIA &
+							<br>GEFORCE NOW
+						</p>
+						<p class="description">
+							LG TV delivers the latest gaming experiences. Google Stadia and NVIDIA GEFORCE NOW are a real-time cloud gaming service that lets you instantly play an exciting array of games on your TV with just a controller and no additional gaming hardware.
+						</p>
+					</div>
+				</div>
+
+				<!--Game Dashboard & Optimizer-->
+				<div class="hash_info_wrap">
+					<div class="right_contents">
+						<img src="./images/main/stadia_geforce.jpg" alt="">
+						<video class="popup_video" src="./video/Game%20Optimizer.mp4" preload controls></video>
+					</div>
+					<div class="hash_info">
+						<p class="title">Game Dashboard
+							<br> & Optimizer
+						</p>
+						<p class="description">
+							Game Optimizer provides optimized settings for various game genres including, FPS, RPG, RTS, and Sports. You can access everything in one place for greater control over picture and sound settings. And you can also toggle VRR, NVIDIA G-GYNC, and AMD FreeSync™ technologies. This added control ensures all your games will be clearer and smooth with less lag, stutter, and tearing.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*Items in Game Optimizer can be different by series.<br> *Dark Room mode only applies to 2022 OLED, QNED, NaoCell, and UHD TVs.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Quantum Dot NanoCell Mini LED-->
+			<div class="popup_window quantumDot_85">
+				<!--Extreme Dimming Technology-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/extreme_dimming_9x.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Extreme Dimming
+							<br>Technology
+						</p>
+						<p class="description">
+							LG QNED Mini LED features approximately 30,000 Mini LEDs to produce a bright, high-quality picture, while close to 2,400 unique dimming zones deliver stunning blacks with reduced halo effect even in the darkest scenes. The resulting image looks so good you might just think it's magic.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*2,400 dimming zones are number of block based on 86QNED99
+					</p>
+				</div>
+
+				<!--100% Color Volume-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/OLED/03_Color%20Volume%20100%25.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">100% Color<br>Volume
+						</p>
+						<p class="description">
+							Thanks to LG TVs’ outstanding color reproduction technology, colors achieve full volume on LG OLED and QNED. Certified via independent third-party testing, the evolved display accurately captures a wider color gamut to deliver rich colors that remain brilliant even at maximum brightness levels. This ensures a vibrant experience and keeps everything you watch looking exactly as intended.
+						</p>
+					</div>
+				</div>
+
+				<!--100% Color Consistency-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/color_consistency.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">100% Color
+							<br>Consistency
+						</p>
+						<p class="description">
+							LG QNED and NanoCell TV display Pure Colors with high consistency from wide viewing angles thanks to Nano technology. Color consistency is a representation of display consistency in terms of color and lightness. Certified by Intertek, LG QNED and NanoCell TV deliver a high Color Consistency recorded as 100% by CIE DE2000 across 18 color patterns with a viewing angle of ±30°. In other words, this means that LG QNED and NanoCell TV display colors richly and accurately even when viewed from wide angles.
+						</p>
+					</div>
+				</div>
+
+				<!--Ultra Contrast-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/QNED/01_Ultra%20Contrast.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">Ultra Contrast</p>
+						<p class="description">
+							Approximately 2,500 unique dimming zones deliver precise backlight control and an ultra-high contrast ratio. This makes blacks deeper and colors more vivid for a more detailed picture, even in the darkest scenes.
+						</p>
+					</div>
+				</div>
+
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Quantum Dot NanoCell-->
+			<div class="popup_window quantumDot_80">
+				<!--Extreme Dimming Technology-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/advenced_dimming.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Advanced
+							<br> Dimming Technology
+						</p>
+						<p class="description">
+							LG QNED Mini LED features approximately 30,000 Mini LEDs to produce a bright, high-quality picture, while close to 2,400 unique dimming zones deliver stunning blacks with reduced halo effect even in the darkest scenes. The resulting image looks so good you might just think it's magic.
+						</p>
+					</div>
+				</div>
+
+				<!--100% Color Volume-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/OLED/03_Color%20Volume%20100%25.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">100% Color<br>Volume
+						</p>
+						<p class="description">
+							Thanks to LG TVs’ outstanding color reproduction technology, colors achieve full volume on LG OLED and QNED. Certified via independent third-party testing, the evolved display accurately captures a wider color gamut to deliver rich colors that remain brilliant even at maximum brightness levels. This ensures a vibrant experience and keeps everything you watch looking exactly as intended.
+						</p>
+					</div>
+				</div>
+
+				<!--100% Color Consistency-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/color_consistency.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">100% Color
+							<br>Consistency
+						</p>
+						<p class="description">
+							LG QNED and NanoCell TV display Pure Colors with high consistency from wide viewing angles thanks to Nano technology. Color consistency is a representation of display consistency in terms of color and lightness. Certified by Intertek, LG QNED and NanoCell TV deliver a high Color Consistency recorded as 100% by CIE DE2000 across 18 color patterns with a viewing angle of ±30°. In other words, this means that LG QNED and NanoCell TV display colors richly and accurately even when viewed from wide angles.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Home Cinema Experience-->
+			<div class="popup_window homeCinema">
+				<!--HDR 10 Pro-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/hdr_10.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">HDR 10 Pro</p>
+						<p class="description">
+							Because HDR 10 doesn't use dynamic metadata like Dolby, we integrated our own LG HDR technology that uses static metadata to create HDR 10 Pro. It uses that metadata to adjust color and brightness, reveal more detail in both bright and dark scenes, and enhance color to make everything you watch look more realistic. It also intensifies regular HDR content, so all your favorite movies and shows will be more dynamic and vibrant.
+						</p>
+					</div>
+				</div>
+
+				<!--filmmaker mode-->
+				<div class="hash_info_wrap">
+					<div class="right_contents">
+						<img src="./images/main/filmmaker_mode_img01.jpg" alt="">
+					</div>
+					<div class="hash_frame">
+						<iframe src="https://player.vimeo.com/video/631710843?quality=1080p"></iframe>
+					</div>
+					<div class="hash_info">
+						<p class="title">FILMMAKER<br>MODE
+						</p>
+						<p class="description">
+							FILMMAKER MODE™ turns off motion smoothing, image sharpening, and other processing settings while preserving the original aspect ratios, colors, and frame rates. This accurately delivers the director's original intent, so you get to experience the film the way they intended.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--rollable_design-->
+			<div class="popup_window rollable_design">
+				<!--Full/Line/Zero view-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/R1.mp4" id="test" preload controls></video>
+					<div class="hash_info">
+						<p class="title">Full/Line/Zero View</p>
+						<p class="description">
+							The world’s first and only rollable TV has arrived. A truly unique design and unprecedented functionality make the LG SIGNATURE OLED R a sight to behold, whichever way you use it. Watch your favorite content in Full View mode, discreetly set the mood in Line View, or make the most of your space in Zero View.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!-- 211209 기존 hash_info, 하단이미지&영상 영역 상하 위치 바꿈 -->
+
+			<!--Quantum Dot NanoCell Mini LED-->
+			<div class="popup_window pureColors_80">
+				<!--Advanced Dimming Technology-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/advenced_dimming.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Advanced Dimming
+							<br>Technology
+						</p>
+						<p class="description">
+							It’s time to experience more realistic and brighter image. Advanced dimming technology detects and maps object information to the backlight allowing for a more natural image with enhanced brightness.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*Based on internal measurement. Image Simulated.
+					</p>
+				</div>
+
+				<!--NanoCell Technology-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/NanoCell/04_NanoCell%20Technology.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">NanoCell
+							<br>Technology
+						</p>
+						<p class="description">
+							LG NanoCell TV utilizes nanoparticles, our own distinctive Nano technology, to filter and refine color, removing impurities from RGB wavelengths. This means that only pure, accurate colors will be displayed on screen. The result is a more vibrant, more realistic picture that will bring your content to life.
+						</p>
+					</div>
+				</div>
+				<!--100% Color Consistency-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/color_consistency.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">100% Color
+							<br>Consistency
+						</p>
+						<p class="description">
+							LG QNED and NanoCell TV display Pure Colors with high consistency from wide viewing angles thanks to Nano technology. Color consistency is a representation of display consistency in terms of color and lightness. Certified by Intertek, LG QNED and NanoCell TV deliver a high Color Consistency recorded as 100% by CIE DE2000 across 18 color patterns with a viewing angle of ±30°. In other words, this means that LG QNED and NanoCell TV display colors richly and accurately even when viewed from wide angles.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--α5 Gen5 AI Processor 4K-->
+			<div class="popup_window a5_gen5_4K">
+				<!--AI Brightness Control-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_brightness.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">AI Brightness
+							<br>Control
+						</p>
+						<p class="description">
+							A light sensor measures the surrounding ambient light, then the processor finely adjusts tone mapping for optimal screen brightness. HDR content is refined with brightness adjustments that transform darker scenes into ones with stunning contrast, detail, and color depth.
+						</p>
+					</div>
+				</div>
+
+				<!--AI Sound Pro-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_sound_pro_7.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">AI Sound Pro</p>
+						<p class="description">
+							By learning from more than 17 million sound data points, the processor identifies voices, effects, and frequencies so it can optimize sound according to the audio genre. And the Auto Volume Leveling feature maintains consistent voice levels across different types of content. Also, with the a7 and a5 processor, LG Virtual Up-mixing now converts
+							<br> 2-channel audio into 5. 1. 2 channel audio providing a more spatial sound.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Quantum Dot NanoCell Mini LED-->
+			<div class="popup_window pureColors_75">
+				<!--NanoCell Technology-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/NanoCell/04_NanoCell%20Technology.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">NanoCell
+							<br>Technology
+						</p>
+						<p class="description">
+							LG NanoCell TV utilizes nanoparticles, our own distinctive Nano technology, to filter and refine color, removing impurities from RGB wavelengths. This means that only pure, accurate colors will be displayed on screen. The result is a more vibrant, more realistic picture that will bring your content to life.
+						</p>
+					</div>
+				</div>
+				<!--100% Color Consistency-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/color_consistency.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">100% Color
+							<br>Consistency
+						</p>
+						<p class="description">
+							LG QNED and NanoCell TV display Pure Colors with high consistency from wide viewing angles thanks to Nano technology. Color consistency is a representation of display consistency in terms of color and lightness. Certified by Intertek, LG QNED and NanoCell TV deliver a high Color Consistency recorded as 100% by CIE DE2000 across 18 color patterns with a viewing angle of ±30°. In other words, this means that LG QNED and NanoCell TV display colors richly and accurately even when viewed from wide angles.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--REAL 4K-->
+			<div class="popup_window real4K">
+				<!--REAL 4K UHD-->
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/UHD/05_REAL%204K%20UHD.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">REAL 4K UHD</p>
+						<p class="description">
+							LG UHD TVs surpass your expectations every time. Experience lifelike picture quality and vivid colors with four time more pixel accuracy than Full HD.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--a7 Gen5 AI Processor 4K-->
+			<div class="popup_window a7_gen5_4K_UQ90">
+				<!--AI Picture Pro-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_picture_pro_img01.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">AI Picture Pro</p>
+						<p class="description">
+							Developed using a vast database of over one million visual data points, the deep-learning algorithm recognizes content quality, while the 5th generation α9 AI processor removes noise, and optimizes contrast and saturation. The result is crisp, high-quality visuals.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*Screen images simulated.
+						<br>
+					</p>
+				</div>
+
+				<!--AI Sound Pro-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_sound_pro_7.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">AI Sound Pro</p>
+						<p class="description">
+							By learning from more than 17 million sound data points, the processor identifies voices, effects, and frequencies so it can optimize sound according to the audio genre. And the Auto Volume Leveling feature maintains consistent voice levels across different types of content. Also, with the a7 and a5 processor, LG Virtual Up-mixing now converts
+							<br> 2-channel audio into 5. 1. 2 channel audio providing a more spatial sound.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--α5 Gen5 AI Processor 4K-->
+			<div class="popup_window a5_gen5_4K_UQ90_55">
+				<!--AI Brightness Control-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_brightness.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">AI Brightness
+							<br>Control
+						</p>
+						<p class="description">
+							A light sensor measures the surrounding ambient light, then the processor finely adjusts tone mapping for optimal screen brightness. HDR content is refined with brightness adjustments that transform darker scenes into ones with stunning contrast, detail, and color depth.
+						</p>
+					</div>
+				</div>
+
+				<!--AI Sound Pro-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_sound_pro_7.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">AI Sound Pro</p>
+						<p class="description">
+							By learning from more than 17 million sound data points, the processor identifies voices, effects, and frequencies so it can optimize sound according to the audio genre. And the Auto Volume Leveling feature maintains consistent voice levels across different types of content. Also, with the a7 and a5 processor, LG Virtual Up-mixing now converts
+							<br> 2-channel audio into 5. 1. 2 channel audio providing a more spatial sound.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--α5 Gen5 AI Processor 4K-->
+			<div class="popup_window a5_gen5_4K_UQ75">
+				<!--AI Brightness Control-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_brightness.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">AI Brightness
+							<br>Control
+						</p>
+						<p class="description">
+							A light sensor measures the surrounding ambient light, then the processor finely adjusts tone mapping for optimal screen brightness. HDR content is refined with brightness adjustments that transform darker scenes into ones with stunning contrast, detail, and color depth.
+						</p>
+					</div>
+				</div>
+
+				<!--AI Sound-->
+				<div class="hash_info_wrap">
+					<img src="./images/main/ai_sound.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">AI Sound</p>
+						<p class="description">
+							By learning from more than 17 million sound data points, the processor identifies voices, effects, and frequencies so it can then optimize the sound by genre for a more immersive experience.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Full/Line View-->
+			<div class="popup_window full_line_view">
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/LifeStyle/65ART90_view.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">Full/Line View</p>
+						<p class="description">
+							65ART90 provides various space value with differentiated UX. With Full View, people can enjoy the TV as gallery. Also, while not using it, just let it in Line View as a notification about music you are listening and time.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--80W Sound-->
+			<div class="popup_window sound_80w">
+				<div class="hash_info_wrap">
+					<img src="./images/main/80w_sound.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">80W Sound</p>
+						<p class="description">
+							65ART90 is the best audio platform in a lifestyle design. With 80W sound, experience powerful and clear sound quality.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Selective Textile Colors-->
+			<div class="popup_window selective_textile_colors">
+				<div class="hash_info_wrap">
+					<video class="popup_video" src="./video/LifeStyle/ART90_Selective-Textile-Colors.mp4" preload controls></video>
+					<div class="hash_info">
+						<p class="title">Selective Textile
+							<br>Colors
+						</p>
+						<p class="description">
+							The gorgeous TV covers are made in collaboration with renowned textile brand, Kvadrat. Kvadrat is well know for its application in high end audios such as B&O (Beoplay A9).
+						</p>
+					</div>
+					<p class="popup_disclaimer01">*Kvadrat is a premium textile brand in Denmark.</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Rotate, Tilt, Swivel-->
+			<div class="popup_window rotate_tilt_swivel">
+				<div class="hash_info_wrap">
+					<img src="./images/main/rotate_tilt.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Rotate, Tilt,
+							<br> Swivel
+						</p>
+						<p class="description">
+							Watch in comfort wherever you are with StandbyME’s multiple adjustment options. With up to 180˚ rotation, 130 swivel, 50 tilt, and 20cm height adjustments, it’s easy to find your most comfortable viewing position.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*Vertical screen mode may not be supported in all apps.
+						<br> *The product screen shows a simulated image which may differ from the actual product.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Wireless, built-in Battery-->
+			<div class="popup_window wireless_battery">
+				<div class="hash_info_wrap">
+					<img src="./images/main/wireless_battery.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Wireless,
+							<br>built-in Battery
+						</p>
+						<p class="description">
+							No power outlet, no problem! A built-in battery lets you use StandbyME wirelessly, so you can place it wherever you need. The battery lasts for up to 3 hours on a single charge – that’s more than enough for a movie, a workout, or even an intense study session.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*The product screen shows a simulated image which may differ from the actual product.
+						<br> *Built in battery supports up to 3 hours of wireless use. (3 hours based on using in standard mode but battery usage may vary depending on usage conditions)<br> *Ease of moving the product depends on the flooring material.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--5-wheels-->
+			<div class="popup_window wheels_5">
+				<div class="hash_info_wrap">
+					<img src="./images/main/5_wheels.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">5-wheels</p>
+						<p class="description">
+							Five wheels hidden in the base of the product make it easy to move StandbyME around your home. Take it from your workspace to kitchen to living room, and back again without hassle.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--NFC / Mirroring-->
+			<div class="popup_window nfc_mirroring">
+				<div class="hash_info_wrap">
+					<img src="./images/main/nfc_mirroring.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">NFC / Mirroring</p>
+						<p class="description">
+							StandbyME feature NFC allowing you to wirelessly mirror content from your phone, tablet, or laptop. Just tap your device against the NFC logo on the back of the screen to easily connect and enjoy more immersive mobile content with a bigger screen.
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*The product screen shows a simulated image which may differ from the actual product.
+						<br> *Depending on the specifications and manufacturer of the mobile device, the screen sharing (mirroring) method may differ as well as the image quality.<br> *NFC functionality works after ThinQ app is loaded onto mobile device and device is connected to the TV via Wi-Fi.<br> *Mobile screen sharing (mirroring) is available only on Android devices. (iOS is not supported)<br> *Connection condition may differ depending on user’s network environment.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Touch Screen-->
+			<div class="popup_window touch_screen">
+				<div class="hash_info_wrap">
+					<img src="./images/main/touch_screen.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Touch Screen</p>
+						<p class="description">
+							An intuitive touch screen display lets you operate StandbyME with ease. Just tap to open an app, pause a movie, change your display settings, and more!
+						</p>
+					</div>
+					<p class="infinite_contrast_disclaimer">
+						*The product screen shows a simulated image which may differ from the actual product.
+						<br> *Touch screen functionality varies by app and may not be supported for all apps.<br> *Apps that cannot be operated by touch can be controlled by using the provided remote control.
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Remote Controller-->
+			<div class="popup_window remote_controller">
+				<div class="hash_info_wrap">
+					<img src="./images/main/remote_controller.jpg" alt="">
+					<div class="hash_info">
+						<p class="title">Remote
+							<br>Controller
+						</p>
+						<p class="description">
+							A handy remote lets you stay in control even when the touch screen display is out of reach. Whether you want to switch channels without getting up or get comfortable before starting a movie, the remote is your new best friend.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
+
+			<!--Remote Controller-->
+			<div class="popup_window swivel">
+				<div class="hash_info_wrap">
+					<div class="hash_info">
+						<p class="title">Swivel Stand</p>
+						<p class="description">
+							The OLED G2 comes with a swivel stand allowing people to see more action. The stand swivels 10˚ left and right each which provides the comfortable viewing position.
+						</p>
+					</div>
+					<img src="./images/main/swivel.jpg" alt="">
+					<p class="infinite_contrast_disclaimer">
+						* G series stand is optional
+					</p>
+				</div>
+				<button type="button" class="popup_close_btn"></button>
+			</div>
 			<!--컨텐츠 추가 e-->
 		</div>
-		<div class="dimension">
-			<p class="title">Dimension<span class="millimeter">WxHxD(mm)</span></p>
-			<div class="description_wrap">
-			<div class="description">
-				<span class="hyphen">-</span>
-				<span class="without_stand_num">Full View: 1,592 x 1,276 x 266</span>
-			</div>
-			<div class="description description_sub">
-				<span class="hyphen">-</span>
-				<span class="with_stand_num">Zero View: 1,592 x 450 x 266</span>
-			</div>
-			</div>
-		</div>
-		<p class="ex_description">*Availability of sizes and models may vary depending on region.</p>
-	</div>
-	<!--hash popup-->
-	<div class="hash_popup">
-		<div class="popup_subusp_btn">
-			<button type="button" class="popup_main_usp">Advanced SELF-LIT OLED</button>
-			<div class="popup_sub_usp_wrap">
-				<button type="button" class="popup_sub_usp active">Infinite Contrast</button>
-				<button type="button" class="popup_sub_usp">100% Color Fidelity</button>
-				<button type="button" class="popup_sub_usp">100% Color Volume</button>
-				<button type="button" class="popup_sub_usp">Eye Comfort Display</button>
-			</div>
-		</div>
-		<!--컨텐츠 추가 s-->
-
-		<!--selflit-->
-		<div class="popup_window selflit">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Infinite Contrast</p>
-					<p class="description">
-						The same content can look different
-						depending on which display
-						technology a TV has. LG OLED TVs
-						have self-lit pixels that turn on and off
-						to achieve perfect black and infinite
-						contrast. LED and Mini LED TVs use
-						backlights that are not self-emissive.
-						This means they can't create perfect
-						black and can also suffer from the
-						halo effect. Self-lit pixels don't have
-						this problem — there's no light bleed
-						and no halo, so you get perfect black
-						and better image quality.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/selflit_oled_02.jpg" alt="">
-				<p class="popup_disclaimer01">*Screen images simulated.</p>
-			</div>
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color<br>
-						Fidelity</p>
-					<p class="description">
-						LG OLED TVs not only express
-						perfect black, but also original color.
-						Intertek, a global testing agency
-						based in the UK, has certified that
-						OLED displays have 100% color
-						fidelity. This means on-screen colors
-						closely match those of the original
-						image. LED TVs simply can't match
-						this standard of color reproduction.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/OLED/02_100%25%20Color%20Fidelity.mp4" loop></video>
-			</div>
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color<br>Volume</p>
-					<p class="description">
-						Thanks to LG TVs’ outstanding color
-						reproduction technology, colors
-						achieve full volume on LG OLED
-						and QNED. Certified via independent
-						third-party testing, the evolved
-						display accurately captures a wider
-						color gamut to deliver rich colors that
-						remain brilliant even at maximum
-						brightness levels. This ensures a
-						vibrant experience and keeps
-						everything you watch looking exactly
-						as intended.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/OLED/03_Color%20Volume%20100%25.mp4" loop></video>
-			</div>
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Eye Comfort<br>Display</p>
-					<p class="description">
-						If you worry about you and your
-						family’s eyes, LG OLED TVs
-						provide a more comfortable way
-						to watch for longer. They’ve
-						been certified as low-blue light,
-						flicker-free, and discomfort glare-free
-						displays by international agencies
-						TÜV Rheinland (TUV) and
-						Underwriter Laboratories (UL).
-						LG OLED TVs are also the first panels
-						from any kind of TV to receive the
-						Eyesafe® certification developed
-						by TUV-Eyesafe®.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/selflit_oled_01.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*LG OLED TV sets, except LG OLED R, have been certified as low-blue light displays by TUV-Eyesafe®.<br>
-					*LG OLED TV panels have been certified as flicker-free and discomfort glare free by UL.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--selflit8K-->
-		<div class="popup_window selflit8K">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">REAL 8K <br>(7,680 x 4,320)</p>
-					<p class="description">
-						33 million self-lit pixels make LG OLED TV the only way to see real 8K. Each pixel can be controlled individually to display unprecedented levels of depth and detail with infinite contrast and perfect blacks. LG OLED TVs set the standard for real 8K — LED TVs that claim to be 8K just can’t quite reach this level of realism.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/OLED/Z1-8K-Desktop.mp4" loop></video>
-			</div>
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Infinite Contrast</p>
-					<p class="description">
-						The same content can look different
-						depending on which display
-						technology a TV has. LG OLED TVs
-						have self-lit pixels that turn on and off
-						to achieve perfect black and infinite
-						contrast. LED and Mini LED TVs use
-						backlights that are not self-emissive.
-						This means they can't create perfect
-						black and can also suffer from the
-						halo effect. Self-lit pixels don't have
-						this problem — there's no light bleed
-						and no halo, so you get perfect black
-						and better image quality.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/selflit_oled_02.jpg" alt="">
-				<p class="popup_disclaimer01">*Screen images simulated.</p>
-			</div>
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color<br>
-						Fidelity</p>
-					<p class="description">
-						LG OLED TVs not only express
-						perfect black, but also original color.
-						Intertek, a global testing agency
-						based in the UK, has certified that
-						OLED displays have 100% color
-						fidelity. This means on-screen colors
-						closely match those of the original
-						image. LED TVs simply can't match
-						this standard of color reproduction.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/OLED/02_100%25%20Color%20Fidelity.mp4" loop></video>
-			</div>
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Eye Comfort<br>Display</p>
-					<p class="description">
-						If you worry about you and your
-						family’s eyes, LG OLED TVs
-						provide a more comfortable way
-						to watch for longer. They’ve
-						been certified as low-blue light,
-						flicker-free, and discomfort glare-free
-						displays by international agencies
-						TÜV Rheinland (TUV) and
-						Underwriter Laboratories (UL).
-						LG OLED TVs are also the first panels
-						from any kind of TV to receive the
-						Eyesafe® certification developed
-						by TUV-Eyesafe®.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/selflit_oled_01.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*LG OLED TV sets, except LG OLED R, have been certified as low-blue light displays by TUV-Eyesafe®.<br>
-					*LG OLED TV panels have been certified as flicker-free and discomfort glare free by UL.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--a9 Gen5 AI Processor 4K-->
-		<div class="popup_window a9_gen5_4K">
-			<!--AI Picture Pro-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Picture Pro</p>
-					<p class="description">
-						Developed using a vast database of
-						over one million visual data points,
-						the deep-learning algorithm recognizes
-						content quality, while the 5th generation
-						α9 AI processor removes noise, and
-						optimizes contrast and saturation.
-						The result is crisp, high-quality visuals.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_picture_pro_img01.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Screen images simulated. <br>
-				</p>
-			</div>
-
-			<!--Dynamic Tone-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">
-						Dynamic Tone <br>
-						Mapping Pro
-					</p>
-					<p class="description">
-						Dynamic Tone Mapping Pro analyzes
-						the image and adjusts brightness levels
-						to minimize saturated or smeared areas.
-						When analyzing videos, it divides them
-						into small blocks and collects data
-						separately for each block. This way it
-						can bring out individual areas of detail
-						in a scene and optimize tone curves
-						on a frame-by-frame basis.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dynamic_tone_img01.jpg" alt="">
-			</div>
-
-			<!--AI Sound Pro-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">
-						AI Sound Pro
-					</p>
-					<p class="description">
-						By learning from more than
-						17 million sound data points, the
-						processor identifies voices, effects,
-						and frequencies so it can optimize
-						sound according to the audio genre.
-						And the Auto Volume Leveling feature
-						maintains consistent voice levels
-						across different types of content.
-						Also, with the a9 processor, LG Virtual
-						Up-mixing now converts 2-channel
-						audio into 7. 1. 2 channel audio
-						providing a more spatial sound.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_sound_pro_7.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--ThinQ AI-->
-		<div class="popup_window thinQ_AI">
-			<!--Google Assistant-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Google Assistant</p>
-					<p class="description">
-						Do more on your TV with help from
-						Google. Access entertainment, get
-						answers on screen, control smart
-						devices, and more using your voice.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/google_assistant.jpg" alt="">
-			</div>
-
-			<!--Amazon Alexa-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Amazon Alexa</p>
-					<p class="description">
-						Speak to Alexa through your LG TV
-						to play music, check the weather,
-						control smart home devices, and
-						access more than 100,000 Skills and
-						more. Make your life easier using
-						Alexa routines to link several actions,
-						such as traffic updates, weather
-						reports, and alarms, with one voice
-						command.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/amazon_alexa.jpg" alt="">
-			</div>
-
-			<!--Apple Airplay-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Apple Airplay</p>
-					<p class="description">
-						Effortlessly stream, share and mirror
-						your favorite content from your iPhone,
-						iPad or Mac. Play your favorites from
-						the Apple TV app and other video
-						apps, or view photos right on your
-						LG ThinQ AI TV.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/apple_airplay.jpg" alt="">
-			</div>
-
-			<!--HomeKit-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">HomeKit</p>
-					<p class="description">
-						Use the Home app or Siri on your
-						Apple devices to easily and securely
-						control your ThinQ AI TV. You can
-						turn your TV on and off, switch inputs,
-						and even change the volume.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/apple_homekit.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--True Cinema Experience-->
-		<div class="popup_window trueCinema">
-			<!--Dolby Vision IQ & Dolby Atmos-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Dolby Vision IQ &<br>Dolby Atmos</p>
-					<p class="description">
-						LG TVs come with the latest solutions
-						from Dolby. Dolby Vision IQ utilizes
-						metadata and the TVs’ built-in light
-						sensors to optimize picture quality
-						based on content genre and ambient
-						surroundings while Dolby Atmos
-						simultaneously delivers multi-
-						dimensional immersive sound.
-						it’s a powerful combination that
-						delivers a more realistic experience
-						when watching a movie.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dolby_vision_iq.jpg" alt="">
-			</div>
-
-			<!--HDR 10 Pro-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">HDR 10 Pro</p>
-					<p class="description">
-						Because HDR 10 doesn't use dynamic
-						metadata like Dolby, we integrated
-						our own LG HDR technology that uses
-						static metadata to create HDR 10 Pro.
-						It uses that metadata to adjust color
-						and brightness, reveal more detail in
-						both bright and dark scenes, and
-						enhance color to make everything
-						you watch look more realistic. It also
-						intensifies regular HDR content, so all
-						your favorite movies and shows will
-						be more dynamic and vibrant.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/hdr_10.jpg" alt="">
-			</div>
-
-			<!--filmmaker mode-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">FILMMAKER<br>MODE</p>
-					<p class="description">
-						FILMMAKER MODE™ turns off
-						motion smoothing, image sharpening,
-						and other processing settings while
-						preserving the original aspect ratios,
-						colors, and frame rates. This accurately
-						delivers the director's original intent,
-						so you get to experience the film
-						the way they intended.
-					</p>
-				</div>
-				<div class="right_contents">
-					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/filmmaker_mode_img01.jpg" alt="">
-				</div>
-				<iframe src="https://player.vimeo.com/video/631710843?quality=1080p" width="900" height="506" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" style="width:900px; height:633px; position:absolute; top:50%; right:152px; left:auto; transform:translateY(-42%);"></iframe>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Ultimate Gameplay-->
-		<div class="popup_window ultimate_gameplay">
-			<!--NVIDIA G-SYNC-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">NVIDIA G-SYNC</p>
-					<p class="description">
-						LG continue to work with industry-
-						leader NVIDIA to make LG OLED TV
-						the only G-SYNC compatible TV.
-						LG OLED TVs use the precision and
-						control of individual self-lit pixels to
-						take full advantage of the G-SYNC
-						compatibility, allowing fast response
-						times and smoother gaming, even
-						at high resolution.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/nvidia_g_sync.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*NVIDIA G-SYNC is compatible with RTX 20, RTX 30 and GTX 16 graphics cards. Older GPUs will not support G-SYNC compaibility.
-					<br>
-					*NVIDIA G-SYNC is only supported on Z1, G1, C1, and B1 models.
-				</p>
-			</div>
-
-			<!--FreeSync™ Premium-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">FreeSync™ <br> Premium</p>
-					<p class="description">
-						We also partnered with AMD to bring
-						FreeSync™ Premium to LG OLED TVs.
-						Less flicker and low latency allow
-						action-packed games to perform at
-						their absolute peak with clear and
-						fluid gameplay.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/free_sync.jpg" alt="">
-			</div>
-
-			<!--STADIA & GEFORCE NOW-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">STADIA & <br>GEFORCE NOW</p>
-					<p class="description">
-						LG TV delivers the latest gaming
-						experiences. Google Stadia and
-						NVIDIA GEFORCE NOW are
-						a real-time cloud gaming service
-						that lets you instantly play an exciting
-						array of games on your TV with
-						just a controller and no additional
-						gaming hardware.
-					</p>
-				</div>
-				<div class="right_contents">
-					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/stadia_geforce.jpg" alt="">
-				</div>
-			</div>
-
-			<!--Game Dashboard & Optimizer-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Game Dashboard <br> & Optimizer</p>
-					<p class="description">
-						Game Optimizer provides optimized settings for various game genres including, FPS, RPG, RTS, and Sports. You can access everything in one place for greater control over picture and sound settings. And you can also toggle VRR, NVIDIA G-GYNC, and AMD FreeSync™ technologies. This added control ensures all your games will be clearer and smooth with less lag, stutter, and tearing.
-					</p>
-				</div>
-				<div class="right_contents">
-					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/stadia_geforce.jpg" alt="">
-					<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/Game%20Optimizer.mp4" loop></video>
-				</div>
-				<p class="infinite_contrast_disclaimer">
-					*Items in Game Optimizer can be different by series.<br>
-					*Dark Room mode only applies to 2022 OLED, QNED, NaoCell, and UHD TVs.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Eco minded-->
-		<div class="popup_window eco_01">
-			<!--Composite Fiber-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Composite Fiber</p>
-					<p class="description">
-						LG OLED TV is produced with
-						composite fiber material making it
-						lighter and eco-minded by emitting
-						less carbon. Using the new material
-						makes LG OLED TV more consumer
-						friendly because it is easier to carry
-						and install due to lightweight.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/composite.jpg" alt="">
-				<p class="popup_disclaimer01">*Screen images simulated.</p>
-			</div>
-
-			<!--Eco Packaging-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Eco Packaging</p>
-					<p class="description">
-						LG TVs are made to be more
-						sustainable. LG's ultimate aim is to
-						impact environmental change and
-						improve the lives of it consumers.
-						LG OLED uses recyclable box, 1 color
-						printing and bio-based remote-
-						control bag to minimize waste.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/eco_packaging.jpg" alt="">
-			</div>
-
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--a9 Gen5 AI Processor 8K-->
-		<div class="popup_window a9_gen5_8K">
-			<!--AI Picture Pro-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Picture Pro</p>
-					<p class="description">
-						Developed using a vast database of
-						over one million visual data points,
-						the deep-learning algorithm recognizes
-						content quality, while the 5th generation
-						α9 AI processor removes noise, and
-						optimizes contrast and saturation.
-						The result is crisp, high-quality visuals.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_picture_pro_img01.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Screen images simulated. <br>
-				</p>
-			</div>
-
-			<!--Dynamic Tone-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">
-						Dynamic Tone <br>
-						Mapping Pro
-					</p>
-					<p class="description">
-						Dynamic Tone Mapping Pro analyzes
-						the image and adjusts brightness levels
-						to minimize saturated or smeared areas.
-						When analyzing videos, it divides them
-						into small blocks and collects data
-						separately for each block. This way it
-						can bring out individual areas of detail
-						in a scene and optimize tone curves
-						on a frame-by-frame basis.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/dynamic_tone_img01.jpg" alt="">
-			</div>
-
-			<!--AI Sound Pro-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">
-						AI Sound Pro
-					</p>
-					<p class="description">
-						By learning from more than
-						17 million sound data points, the
-						processor identifies voices, effects,
-						and frequencies so it can optimize
-						sound according to the audio genre.
-						And the Auto Volume Leveling feature
-						maintains consistent voice levels
-						across different types of content.
-						Also, with the a9 processor, LG Virtual
-						Up-mixing now converts 2-channel
-						audio into 7. 1. 2 channel audio
-						providing a more spatial sound.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_sound_pro_7.jpg" alt="">
-			</div>
-
-			<!--AI 8K Upscaling-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">
-						AI 8K Upscaling
-					</p>
-					<p class="description">
-						α9 AI processor 8K uses a deep
-						learning algorithm to transform 2K or
-						4K content into the most life-like 8K
-						picture by enhancing detail and
-						definition. You get to enjoy much
-						clearer text and images with reduced
-						noise and enhanced sharpness, even
-						on LG's biggest screens.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_8k_upscaling.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--SELF-LIT OLED evo-->
-		<div class="popup_window selflit_evo_G2">
-			<!--Brightness Booster-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">LG OLED evo</p>
-					<p class="description">
-						LG OLED has evolved. The next-generation OLED panel, combined with the power of the Alpha 9 Gen 5 processor, sets a new standard for TV. The redesigned panel has an added layer of more emissive material that refines the wavelengths of light input. The materials used for OLED lighting have also been changed to enhance and strengthen light intensity.  Also, OLED evo technology guarantees most advanced OLED picture quality and performance. LG’s new Heat dissipation technology improves maximum brightness making G2 the brightest LG OLED TV.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/a9_gen5.mp4" loop></video>
-			</div>
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Infinite Contrast</p>
-					<p class="description">
-						The same content can look different
-						depending on which display
-						technology a TV has. LG OLED TVs
-						have self-lit pixels that turn on and off
-						to achieve perfect black and infinite
-						contrast. LED and Mini LED TVs use
-						backlights that are not self-emissive.
-						This means they can't create perfect
-						black and can also suffer from the
-						halo effect. Self-lit pixels don't have
-						this problem — there's no light bleed
-						and no halo, so you get perfect black
-						and better image quality.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/selflit_oled_02.jpg" alt="">
-				<p class="popup_disclaimer01">*Screen images simulated.</p>
-			</div>
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color<br>
-						Fidelity</p>
-					<p class="description">
-						LG OLED TVs not only express
-						perfect black, but also original color.
-						Intertek, a global testing agency
-						based in the UK, has certified that
-						OLED displays have 100% color
-						fidelity. This means on-screen colors
-						closely match those of the original
-						image. LED TVs simply can't match
-						this standard of color reproduction.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/OLED/02_100%25%20Color%20Fidelity.mp4" loop></video>
-			</div>
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Eye Comfort<br>Display</p>
-					<p class="description">
-						If you worry about you and your
-						family’s eyes, LG OLED TVs
-						provide a more comfortable way
-						to watch for longer. They’ve
-						been certified as low-blue light,
-						flicker-free, and discomfort glare-free
-						displays by international agencies
-						TÜV Rheinland (TUV) and
-						Underwriter Laboratories (UL).
-						LG OLED TVs are also the first panels
-						from any kind of TV to receive the
-						Eyesafe® certification developed
-						by TUV-Eyesafe®.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/selflit_oled_01.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*LG OLED TV sets, except LG OLED R, have been certified as low-blue light displays by TUV-Eyesafe®.<br>
-					*LG OLED TV panels have been certified as flicker-free and discomfort glare free by UL.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--SELF-LIT OLED evo-->
-		<div class="popup_window selflit_evo_C2">
-			<!--Brightness Booster-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">LG OLED evo</p>
-					<p class="description">
-						LG OLED has evolved. The next-generation OLED panel, combined with the power of the Alpha 9 Gen 5 processor, sets a new standard for TV. The redesigned panel has an added layer of more emissive material that refines the wavelengths of light input. The materials used for OLED lighting have also been changed to enhance and strengthen light intensity.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/OLED-Evo.mp4" loop></video>
-			</div>
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Infinite Contrast</p>
-					<p class="description">
-						The same content can look different
-						depending on which display
-						technology a TV has. LG OLED TVs
-						have self-lit pixels that turn on and off
-						to achieve perfect black and infinite
-						contrast. LED and Mini LED TVs use
-						backlights that are not self-emissive.
-						This means they can't create perfect
-						black and can also suffer from the
-						halo effect. Self-lit pixels don't have
-						this problem — there's no light bleed
-						and no halo, so you get perfect black
-						and better image quality.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/selflit_oled_02.jpg" alt="">
-				<p class="popup_disclaimer01">*Screen images simulated.</p>
-			</div>
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color<br>
-						Fidelity</p>
-					<p class="description">
-						LG OLED TVs not only express
-						perfect black, but also original color.
-						Intertek, a global testing agency
-						based in the UK, has certified that
-						OLED displays have 100% color
-						fidelity. This means on-screen colors
-						closely match those of the original
-						image. LED TVs simply can't match
-						this standard of color reproduction.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/OLED/02_100%25%20Color%20Fidelity.mp4" loop></video>
-			</div>
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Eye Comfort<br>Display</p>
-					<p class="description">
-						If you worry about you and your
-						family’s eyes, LG OLED TVs
-						provide a more comfortable way
-						to watch for longer. They’ve
-						been certified as low-blue light,
-						flicker-free, and discomfort glare-free
-						displays by international agencies
-						TÜV Rheinland (TUV) and
-						Underwriter Laboratories (UL).
-						LG OLED TVs are also the first panels
-						from any kind of TV to receive the
-						Eyesafe® certification developed
-						by TUV-Eyesafe®.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/selflit_oled_01.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*LG OLED TV sets, except LG OLED R, have been certified as low-blue light displays by TUV-Eyesafe®.<br>
-					*LG OLED TV panels have been certified as flicker-free and discomfort glare free by UL.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Gallery Design-->
-		<div class="popup_window gallery_design">
-			<!--Gallery Design-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Gallery</p>
-					<p class="description">
-						LG OLED G2’s class-leading gallery
-						design offers an ultra slim profile and
-						built-in flush fit wall mount providing
-						understated elegance to any space,
-						merging seamlessly into your
-						environment while making a bold
-						statement and powerful focal point.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/gallery_design.jpg" alt="">
-			</div>
-
-			<!--Narrow Bezel-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Narrow Bezel</p>
-					<p class="description">
-						LG OLED TVs use self-lit pixels instead
-						of backlights. This allows for more
-						innovative designs that are ultra-slim
-						and have almost no bezels — it's
-						a feat of engineering that has to be
-						seen to be believed. The supper
-						narrow bezel that focuses only on
-						the screen enables people to have
-						more immersive experience.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/narrow_bezel.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*This feature only applies to G2 and C2.<br>
-					*Bezel size can be different by size.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Refined Design-->
-		<div class="popup_window refined_design">
-			<!--Narrow Bezel-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Narrow Bezel</p>
-					<p class="description">
-						LG OLED TVs use self-lit pixels instead
-						of backlights. This allows for more
-						innovative designs that are ultra-slim
-						and have almost no bezels — it's
-						a feat of engineering that has to be
-						seen to be believed. The supper
-						narrow bezel that focuses only on
-						the screen enables people to have
-						more immersive experience.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/narrow_bezel.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*This feature only applies to G2 and C2.<br>
-					*Bezel size can be different by size.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--α7 Gen5 AI Processor 4K-->
-		<div class="popup_window a7_gen5_4K">
-			<!--AI Picture Pro-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Picture Pro</p>
-					<p class="description">
-						Developed using a vast database of
-						over one million visual data points,
-						the deep-learning algorithm recognizes
-						content quality, while the 5th generation
-						α9 AI processor removes noise, and
-						optimizes contrast and saturation.
-						The result is crisp, high-quality visuals.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_picture_pro_img01.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Screen images simulated. <br>
-				</p>
-			</div>
-
-			<!--AI Sound Pro-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Sound Pro</p>
-					<p class="description">
-						By learning from more than
-						17 million sound data points, the
-						processor identifies voices, effects,
-						and frequencies so it can optimize
-						sound according to the audio genre.
-						And the Auto Volume Leveling feature
-						maintains consistent voice levels
-						across different types of content.
-						Also, with the a7 and a5 processor,
-						LG Virtual Up-mixing now converts <br>
-						2-channel audio into 5. 1. 2 channel
-						audio providing a more spatial sound.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_sound_pro_7.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Eco minded-->
-		<div class="popup_window eco_02">
-			<!--Eco Packaging-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Eco Packaging</p>
-					<p class="description">
-						LG TVs are made to be more
-						sustainable. LG's ultimate aim is to
-						impact environmental change and
-						improve the lives of it consumers.
-						LG OLED uses recyclable box, 1 color
-						printing and bio-based remote-
-						control bag to minimize waste.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/eco_packaging.jpg" alt="">
-			</div>
-
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Ultimate Gameplay-->
-		<div class="popup_window ultimate_gameplay_A2">
-			<!--STADIA & GEFORCE NOW-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">STADIA & <br>GEFORCE NOW</p>
-					<p class="description">
-						LG TV delivers the latest gaming
-						experiences. Google Stadia and
-						NVIDIA GEFORCE NOW are
-						a real-time cloud gaming service
-						that lets you instantly play an exciting
-						array of games on your TV with
-						just a controller and no additional
-						gaming hardware.
-					</p>
-				</div>
-				<div class="right_contents">
-					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/stadia_geforce.jpg" alt="">
-				</div>
-			</div>
-
-			<!--Game Dashboard & Optimizer-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Game Dashboard <br> & Optimizer</p>
-					<p class="description">
-						Game Optimizer provides optimized settings for various game genres including, FPS, RPG, RTS, and Sports. You can access everything in one place for greater control over picture and sound settings. And you can also toggle VRR, NVIDIA G-GYNC, and AMD FreeSync™ technologies. This added control ensures all your games will be clearer and smooth with less lag, stutter, and tearing.
-					</p>
-				</div>
-				<div class="right_contents">
-					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/stadia_geforce.jpg" alt="">
-					<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/Game%20Optimizer.mp4" loop></video>
-				</div>
-				<p class="infinite_contrast_disclaimer">
-					*Items in Game Optimizer can be different by series.<br>
-					*Dark Room mode only applies to 2022 OLED, QNED, NaoCell, and UHD TVs.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Quantum Dot NanoCell Mini LED-->
-		<div class="popup_window quantumDot">
-			<!--Extreme Dimming Technology 9X-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Extreme Dimming <br>Technology 9X</p>
-					<p class="description">
-						LG QNED Mini LED features
-						approximately 30,000 Mini LEDs to
-						produce a bright, high-quality picture,
-						while close to 2,400 unique dimming
-						zones deliver stunning blacks with
-						reduced halo effect even in the darkest
-						scenes. The resulting image looks so
-						good you might just think it's magic.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/extreme_dimming_9x.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*2,400 dimming zones are number of block based on 86QNED99
-				</p>
-			</div>
-
-			<!--100% Color Volume-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color<br>Volume</p>
-					<p class="description">
-						Thanks to LG TVs’ outstanding color
-						reproduction technology, colors
-						achieve full volume on LG OLED
-						and QNED. Certified via independent
-						third-party testing, the evolved
-						display accurately captures a wider
-						color gamut to deliver rich colors that
-						remain brilliant even at maximum
-						brightness levels. This ensures a
-						vibrant experience and keeps
-						everything you watch looking exactly
-						as intended.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/OLED/03_Color%20Volume%20100%25.mp4" loop></video>
-			</div>
-
-			<!--100% Color Consistency-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color <br>Consistency</p>
-					<p class="description">
-						LG QNED and NanoCell TV display
-						Pure Colors with high consistency
-						from wide viewing angles thanks to
-						Nano technology. Color consistency
-						is a representation of display
-						consistency in terms of color and
-						lightness. Certified by Intertek,
-						LG QNED and NanoCell TV deliver
-						a high Color Consistency recorded
-						as 100% by CIE DE2000 across
-						18 color patterns with a viewing angle
-						of ±30°. In other words, this means
-						that LG QNED and NanoCell TV
-						display colors richly and accurately
-						even when viewed from wide angles.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/color_consistency.jpg" alt="">
-			</div>
-
-			<!--Ultra Contrast-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Ultra Contrast</p>
-					<p class="description">
-						Approximately 2,500 unique dimming
-						zones deliver precise backlight control
-						and an ultra-high contrast ratio. This
-						makes blacks deeper and colors more
-						vivid for a more detailed picture, even
-						in the darkest scenes.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/QNED/01_Ultra%20Contrast.mp4" loop></video>
-			</div>
-
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Powerful Gameplay-->
-		<div class="popup_window powerful_gameplay">
-			<!--STADIA & GEFORCE NOW-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">STADIA & <br>GEFORCE NOW</p>
-					<p class="description">
-						LG TV delivers the latest gaming
-						experiences. Google Stadia and
-						NVIDIA GEFORCE NOW are
-						a real-time cloud gaming service
-						that lets you instantly play an exciting
-						array of games on your TV with
-						just a controller and no additional
-						gaming hardware.
-					</p>
-				</div>
-				<div class="right_contents">
-					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/stadia_geforce.jpg" alt="">
-				</div>
-			</div>
-
-			<!--Game Dashboard & Optimizer-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Game Dashboard <br>& Optimizer</p>
-					<p class="description">
-						Game Optimizer provides optimized settings for various game genres including, FPS, RPG, RTS, and Sports. You can access everything in one place for greater control over picture and sound settings. And you can also toggle VRR, NVIDIA G-GYNC, and AMD FreeSync™ technologies. This added control ensures all your games will be clearer and smooth with less lag, stutter, and tearing.
-					</p>
-				</div>
-				<div class="right_contents">
-					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/stadia_geforce.jpg" alt="">
-					<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/Game%20Optimizer.mp4" loop></video>
-				</div>
-				<p class="infinite_contrast_disclaimer">
-					*Items in Game Optimizer can be different by series.<br>
-					*Dark Room mode only applies to 2022 OLED, QNED, NaoCell, and UHD TVs.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Quantum Dot NanoCell Mini LED-->
-		<div class="popup_window quantumDot_90">
-			<!--Extreme Dimming Technology 9X-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Extreme Dimming <br>Technology 4X</p>
-					<p class="description">
-						LG QNED Mini LED features
-						approximately 30,000 Mini LEDs to
-						produce a bright, high-quality picture,
-						while close to 2,400 unique dimming
-						zones deliver stunning blacks with
-						reduced halo effect even in the darkest
-						scenes. The resulting image looks so
-						good you might just think it's magic.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/extreme_dimming_9x.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*2,400 dimming zones are number of block based on 86QNED99
-				</p>
-			</div>
-
-			<!--100% Color Volume-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color<br>Volume</p>
-					<p class="description">
-						Thanks to LG TVs’ outstanding color
-						reproduction technology, colors
-						achieve full volume on LG OLED
-						and QNED. Certified via independent
-						third-party testing, the evolved
-						display accurately captures a wider
-						color gamut to deliver rich colors that
-						remain brilliant even at maximum
-						brightness levels. This ensures a
-						vibrant experience and keeps
-						everything you watch looking exactly
-						as intended.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/OLED/03_Color%20Volume%20100%25.mp4" loop></video>
-			</div>
-
-			<!--100% Color Consistency-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color <br>Consistency</p>
-					<p class="description">
-						LG QNED and NanoCell TV display
-						Pure Colors with high consistency
-						from wide viewing angles thanks to
-						Nano technology. Color consistency
-						is a representation of display
-						consistency in terms of color and
-						lightness. Certified by Intertek,
-						LG QNED and NanoCell TV deliver
-						a high Color Consistency recorded
-						as 100% by CIE DE2000 across
-						18 color patterns with a viewing angle
-						of ±30°. In other words, this means
-						that LG QNED and NanoCell TV
-						display colors richly and accurately
-						even when viewed from wide angles.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/color_consistency.jpg" alt="">
-			</div>
-
-			<!--Ultra Contrast-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Ultra Contrast</p>
-					<p class="description">
-						Approximately 2,500 unique dimming
-						zones deliver precise backlight control
-						and an ultra-high contrast ratio. This
-						makes blacks deeper and colors more
-						vivid for a more detailed picture, even
-						in the darkest scenes.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/QNED/01_Ultra%20Contrast.mp4" loop></video>
-			</div>
-
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Advanced Gameplay-->
-		<div class="popup_window advanced_gameplay">
-			<!--FreeSync™ Premium-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">FreeSync™ <br> Premium</p>
-					<p class="description">
-						We also partnered with AMD to bring
-						FreeSync™ Premium to LG OLED TVs.
-						Less flicker and low latency allow
-						action-packed games to perform at
-						their absolute peak with clear and
-						fluid gameplay.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/free_sync.jpg" alt="">
-			</div>
-
-			<!--STADIA & GEFORCE NOW-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">STADIA & <br>GEFORCE NOW</p>
-					<p class="description">
-						LG TV delivers the latest gaming
-						experiences. Google Stadia and
-						NVIDIA GEFORCE NOW are
-						a real-time cloud gaming service
-						that lets you instantly play an exciting
-						array of games on your TV with
-						just a controller and no additional
-						gaming hardware.
-					</p>
-				</div>
-				<div class="right_contents">
-					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/stadia_geforce.jpg" alt="">
-				</div>
-			</div>
-
-			<!--Game Dashboard & Optimizer-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Game Dashboard <br> & Optimizer</p>
-					<p class="description">
-						Game Optimizer provides optimized settings for various game genres including, FPS, RPG, RTS, and Sports. You can access everything in one place for greater control over picture and sound settings. And you can also toggle VRR, NVIDIA G-GYNC, and AMD FreeSync™ technologies. This added control ensures all your games will be clearer and smooth with less lag, stutter, and tearing.
-					</p>
-				</div>
-				<div class="right_contents">
-					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/stadia_geforce.jpg" alt="">
-					<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/Game%20Optimizer.mp4" loop></video>
-				</div>
-				<p class="infinite_contrast_disclaimer">
-					*Items in Game Optimizer can be different by series.<br>
-					*Dark Room mode only applies to 2022 OLED, QNED, NaoCell, and UHD TVs.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Quantum Dot NanoCell Mini LED-->
-		<div class="popup_window quantumDot_85">
-			<!--Extreme Dimming Technology-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Extreme Dimming <br>Technology</p>
-					<p class="description">
-						LG QNED Mini LED features
-						approximately 30,000 Mini LEDs to
-						produce a bright, high-quality picture,
-						while close to 2,400 unique dimming
-						zones deliver stunning blacks with
-						reduced halo effect even in the darkest
-						scenes. The resulting image looks so
-						good you might just think it's magic.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/extreme_dimming_9x.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*2,400 dimming zones are number of block based on 86QNED99
-				</p>
-			</div>
-
-			<!--100% Color Volume-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color<br>Volume</p>
-					<p class="description">
-						Thanks to LG TVs’ outstanding color
-						reproduction technology, colors
-						achieve full volume on LG OLED
-						and QNED. Certified via independent
-						third-party testing, the evolved
-						display accurately captures a wider
-						color gamut to deliver rich colors that
-						remain brilliant even at maximum
-						brightness levels. This ensures a
-						vibrant experience and keeps
-						everything you watch looking exactly
-						as intended.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/OLED/03_Color%20Volume%20100%25.mp4" loop></video>
-			</div>
-
-			<!--100% Color Consistency-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color <br>Consistency</p>
-					<p class="description">
-						LG QNED and NanoCell TV display
-						Pure Colors with high consistency
-						from wide viewing angles thanks to
-						Nano technology. Color consistency
-						is a representation of display
-						consistency in terms of color and
-						lightness. Certified by Intertek,
-						LG QNED and NanoCell TV deliver
-						a high Color Consistency recorded
-						as 100% by CIE DE2000 across
-						18 color patterns with a viewing angle
-						of ±30°. In other words, this means
-						that LG QNED and NanoCell TV
-						display colors richly and accurately
-						even when viewed from wide angles.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/color_consistency.jpg" alt="">
-			</div>
-
-			<!--Ultra Contrast-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Ultra Contrast</p>
-					<p class="description">
-						Approximately 2,500 unique dimming
-						zones deliver precise backlight control
-						and an ultra-high contrast ratio. This
-						makes blacks deeper and colors more
-						vivid for a more detailed picture, even
-						in the darkest scenes.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/QNED/01_Ultra%20Contrast.mp4" loop></video>
-			</div>
-
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Quantum Dot NanoCell-->
-		<div class="popup_window quantumDot_80">
-			<!--Extreme Dimming Technology-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Advanced <br> Dimming Technology</p>
-					<p class="description">
-						LG QNED Mini LED features
-						approximately 30,000 Mini LEDs to
-						produce a bright, high-quality picture,
-						while close to 2,400 unique dimming
-						zones deliver stunning blacks with
-						reduced halo effect even in the darkest
-						scenes. The resulting image looks so
-						good you might just think it's magic.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/advenced_dimming.jpg" alt="">
-			</div>
-
-			<!--100% Color Volume-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color<br>Volume</p>
-					<p class="description">
-						Thanks to LG TVs’ outstanding color
-						reproduction technology, colors
-						achieve full volume on LG OLED
-						and QNED. Certified via independent
-						third-party testing, the evolved
-						display accurately captures a wider
-						color gamut to deliver rich colors that
-						remain brilliant even at maximum
-						brightness levels. This ensures a
-						vibrant experience and keeps
-						everything you watch looking exactly
-						as intended.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/OLED/03_Color%20Volume%20100%25.mp4" loop></video>
-			</div>
-
-			<!--100% Color Consistency-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color <br>Consistency</p>
-					<p class="description">
-						LG QNED and NanoCell TV display
-						Pure Colors with high consistency
-						from wide viewing angles thanks to
-						Nano technology. Color consistency
-						is a representation of display
-						consistency in terms of color and
-						lightness. Certified by Intertek,
-						LG QNED and NanoCell TV deliver
-						a high Color Consistency recorded
-						as 100% by CIE DE2000 across
-						18 color patterns with a viewing angle
-						of ±30°. In other words, this means
-						that LG QNED and NanoCell TV
-						display colors richly and accurately
-						even when viewed from wide angles.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/color_consistency.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Home Cinema Experience-->
-		<div class="popup_window homeCinema">
-			<!--HDR 10 Pro-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">HDR 10 Pro</p>
-					<p class="description">
-						Because HDR 10 doesn't use dynamic
-						metadata like Dolby, we integrated
-						our own LG HDR technology that uses
-						static metadata to create HDR 10 Pro.
-						It uses that metadata to adjust color
-						and brightness, reveal more detail in
-						both bright and dark scenes, and
-						enhance color to make everything
-						you watch look more realistic. It also
-						intensifies regular HDR content, so all
-						your favorite movies and shows will
-						be more dynamic and vibrant.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/hdr_10.jpg" alt="">
-			</div>
-
-			<!--filmmaker mode-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">FILMMAKER<br>MODE</p>
-					<p class="description">
-						FILMMAKER MODE™ turns off
-						motion smoothing, image sharpening,
-						and other processing settings while
-						preserving the original aspect ratios,
-						colors, and frame rates. This accurately
-						delivers the director's original intent,
-						so you get to experience the film
-						the way they intended.
-					</p>
-				</div>
-				<div class="right_contents">
-					<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/filmmaker_mode_img01.jpg" alt="">
-				</div>
-				<iframe src="https://player.vimeo.com/video/631710843?quality=1080p" width="900" height="506" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" style="width:900px; height:633px; position:absolute; top:50%; right:152px; left:auto; transform:translateY(-42%);"></iframe>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--rollable_design-->
-		<div class="popup_window rollable_design">
-			<!--Full/Line/Zero view-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Full/Line/Zero View</p>
-					<p class="description">
-						The world’s first and only rollable TV has arrived. A truly unique design and unprecedented functionality make the LG SIGNATURE OLED R a sight to behold, whichever way you use it. Watch your favorite content in Full View mode, discreetly set the mood in Line View, or make the most of your space in Zero View.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/R1.mp4" loop id="test"></video>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Quantum Dot NanoCell Mini LED-->
-		<div class="popup_window pureColors_80">
-			<!--Advanced Dimming Technology-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Advanced Dimming <br>Technology</p>
-					<p class="description">
-						It’s time to experience more realistic
-						and brighter image. Advanced
-						dimming technology detects and
-						maps object information to the
-						backlight allowing for a more natural
-						image with enhanced brightness.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/advenced_dimming.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Based on internal measurement. Image Simulated.
-				</p>
-			</div>
-
-			<!--NanoCell Technology-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">NanoCell <br>Technology</p>
-					<p class="description">
-						LG NanoCell TV utilizes nanoparticles,
-						our own distinctive Nano technology,
-						to filter and refine color, removing
-						impurities from RGB wavelengths.
-						This means that only pure, accurate
-						colors will be displayed on screen.
-						The result is a more vibrant, more
-						realistic picture that will bring your
-						content to life.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/NanoCell/04_NanoCell%20Technology.mp4" loop></video>
-			</div>
-			<!--100% Color Consistency-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color <br>Consistency</p>
-					<p class="description">
-						LG QNED and NanoCell TV display
-						Pure Colors with high consistency
-						from wide viewing angles thanks to
-						Nano technology. Color consistency
-						is a representation of display
-						consistency in terms of color and
-						lightness. Certified by Intertek,
-						LG QNED and NanoCell TV deliver
-						a high Color Consistency recorded
-						as 100% by CIE DE2000 across
-						18 color patterns with a viewing angle
-						of ±30°. In other words, this means
-						that LG QNED and NanoCell TV
-						display colors richly and accurately
-						even when viewed from wide angles.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/color_consistency.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--α5 Gen5 AI Processor 4K-->
-		<div class="popup_window a5_gen5_4K">
-			<!--AI Brightness Control-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Brightness <br>Control</p>
-					<p class="description">
-						A light sensor measures the surrounding
-						ambient light, then the processor
-						finely adjusts tone mapping for optimal
-						screen brightness. HDR content is
-						refined with brightness adjustments
-						that transform darker scenes into ones
-						with stunning contrast, detail, and
-						color depth.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_brightness.jpg" alt="">
-			</div>
-
-			<!--AI Sound Pro-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Sound Pro</p>
-					<p class="description">
-						By learning from more than
-						17 million sound data points, the
-						processor identifies voices, effects,
-						and frequencies so it can optimize
-						sound according to the audio genre.
-						And the Auto Volume Leveling feature
-						maintains consistent voice levels
-						across different types of content.
-						Also, with the a7 and a5 processor,
-						LG Virtual Up-mixing now converts <br>
-						2-channel audio into 5. 1. 2 channel
-						audio providing a more spatial sound.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_sound_pro_7.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Quantum Dot NanoCell Mini LED-->
-		<div class="popup_window pureColors_75">
-			<!--NanoCell Technology-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">NanoCell <br>Technology</p>
-					<p class="description">
-						LG NanoCell TV utilizes nanoparticles,
-						our own distinctive Nano technology,
-						to filter and refine color, removing
-						impurities from RGB wavelengths.
-						This means that only pure, accurate
-						colors will be displayed on screen.
-						The result is a more vibrant, more
-						realistic picture that will bring your
-						content to life.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/NanoCell/04_NanoCell%20Technology.mp4" loop></video>
-			</div>
-			<!--100% Color Consistency-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">100% Color <br>Consistency</p>
-					<p class="description">
-						LG QNED and NanoCell TV display
-						Pure Colors with high consistency
-						from wide viewing angles thanks to
-						Nano technology. Color consistency
-						is a representation of display
-						consistency in terms of color and
-						lightness. Certified by Intertek,
-						LG QNED and NanoCell TV deliver
-						a high Color Consistency recorded
-						as 100% by CIE DE2000 across
-						18 color patterns with a viewing angle
-						of ±30°. In other words, this means
-						that LG QNED and NanoCell TV
-						display colors richly and accurately
-						even when viewed from wide angles.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/color_consistency.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--REAL 4K-->
-		<div class="popup_window real4K">
-			<!--REAL 4K UHD-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">REAL 4K UHD</p>
-					<p class="description">
-						LG UHD TVs surpass your
-						expectations every time. Experience
-						lifelike picture quality and vivid colors
-						with four time more pixel accuracy
-						than Full HD.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/UHD/05_REAL%204K%20UHD.mp4" loop></video>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--a7 Gen5 AI Processor 4K-->
-		<div class="popup_window a7_gen5_4K_UQ90">
-			<!--AI Picture Pro-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Picture Pro</p>
-					<p class="description">
-						Developed using a vast database of
-						over one million visual data points,
-						the deep-learning algorithm recognizes
-						content quality, while the 5th generation
-						α9 AI processor removes noise, and
-						optimizes contrast and saturation.
-						The result is crisp, high-quality visuals.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_picture_pro_img01.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Screen images simulated. <br>
-				</p>
-			</div>
-
-			<!--AI Sound Pro-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Sound Pro</p>
-					<p class="description">
-						By learning from more than
-						17 million sound data points, the
-						processor identifies voices, effects,
-						and frequencies so it can optimize
-						sound according to the audio genre.
-						And the Auto Volume Leveling feature
-						maintains consistent voice levels
-						across different types of content.
-						Also, with the a7 and a5 processor,
-						LG Virtual Up-mixing now converts <br>
-						2-channel audio into 5. 1. 2 channel
-						audio providing a more spatial sound.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_sound_pro_7.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--α5 Gen5 AI Processor 4K-->
-		<div class="popup_window a5_gen5_4K_UQ90_55">
-			<!--AI Brightness Control-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Brightness <br>Control</p>
-					<p class="description">
-						A light sensor measures the surrounding
-						ambient light, then the processor
-						finely adjusts tone mapping for optimal
-						screen brightness. HDR content is
-						refined with brightness adjustments
-						that transform darker scenes into ones
-						with stunning contrast, detail, and
-						color depth.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_brightness.jpg" alt="">
-			</div>
-
-			<!--AI Sound Pro-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Sound Pro</p>
-					<p class="description">
-						By learning from more than
-						17 million sound data points, the
-						processor identifies voices, effects,
-						and frequencies so it can optimize
-						sound according to the audio genre.
-						And the Auto Volume Leveling feature
-						maintains consistent voice levels
-						across different types of content.
-						Also, with the a7 and a5 processor,
-						LG Virtual Up-mixing now converts <br>
-						2-channel audio into 5. 1. 2 channel
-						audio providing a more spatial sound.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_sound_pro_7.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--α5 Gen5 AI Processor 4K-->
-		<div class="popup_window a5_gen5_4K_UQ75">
-			<!--AI Brightness Control-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Brightness <br>Control</p>
-					<p class="description">
-						A light sensor measures the surrounding
-						ambient light, then the processor
-						finely adjusts tone mapping for optimal
-						screen brightness. HDR content is
-						refined with brightness adjustments
-						that transform darker scenes into ones
-						with stunning contrast, detail, and
-						color depth.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_brightness.jpg" alt="">
-			</div>
-
-			<!--AI Sound-->
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">AI Sound</p>
-					<p class="description">
-						By learning from more than
-						17 million sound data points, the
-						processor identifies voices, effects,
-						and frequencies so it can then
-						optimize the sound by genre for a
-						more immersive experience.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/ai_sound.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Full/Line View-->
-		<div class="popup_window full_line_view">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Full/Line View</p>
-					<p class="description">
-						65ART90 provides various space
-						value with differentiated UX. With
-						Full View, people can enjoy the TV
-						as gallery. Also, while not using it,
-						just let it in Line View as a notification
-						about music you are listening and time.
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/LifeStyle/65ART90_view.mp4" loop></video>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--80W Sound-->
-		<div class="popup_window sound_80w">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">80W Sound</p>
-					<p class="description">
-						65ART90 is the best audio platform
-						in a lifestyle design. With 80W sound,
-						experience powerful and clear sound
-						quality.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/80w_sound.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Selective Textile Colors-->
-		<div class="popup_window selective_textile_colors">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Selective Textile <br>Colors</p>
-					<p class="description">
-						The gorgeous TV covers are made
-						in collaboration with renowned
-						textile brand, Kvadrat. Kvadrat is well
-						know for its application in high end
-						audios such as B&O (Beoplay A9).
-					</p>
-				</div>
-				<video class="popup_video" src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/video/LifeStyle/ART90_Selective-Textile-Colors.mp4" loop></video>
-				<p class="popup_disclaimer01">*Kvadrat is a premium textile brand in Denmark.</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Rotate, Tilt, Swivel-->
-		<div class="popup_window rotate_tilt_swivel">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Rotate, Tilt, <br> Swivel</p>
-					<p class="description">
-						Watch in comfort wherever you are
-						with StandbyME’s multiple adjustment
-						options. With up to 180˚ rotation,
-						130 swivel, 50 tilt, and 20cm height
-						adjustments, it’s easy to find your
-						most comfortable viewing position.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/rotate_tilt.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*Vertical screen mode may not be supported in all apps. <br>
-					*The product screen shows a simulated image which may differ from the actual product.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Wireless, built-in Battery-->
-		<div class="popup_window wireless_battery">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Wireless, <br>built-in Battery</p>
-					<p class="description">
-						No power outlet, no problem!
-						A built-in battery lets you use
-						StandbyME wirelessly, so you can
-						place it wherever you need.
-						The battery lasts for up to 3 hours on
-						a single charge – that’s more than
-						enough for a movie, a workout,
-						or even an intense study session.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/wireless_battery.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*The product screen shows a simulated image which may differ from the actual product. <br>
-					*Built in battery supports up to 3 hours of wireless use. (3 hours based on using in standard mode but battery usage may vary depending on usage conditions)<br>
-					*Ease of moving the product depends on the flooring material.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--5-wheels-->
-		<div class="popup_window wheels_5">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">5-wheels</p>
-					<p class="description">
-						Five wheels hidden in the base of
-						the product make it easy to move
-						StandbyME around your home.
-						Take it from your workspace to
-						kitchen to living room, and back
-						again without hassle.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/5_wheels.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--NFC / Mirroring-->
-		<div class="popup_window nfc_mirroring">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">NFC / Mirroring</p>
-					<p class="description">
-						StandbyME feature NFC allowing
-						you to wirelessly mirror content from
-						your phone, tablet, or laptop. Just
-						tap your device against the NFC logo
-						on the back of the screen to easily
-						connect and enjoy more immersive
-						mobile content with a bigger screen.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/nfc_mirroring.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*The product screen shows a simulated image which may differ from the actual product. <br>
-					*Depending on the specifications and manufacturer of the mobile device, the screen sharing (mirroring) method may differ as well as the image quality.<br>
-					*NFC functionality works after ThinQ app is loaded onto mobile device and device is connected to the TV via Wi-Fi.<br>
-					*Mobile screen sharing (mirroring) is available only on Android devices. (iOS is not supported)<br>
-					*Connection condition may differ depending on user’s network environment.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Touch Screen-->
-		<div class="popup_window touch_screen">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Touch Screen</p>
-					<p class="description">
-						An intuitive touch screen display lets
-						you operate StandbyME with ease.
-						Just tap to open an app, pause
-						a movie, change your display settings,
-						and more!
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/touch_screen.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					*The product screen shows a simulated image which may differ from the actual product. <br>
-					*Touch screen functionality varies by app and may not be supported for all apps.<br>
-					*Apps that cannot be operated by touch can be controlled by using the provided remote control.
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Remote Controller-->
-		<div class="popup_window remote_controller">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Remote <br>Controller</p>
-					<p class="description">
-						A handy remote lets you stay in
-						control even when the touch screen
-						display is out of reach. Whether you
-						want to switch channels without
-						getting up or get comfortable before
-						starting a movie, the remote is your
-						new best friend.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/remote_controller.jpg" alt="">
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-
-		<!--Remote Controller-->
-		<div class="popup_window swivel">
-			<div class="hash_info_wrap">
-				<div class="hash_info">
-					<p class="title">Swivel Stand</p>
-					<p class="description">
-						The OLED G2 comes with a swivel
-						stand allowing people to see more
-						action. The stand swivels 10˚ left and
-						right each which provides the
-						comfortable viewing position.
-					</p>
-				</div>
-				<img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/main/swivel.jpg" alt="">
-				<p class="infinite_contrast_disclaimer">
-					* G series stand is optional
-				</p>
-			</div>
-			<button type="button" class="popup_close_btn"></button>
-		</div>
-		<!--컨텐츠 추가 e-->
-	</div>
-	<!--//hash popup-->
-
-	<!--simulator popup-->
-	<div class="simulator_popup">
-		<div class="simulator_wrap">
-			<img src="./images/main/simulator/test_bg_infill.jpg" class="simulator_bg" alt="">
-			<div class="simulator_controller">
-				<div class="controller_wrap">
-					<div class="controller_box">
-						<div class="interior_box">
-							<strong>Interior</strong>
-							<ol>
-								<li>
-									<button type="button" class="active">
-										<div class="img_wrap"><img src="./images/main/simulator/test_bg_infill.jpg" alt=""></div>
-										<p>Modern</p>
-									</button>
-								</li>
-								<li>
-									<button type="button">
-										<div class="img_wrap"><img src="./images/main/simulator/test_bg_infill.jpg" alt=""></div>
-										<p>Vintage</p>
-									</button>
-								</li>
-								<li>
-									<button type="button">
-										<div class="img_wrap"><img src="./images/main/simulator/test_bg_infill.jpg" alt=""></div>
-										<p>Planterior</p>
-									</button>
-								</li>
-								<li>
-									<button type="button">
-										<div class="img_wrap"><img src="./images/main/simulator/test_bg_infill.jpg" alt=""></div>
-										<p>Minimal</p>
-									</button>
-								</li>
-							</ol>
-						</div>
-
-						<div class="installation_box">
-							<strong>Installation</strong>
-							<div class="installation_btn_wrap">
-								<button type="button" class="wide_stand_btn active">Wide-Stand</button>
-								<button type="button" class="wall_mount_btn">Wall-mount</button>
-								<button type="button" class="stand_btn">Gallery-Stand</button>
-							</div>
-						</div>
-
-						<div class="infill_on_off">
-							<p>Infill On/Off</p>
-							<button type="button" class="on_off_btn"></button>
-						</div>
-					</div>
+		<!--//hash popup-->
+
+		<!--simulator popup-->
+		<div class="simulator_popup">
+			<div class="simulator_wrap">
+				<img src="./images/main/simulator/test_bg_infill.jpg" class="simulator_bg" alt="">
+				<div class="simulator_controller">
+					<!--211209 start-->
 					<div class="simulate_down_wrap">
-						<button type="button" class="image_down_btn">Image download <i></i></button>
+						<button type="button" class="image_down_btn">Image download</button>
 					</div>
-				</div>
-				<button type="button" class="controller_close_btn"></button>
-			</div>
-		</div>
-		<button type="button" class="simulator_close_btn"></button>
-	</div>
-	<!--//simulator popup-->
+					<!--211209 end-->
+					<div class="controller_wrap">
+						<div class="controller_box">
+							<div class="interior_box">
+								<strong>Interior</strong>
+								<ol>
+									<li>
+										<button type="button" class="active">
+											<div class="img_wrap">
+												<img src="./images/main/simulator/test_bg_infill.jpg" alt="">
+											</div>
+											<p>Modern</p>
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											<div class="img_wrap">
+												<img src="./images/main/simulator/test_bg_infill.jpg" alt="">
+											</div>
+											<p>Vintage</p>
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											<div class="img_wrap">
+												<img src="./images/main/simulator/test_bg_infill.jpg" alt="">
+											</div>
+											<p>Planterior</p>
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											<div class="img_wrap">
+												<img src="./images/main/simulator/test_bg_infill.jpg" alt="">
+											</div>
+											<p>Minimal</p>
+										</button>
+									</li>
+								</ol>
+							</div>
 
-	<!--3d view-->
-	<div class="webgl_wrap">
-		<div id="root"></div>
-		<button type="button" class="webgl_close_btn"></button>
-	</div>
-</div>
-<div class="member_login_popup_wrap">
-	<div class="member_login_popup">
-		<div class="member_login_title_wrap">
-			<p class="member_login_title">MEMBER LOG IN</p>
-			<p class="member_login_sub_title">Enter your account to access the data.</p>
-			<div class="member_login_description_wrap">
-				<p class="description">* This material is highly confidential.<br>Do not copy, share or print out this material for any purposes.</p>
+							<div class="infill_on_off">
+								<p>Infill On/Off</p>
+								<button type="button" class="on_off_btn"></button>
+							</div>
+
+							<div class="installation_box">
+								<!--211209 delete start-->
+								<!--<strong>Installation</strong>-->
+								<!--211209 delete end-->
+								<div class="installation_btn_wrap">
+									<button type="button" class="wide_stand_btn active">Wide-Stand</button>
+									<button type="button" class="wall_mount_btn">Wall-mount</button>
+									<button type="button" class="stand_btn">Gallery-Stand</button>
+								</div>
+							</div>
+
+						</div>
+						<!--211209 delete start-->
+						<!--<div class="simulate_down_wrap">
+							<button type="button" class="image_down_btn">Image download <i></i></button>
+						</div>-->
+						<!--211209 delete end-->
+					</div>
+					<!--211209 delete start-->
+					<!--<button type="button" class="controller_close_btn"></button>-->
+					<!--211209 delete end-->
+				</div>
 			</div>
+			<!--211209 delete start-->
+			<!--<button type="button" class="simulator_close_btn"></button>-->
+			<!--211209 delete end-->
 		</div>
-		<div class="member_login_contents">
-			<p class="email">Email</p>
-			<input type="text" class="input_email">
-			<p class="lge_com">@lge.com</p>
-			<a href="./init">OK</a>
+		<!--//simulator popup-->
+
+		<!--3d view-->
+		<div class="webgl_wrap">
+			<div id="root"></div>
+			<button type="button" class="webgl_close_btn"></button>
 		</div>
-		<button type="button" class="member_login_popup_close_btn"><img src="https://d1wl83prm6u37g.cloudfront.net/lgvirtualstudio-2021/images/intro/close_btn.png" alt=""></button>
 	</div>
-</div>
-<!--//mainContainer-->
+	<div class="member_login_popup_wrap">
+		<div class="member_login_popup">
+			<div class="member_login_title_wrap">
+				<p class="member_login_title">MEMBER LOG IN</p>
+				<p class="member_login_sub_title">Enter your account to access the data.</p>
+				<div class="member_login_description_wrap">
+					<p class="description">* This material is highly confidential.<br>Do not copy, share or print out this material for any purposes.
+					</p>
+				</div>
+			</div>
+			<div class="member_login_contents">
+				<p class="email">Email</p>
+				<input type="text" class="input_email">
+				<p class="lge_com">@lge.com</p>
+				<a href="./init">OK</a>
+			</div>
+			<button type="button" class="member_login_popup_close_btn">
+				<img src="./images/intro/close_btn.png" alt="">
+			</button>
+		</div>
+	</div>
+	<!--//mainContainer-->
 </div>
 <script src="./javascripts/plugin.js"></script>
 <script src="./javascripts/design_common.js?date=211019_1"></script>
@@ -2262,13 +1754,13 @@
 	!function(e){function r(r){for(var n,i,a=r[0],c=r[1],l=r[2],p=0,s=[];p<a.length;p++)i=a[p],Object.prototype.hasOwnProperty.call(o,i)&&o[i]&&s.push(o[i][0]),o[i]=0;for(n in c)Object.prototype.hasOwnProperty.call(c,n)&&(e[n]=c[n]);for(f&&f(r);s.length;)s.shift()();return u.push.apply(u,l||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,a=1;a<t.length;a++){var c=t[a];0!==o[c]&&(n=!1)}n&&(u.splice(r--,1),e=i(i.s=t[0]))}return e}var n={},o={1:0},u=[];function i(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,i),t.l=!0,t.exports}i.e=function(e){var r=[],t=o[e];if(0!==t)if(t)r.push(t[2]);else{var n=new Promise((function(r,n){t=o[e]=[r,n]}));r.push(t[2]=n);var u,a=document.createElement("script");a.charset="utf-8",a.timeout=120,i.nc&&a.setAttribute("nonce",i.nc),a.src=function(e){return i.p+"static/js/"+({}[e]||e)+"."+{3:"83d61993"}[e]+".chunk.js"}(e);var c=new Error;u=function(r){a.onerror=a.onload=null,clearTimeout(l);var t=o[e];if(0!==t){if(t){var n=r&&("load"===r.type?"missing":r.type),u=r&&r.target&&r.target.src;c.message="Loading chunk "+e+" failed.\n("+n+": "+u+")",c.name="ChunkLoadError",c.type=n,c.request=u,t[1](c)}o[e]=void 0}};var l=setTimeout((function(){u({type:"timeout",target:a})}),12e4);a.onerror=a.onload=u,document.head.appendChild(a)}return Promise.all(r)},i.m=e,i.c=n,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,r){if(1&r&&(e=i(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)i.d(t,n,function(r){return e[r]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/",i.oe=function(e){throw console.error(e),e};var a=this.webpackJsonphdrp=this.webpackJsonphdrp||[],c=a.push.bind(a);a.push=r,a=a.slice();for(var l=0;l<a.length;l++)r(a[l]);var f=c;t()}([])</script>
 <script src="https://d1wl83prm6u37g.cloudfront.net/static/models/js/2.a132ed2b.chunk.js"></script>
 <script src="https://d1wl83prm6u37g.cloudfront.net/static/models/js/main.caaecd74.chunk.js"></script>
-<div class="footer">
+<!--<div class="footer">
 	<div class="privacy_law">
 		<a href="https://www.lg.com/global/privacy" target="_black" class="privacy">PRIVACY</a>
 		<a href="https://www.lg.com/global/legal" target="_black">LEGAL</a>
 	</div>
 	<p>Copyright &copy; LG Electronics. ALL Rights Reserved</p>
-</div>
+</div>-->
 </body>
 </html>
 

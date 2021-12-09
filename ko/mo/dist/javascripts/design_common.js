@@ -49,30 +49,34 @@ function detail(){
 
     /*211208 start*/
     // Header Toggle Button
+    var $header = $("#header");
     var TVContainer = $(".tv_container"),
-        TVGnbBtn = TVContainer.find(".gnb_btn"),
-        TVGnbList = TVContainer.find(".gnb_list"),
-        TVMenuCloseBtn = TVContainer.find(".close_btn"),
-        TVDim = TVContainer.find(".dim");
+        TVGnbBtn = $header.find(".gnb_btn"),
+        TVGnbList = $header.find(".gnb_list"),
+        TVMenuCloseBtn = $header.find(".close_btn"),
+        TVDim = $("#wrap").find(".dim");
 
     TVGnbBtn.on("click",function(){
         if (TVGnbList.hasClass("active") ) {
             GnbMenuNone();
         } else {
             TweenMax.to(TVDim, .5, { opacity:1, display:"block"})
+            TweenMax.to(TVGnbList, .5, { opacity:1, display:"block", left:0 })
             TVGnbList.addClass("active");
+            $(".main_container").addClass("on");
         }
     });
     TVMenuCloseBtn.on("click",function(){
         GnbMenuNone();
     });
     TVDim.on("click",function(){
-        var _this = $(this);
         GnbMenuNone();
     });
     function GnbMenuNone () {
         TVGnbList.removeClass("active");
+        $(".main_container").removeClass("on");
         TweenMax.to(TVDim, .5, { opacity:0, display:"none"})
+        TweenMax.to(TVGnbList, .5, { opacity:0, display:"none", left:"-100vw" })
     }
     /*211208 end*/
 
@@ -84,7 +88,9 @@ function detail(){
     //model title 제어
     $(".main_title").find("a").on("click",function(){
         $(".art90_color_btn_wrap").css("display","none");
-        $(".model_size_btn").css("display","inline-block");
+        /*211209 start*/
+        $(".model_size_btn").css("display","flex");
+        /*211209 end*/
         $(".main_title").find("a").removeClass("main_title_active");
         $(this).addClass("main_title_active");
         $(".sub_title").css("display","none");
@@ -110,6 +116,7 @@ function detail(){
     var selectModel;
     $subTitleBtn.on("click",function(){
         /*211208 start*/
+        $window.scrollTop(0);
         GnbMenuNone();
         /*211208 end*/
         selectModel = $(this).children().text();
@@ -237,6 +244,13 @@ function detail(){
     });
 
     $hashUsp.on("click",function(){
+        /*211209 start*/
+        TVGnbBtn.css({ display:"none", opacity:0 });
+        $(".main_container").addClass("on");
+        $header.css("position","absolute");
+        $window.scrollTop(0);
+        /*211209 end*/
+        
         hashTagName = $(this).attr("id");
         if(hashTagName === "spotify_hifi" || hashTagName === "virtual_dolby_atmos" || hashTagName === "wireless_subwoofer") return false;
 
@@ -249,9 +263,11 @@ function detail(){
             }
         }
 
-        if($("."+ hashTagName).find("> div").eq(0).find(".popup_video").length){
-            $("."+ hashTagName).find("> div").eq(0).find(".popup_video")[0].play();
-        }
+        /*211209 start*/
+       /* if($("."+ hashTagName).find("> div").eq(0).find(".popup_video").length){
+            $("."+ hashTagName).find("> div").eq(0).find(".popup_video")[0].load();
+        }*/
+        /*211209 start*/
 
         $hashUsp.removeClass("hash_btn_active");
         $(this).addClass("hash_btn_active");
@@ -278,9 +294,16 @@ function detail(){
     var _popup_sub_usp_index = 0;
     //hash tag popup 닫힐 때
     $(".popup_close_btn").on("click",function(){
-        if($hash_popup.find("."+ hashTagName).find(".hash_info_wrap").eq(_popup_sub_usp_index).find(".popup_video").length){
+        /*211209 start*/
+        TVGnbBtn.css({ display:"block", opacity:1 });
+        $(".main_container").removeClass("on");
+        $header.css("position","fixed");
+        /*211209 end*/
+
+
+        /*if($hash_popup.find("."+ hashTagName).find(".hash_info_wrap").eq(_popup_sub_usp_index).find(".popup_video").length){
             $hash_popup.find("."+ hashTagName).find(".hash_info_wrap").eq(_popup_sub_usp_index).find(".popup_video")[0].pause();
-        }
+        }*/
         $(".hash_popup").css("display","none");
         $hashInfoWrap.css("display","none");
         $(".popup_sub_usp").removeClass("active");
@@ -308,9 +331,9 @@ function detail(){
         $hashInfoWrap.css("display","none");
         $hash_popup.find("."+ hashTagName).find(".hash_info_wrap").eq(_popup_sub_usp_index).css("display","block");
         $hash_popup.find("."+ hashTagName).find(".hash_info_wrap").eq(_popup_sub_usp_index).find("iframe").attr("src",$hash_popup.find("."+ hashTagName).find(".hash_info_wrap").eq(_popup_sub_usp_index).find("iframe").attr("src"));
-        if($hash_popup.find("."+ hashTagName).find(".hash_info_wrap").eq(_popup_sub_usp_index).find("video").length){
+        /*if($hash_popup.find("."+ hashTagName).find(".hash_info_wrap").eq(_popup_sub_usp_index).find("video").length){
             $hash_popup.find("."+ hashTagName).find(".hash_info_wrap").eq(_popup_sub_usp_index).find("video")[0].play();
-        }
+        }*/
     });
 
 
@@ -470,10 +493,18 @@ function detail(){
     var $modelFilter = $("#modelFilter");
 
     $(".btn_3D").click(function(){
+        /*211209 start*/
+        TVGnbBtn.css({opacity:0, display:"none"});
+        $(".webgl_close_btn").css({opacity:1, display:"block"});
+        /*211209 end*/
         $webglWrap.css({display:"block"});
     });
     $(".webgl_close_btn").click(function(){
         $webglWrap.css({display:"none"});
+        /*211209 start*/
+        TVGnbBtn.css({opacity:1, display:"block"});
+        $(".webgl_close_btn").css({opacity:0, display:"none"});
+        /*211209 end*/
     });
     $modelFilter.click(function (){
         $(".filter_header, .filter_container").css({display:"block"})
@@ -498,6 +529,10 @@ function detail(){
 
     $btnSimulate.click(function () {
         TweenMax.to($simulatorPopup, .3, {opacity:1, display:"block"});
+        /*211209 start*/
+        $simulatorCloseBtn.css({opacity:1, display:"block"});
+        TVGnbBtn.css({opacity:0, display:"none"});
+        /*211209 end*/
     });
 
 
@@ -505,6 +540,10 @@ function detail(){
     //닫을 때 active된 요소 전부 초기화
     $simulatorCloseBtn.click(function () {
         TweenMax.to($simulatorPopup, .3, {opacity:0, display:"none"});
+        /*211209 start*/
+        $simulatorCloseBtn.css({opacity:0, display:"none"});
+        TVGnbBtn.css({opacity:1, display:"block"});
+        /*211209 end*/
     });
 
     //interior box 클릭
