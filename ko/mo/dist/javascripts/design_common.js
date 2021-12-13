@@ -50,33 +50,29 @@ function detail(){
     /*211208 start*/
     // Header Toggle Button
     var $header = $("#header");
-    var TVContainer = $(".tv_container"),
-        TVGnbBtn = $header.find(".gnb_btn"),
-        TVGnbList = $header.find(".gnb_list"),
-        TVMenuCloseBtn = $header.find(".close_btn"),
-        TVDim = $("#wrap").find(".dim");
+    var GnbBtn = $header.find(".gnb_btn"),
+        GnbList = $header.find(".gnb_list"),
+        MenuCloseBtn = $header.find(".close_btn"),
+        Dim = $("#wrap").find(".dim");
 
-    TVGnbBtn.on("click",function(){
-        if (TVGnbList.hasClass("active") ) {
+    GnbBtn.on("click",function(){
+        if (GnbList.hasClass("active") ) {
             GnbMenuNone();
         } else {
-            TweenMax.to(TVDim, .5, { opacity:1, display:"block"})
-            TweenMax.to(TVGnbList, .5, { opacity:1, display:"block", left:0 })
-            TVGnbList.addClass("active");
+            TweenMax.to(Dim, .5, { opacity:1, display:"block"})
+            TweenMax.to(GnbList, .5, { opacity:1, display:"block", left:0 })
+            GnbList.addClass("active");
             $(".main_container").addClass("on");
         }
     });
-    TVMenuCloseBtn.on("click",function(){
-        GnbMenuNone();
-    });
-    TVDim.on("click",function(){
-        GnbMenuNone();
-    });
+    MenuCloseBtn.on("click", GnbMenuNone);
+    Dim.on("click", GnbMenuNone);
+
     function GnbMenuNone () {
-        TVGnbList.removeClass("active");
+        GnbList.removeClass("active");
         $(".main_container").removeClass("on");
-        TweenMax.to(TVDim, .5, { opacity:0, display:"none"})
-        TweenMax.to(TVGnbList, .5, { opacity:0, display:"none", left:"-100vw" })
+        TweenMax.to(Dim, .5, { opacity:0, display:"none"})
+        TweenMax.to(GnbList, .5, { opacity:0, display:"none", left:"-100vw" })
     }
     /*211208 end*/
 
@@ -245,7 +241,7 @@ function detail(){
 
     $hashUsp.on("click",function(){
         /*211209 start*/
-        TVGnbBtn.css({ display:"none", opacity:0 });
+        GnbBtn.css({ display:"none", opacity:0 });
         $(".main_container").addClass("on");
         $header.css("position","absolute");
         $window.scrollTop(0);
@@ -263,11 +259,11 @@ function detail(){
             }
         }
 
-        /*211209 start*/
+        /*211209 delete start*/
        /* if($("."+ hashTagName).find("> div").eq(0).find(".popup_video").length){
             $("."+ hashTagName).find("> div").eq(0).find(".popup_video")[0].load();
         }*/
-        /*211209 start*/
+        /*211209 delete end*/
 
         $hashUsp.removeClass("hash_btn_active");
         $(this).addClass("hash_btn_active");
@@ -295,15 +291,17 @@ function detail(){
     //hash tag popup 닫힐 때
     $(".popup_close_btn").on("click",function(){
         /*211209 start*/
-        TVGnbBtn.css({ display:"block", opacity:1 });
+        GnbBtn.css({ display:"block", opacity:1 });
         $(".main_container").removeClass("on");
         $header.css("position","fixed");
         /*211209 end*/
 
 
+        /*211209 delete start*/
         /*if($hash_popup.find("."+ hashTagName).find(".hash_info_wrap").eq(_popup_sub_usp_index).find(".popup_video").length){
             $hash_popup.find("."+ hashTagName).find(".hash_info_wrap").eq(_popup_sub_usp_index).find(".popup_video")[0].pause();
         }*/
+        /*211209 delete end*/
         $(".hash_popup").css("display","none");
         $hashInfoWrap.css("display","none");
         $(".popup_sub_usp").removeClass("active");
@@ -494,7 +492,7 @@ function detail(){
 
     $(".btn_3D").click(function(){
         /*211209 start*/
-        TVGnbBtn.css({opacity:0, display:"none"});
+        GnbBtn.css({opacity:0, display:"none"});
         $(".webgl_close_btn").css({opacity:1, display:"block"});
         /*211209 end*/
         $webglWrap.css({display:"block"});
@@ -502,7 +500,7 @@ function detail(){
     $(".webgl_close_btn").click(function(){
         $webglWrap.css({display:"none"});
         /*211209 start*/
-        TVGnbBtn.css({opacity:1, display:"block"});
+        GnbBtn.css({opacity:1, display:"block"});
         $(".webgl_close_btn").css({opacity:0, display:"none"});
         /*211209 end*/
     });
@@ -531,7 +529,7 @@ function detail(){
         TweenMax.to($simulatorPopup, .3, {opacity:1, display:"block"});
         /*211209 start*/
         $simulatorCloseBtn.css({opacity:1, display:"block"});
-        TVGnbBtn.css({opacity:0, display:"none"});
+        GnbBtn.css({opacity:0, display:"none"});
         /*211209 end*/
     });
 
@@ -542,7 +540,7 @@ function detail(){
         TweenMax.to($simulatorPopup, .3, {opacity:0, display:"none"});
         /*211209 start*/
         $simulatorCloseBtn.css({opacity:0, display:"none"});
-        TVGnbBtn.css({opacity:1, display:"block"});
+        GnbBtn.css({opacity:1, display:"block"});
         /*211209 end*/
     });
 
