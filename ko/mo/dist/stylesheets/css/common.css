@@ -8,6 +8,11 @@
 
 @font-face { font-family: 'Gordita'; font-style: normal; font-weight: 700; src: url("../../fonts/Gordita_Bold.woff") format("woff"); }
 
+/* LG Innovation */
+@font-face { font-family: 'LGInnovation'; font-style: normal; font-weight: 500; src: url("../../fonts/LGInnovationRegular.woff") format("woff"); }
+
+@font-face { font-family: 'LGInnovation'; font-style: normal; font-weight: 700; src: url("../../fonts/LGInnovationBold.woff") format("woff"); }
+
 /* reset css */
 article, aside, footer, header, nav, section { display: block; }
 
@@ -874,6 +879,12 @@ button { padding: 0; border: 0; outline: none; cursor: pointer; font-weight: 500
 
 .product_profile_contents .tab_av_contents .title_02 { display: block; font-size: 16px; font-weight: 600; clear: both; }
 
+/* 211217 start*/
+.studio_container { width: 100%; height: 100vh; background: url(../../images/main/studio_bg.jpg) 50% 100% no-repeat; background-size: cover; }
+
+.studio_container h1 { margin: 0 auto; font-size: 3.4rem; color: #fff; font-family: "LGInnovation", Arial, Apple SD Gothic Neo, sans-serif; text-align: center; text-shadow: 0 0 0.25rem #583c31, 0 0 0.4rem #745141, 0 0 0.5rem #705543; line-height: 3.7rem; }
+
+/* 211217 end*/
 /*
   z-index 가이드
   header : 200
