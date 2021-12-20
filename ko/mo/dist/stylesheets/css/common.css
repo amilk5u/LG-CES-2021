@@ -880,11 +880,13 @@ button { padding: 0; border: 0; outline: none; cursor: pointer; font-weight: 500
 .product_profile_contents .tab_av_contents .title_02 { display: block; font-size: 16px; font-weight: 600; clear: both; }
 
 /* 211217 start*/
+.studio_container { position: relative; }
+
 .studio_container > img { width: 100%; }
 
 .studio_container h1 { width: 100%; position: absolute; top: 0; margin: 15vw auto 0; font-size: 3.4rem; color: #fff; font-family: "LGInnovation", Arial, Apple SD Gothic Neo, sans-serif; line-height: 3.7rem; text-align: center; text-shadow: 0 0 0.25rem #583c31, 0 0 0.4rem #745141, 0 0 0.5rem #705543; }
 
-.studio_container ul.link_wrap { width: 100%; position: absolute; bottom: 16%; padding: 0 1.25rem; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.studio_container ul.link_wrap { width: 100%; position: absolute; bottom: 22%; padding: 0 1.25rem; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .studio_container ul.link_wrap li { display: block; position: absolute; -webkit-transform: translate(-50%, 0); -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -o-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 
